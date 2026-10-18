@@ -347,3 +347,17 @@ code {
   main { padding-top: 24px; }
   .cat-grid { grid-template-columns: 1fr; }
 }
+
+/* ── 作者卡二维码（2026-10-18）──────────────────────────── */
+.author-box .qr {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-top: 14px;
+  padding-top: 14px;
+  border-top: 1px dashed var(--line);
+  font-size: 12.5px;
+  line-height: 1.65;
+  color: var(--faint);
+}
+.author-box .qr img { display: block; border: 1px solid var(--line); border-radius: 6px; }
