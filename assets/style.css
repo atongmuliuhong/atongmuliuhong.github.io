@@ -564,3 +564,252 @@ code {
   .hero .actions a { flex: 1 1 45%; text-align: center; }
   .solve-grid, .cred-grid { grid-template-columns: 1fr; }
 }
+
+/* ═══════════════════════════════════════════════════════
+   2026-10-19 · 高端版式升级（参考 lawyerzhumc.com 的结构骨架）
+   首页宽容器 + 双列首屏（照片）+ IP 视觉画廊 + CONTACT 大区块
+   原则：只升质感，不撤密度 —— GEO 正文仍是资产
+   ═══════════════════════════════════════════════════════ */
+
+.wrap-wide { max-width: 1120px; }
+
+/* ── 首屏：名字大字 + 主张 + 正装照片 ─────────────────── */
+.hero {
+  border-radius: 14px;
+  padding: 0;
+  overflow: hidden;
+  position: relative;
+  background: linear-gradient(135deg, #0a1f3d 0%, #0d2648 55%, #14325a 100%);
+  margin-bottom: 34px;
+}
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, #c6a664, rgba(198, 166, 100, .12));
+}
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1fr 360px;
+  gap: 52px;
+  padding: 58px 56px 50px;
+  align-items: center;
+}
+.hero h1 {
+  font-size: 54px;
+  line-height: 1.15;
+  margin: 0 0 4px;
+  letter-spacing: 3px;
+}
+.hero h1 .en {
+  display: block;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 15px;
+  font-weight: 400;
+  letter-spacing: .42em;
+  color: #c6a664;
+  margin-top: 12px;
+}
+.hero .claim {
+  font-size: 23px;
+  line-height: 1.9;
+  color: #f1f3f5;
+  border-left: none;
+  padding-left: 0;
+  margin: 20px 0 26px;
+  font-weight: 400;
+}
+.hero-photo {
+  margin: 0;
+  padding: 10px;
+  background: rgba(255, 255, 255, .035);
+  border: 1px solid rgba(198, 166, 100, .45);
+  box-shadow: 0 24px 60px rgba(0, 0, 0, .35);
+}
+.hero-photo img { display: block; width: 100%; height: auto; }
+.hero-photo figcaption {
+  text-align: center;
+  font-size: 12px;
+  letter-spacing: .55em;
+  color: #c6a664;
+  padding: 12px 0 2px;
+}
+
+/* ── IP 视觉画廊 ──────────────────────────────────────── */
+.brand-block {
+  display: grid;
+  grid-template-columns: 330px 1fr;
+  gap: 26px;
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 26px;
+  box-shadow: 0 1px 3px rgba(10, 31, 61, .07), 0 8px 28px rgba(10, 31, 61, .045);
+}
+.bb-poster { margin: 0; }
+.bb-poster img {
+  width: 100%;
+  display: block;
+  border-radius: 6px;
+  border: 1px solid var(--line);
+}
+.bb-poster figcaption {
+  font-size: 12px;
+  color: var(--faint);
+  margin-top: 9px;
+  text-align: center;
+  letter-spacing: .04em;
+}
+.bb-intro { font-size: 14.5px; color: var(--text); line-height: 2.0; margin: 2px 0 18px; }
+.bb-intro b { color: var(--ink); }
+.bb-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 13px;
+  margin-bottom: 16px;
+}
+.bb-grid figure { margin: 0; }
+.bb-grid img {
+  width: 100%;
+  display: block;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  transition: transform .15s, box-shadow .15s;
+}
+.bb-grid figure:hover img {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 22px rgba(10, 31, 61, .13);
+}
+.bb-grid figcaption {
+  font-size: 11.5px;
+  color: var(--faint);
+  text-align: center;
+  margin-top: 7px;
+  letter-spacing: .05em;
+}
+.bb-note { font-size: 13px; color: var(--muted); line-height: 1.9; margin: 0; }
+.bb-note b { color: var(--ink); }
+
+/* ── CONTACT 大区块（参考 zhumc #contact 结构）────────── */
+.contact {
+  background: var(--ink);
+  border-radius: 14px;
+  padding: 56px 56px 46px;
+  margin-top: 48px;
+  position: relative;
+  overflow: hidden;
+}
+.contact::before {
+  content: "";
+  position: absolute;
+  left: 0; top: 0; bottom: 0;
+  width: 3px;
+  background: linear-gradient(180deg, #c6a664, rgba(198, 166, 100, .15));
+}
+.cb-eyebrow {
+  font-size: 12px;
+  letter-spacing: .45em;
+  color: #c6a664;
+  font-weight: 600;
+  margin-bottom: 14px;
+}
+.cb-title {
+  font-family: Georgia, "Songti SC", "Noto Serif CJK SC", serif;
+  font-size: 29px;
+  line-height: 1.5;
+  color: #fff;
+  margin: 0 0 32px;
+  border-left: none;
+  padding-left: 0;
+  font-weight: 700;
+}
+.cb-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin-bottom: 32px;
+}
+.cb-card {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  background: rgba(255, 255, 255, .055);
+  border: 1px solid rgba(255, 255, 255, .14);
+  border-radius: 10px;
+  padding: 24px 28px;
+  text-decoration: none;
+  transition: border-color .16s, background .16s;
+}
+.cb-card:hover {
+  text-decoration: none;
+  border-color: rgba(198, 166, 100, .65);
+  background: rgba(255, 255, 255, .09);
+}
+.cb-k { font-size: 12px; letter-spacing: .25em; color: #8fb4d9; }
+.cb-v {
+  font-family: Georgia, "Songti SC", serif;
+  font-size: 25px;
+  font-weight: 700;
+  color: #fff;
+  word-break: break-all;
+}
+.cb-s { font-size: 12.5px; color: #a9c4dd; line-height: 1.7; }
+.cb-meta {
+  display: flex;
+  gap: 36px;
+  justify-content: space-between;
+  align-items: flex-start;
+  border-top: 1px solid rgba(255, 255, 255, .14);
+  padding-top: 26px;
+}
+.cb-info { flex: 1; }
+.cb-info p { margin: 0 0 11px; font-size: 14px; color: #d6e4f2; line-height: 1.9; }
+.cb-info p:last-child { margin-bottom: 0; }
+.cb-info span {
+  display: inline-block;
+  width: 6em;
+  color: #8fb4d9;
+  font-size: 12.5px;
+  letter-spacing: .05em;
+}
+.cb-qr {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  font-size: 12px;
+  color: #a9c4dd;
+  text-align: center;
+  line-height: 1.7;
+  flex-shrink: 0;
+}
+.cb-qr img { display: block; border-radius: 6px; background: #fff; padding: 4px; }
+.cb-areas { margin-top: 24px; }
+.cb-areas-k {
+  font-size: 12px;
+  color: #8fb4d9;
+  letter-spacing: .1em;
+  margin-bottom: 9px;
+}
+.contact .chip {
+  background: rgba(255, 255, 255, .07);
+  border-color: rgba(255, 255, 255, .18);
+  color: #d6e4f2;
+}
+
+/* ── 响应式 ───────────────────────────────────────────── */
+@media (max-width: 960px) {
+  .hero-grid { grid-template-columns: 1fr; gap: 36px; padding: 42px 30px 38px; }
+  .hero-photo { max-width: 330px; margin: 0 auto; }
+  .brand-block { grid-template-columns: 1fr; }
+  .bb-grid { grid-template-columns: repeat(2, 1fr); }
+  .cb-cards { grid-template-columns: 1fr; }
+  .cb-meta { flex-direction: column; gap: 24px; }
+  .contact { padding: 40px 28px 36px; }
+}
+@media (max-width: 640px) {
+  .hero h1 { font-size: 40px; }
+  .hero .claim { font-size: 19px; }
+  .cb-title { font-size: 22px; }
+  .cb-v { font-size: 20px; }
+}
