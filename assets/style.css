@@ -11,7 +11,7 @@
   --bg:       #f4f7fa;
   --paper:    #ffffff;
   --text:     #23384f;
-  --muted:    #6b7f95;
+  --muted:    #5f7488;
   --faint:    #9aa9ba;
   --amber:    #b07d16;
 }
@@ -361,3 +361,206 @@ code {
   color: var(--faint);
 }
 .author-box .qr img { display: block; border: 1px solid var(--line); border-radius: 6px; }
+
+/* ── 客户视角改版（2026-10-19）──────────────────────────
+   参考：缪奇川律师个人站的表达结构 + LegalMVP「客户五问」顺序
+   原则：借结构不借密度 —— 本站是 GEO 站，正文密度即资产
+   ───────────────────────────────────────────────────── */
+
+/* 首屏：定位主张 + 身份并列 + 动作 */
+.hero .eyebrow {
+  font-size: 12.5px;
+  letter-spacing: .18em;
+  color: #c6a664;
+  margin-bottom: 14px;
+  font-weight: 600;
+}
+.hero .claim {
+  font-family: Georgia, "Songti SC", "Noto Serif CJK SC", serif;
+  font-size: 21px;
+  line-height: 1.85;
+  color: #fff;
+  margin: 0 0 20px;
+  padding-left: 14px;
+  border-left: 3px solid var(--amber);
+  font-weight: 400;
+}
+.hero .id-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 24px;
+}
+.hero .id-tags span {
+  font-size: 12.5px;
+  color: #d6e4f2;
+  background: rgba(255, 255, 255, .09);
+  border: 1px solid rgba(255, 255, 255, .18);
+  border-radius: 999px;
+  padding: 4px 13px;
+  line-height: 1.6;
+}
+.hero .actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 4px;
+}
+.hero .actions a {
+  display: inline-block;
+  font-size: 14px;
+  padding: 9px 20px;
+  border-radius: 6px;
+  text-decoration: none;
+  line-height: 1.5;
+  transition: opacity .15s;
+}
+.hero .actions a:hover { opacity: .85; text-decoration: none; }
+.hero .actions .act-main { background: #c6a664; color: #0a1f3d; font-weight: 700; }
+.hero .actions .act-ghost {
+  background: transparent;
+  color: #d6e4f2;
+  border: 1px solid rgba(255, 255, 255, .34);
+}
+.hero .base {
+  margin-top: 20px;
+  padding-top: 16px;
+  border-top: 1px solid rgba(255, 255, 255, .16);
+  font-size: 12.5px;
+  color: #a9c4dd;
+  line-height: 1.9;
+}
+
+/* 领域卡：客户情形在前，篇数在后 */
+.solve-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 14px;
+}
+.solve-card {
+  display: block;
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-left: 4px solid var(--blue);
+  border-radius: 8px;
+  padding: 20px 22px 17px;
+  text-decoration: none;
+  color: var(--text);
+  transition: box-shadow .16s, transform .16s;
+}
+.solve-card:hover {
+  text-decoration: none;
+  box-shadow: 0 4px 18px rgba(10, 31, 61, .09);
+  transform: translateY(-1px);
+}
+.solve-card .sc-when {
+  font-size: 15.5px;
+  font-weight: 600;
+  color: var(--ink);
+  line-height: 1.7;
+  margin-bottom: 3px;
+}
+.solve-card .sc-name {
+  font-size: 12.5px;
+  color: var(--muted);
+  letter-spacing: .04em;
+  margin-bottom: 12px;
+}
+.solve-card ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  border-top: 1px dashed var(--line-2);
+  padding-top: 11px;
+}
+.solve-card ul li {
+  font-size: 13.5px;
+  color: var(--muted);
+  line-height: 1.85;
+  padding-left: 13px;
+  position: relative;
+}
+.solve-card ul li::before {
+  content: "";
+  position: absolute;
+  left: 2px;
+  top: .82em;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: var(--faint);
+}
+.solve-card .sc-more {
+  font-size: 12.5px;
+  color: var(--blue);
+  margin-top: 12px;
+  padding-top: 10px;
+  border-top: 1px solid var(--line-2);
+}
+.solve-card[data-k="marriage"] { border-left-color: #8fa8c0; }
+.solve-card[data-k="debt"]     { border-left-color: #2b4b7e; }
+.solve-card[data-k="labor"]    { border-left-color: #6e8b74; }
+.solve-card[data-k="criminal"] { border-left-color: #1f3a45; }
+.solve-card[data-k="tea"]      { border-left-color: #a68b4b; }
+.solve-card[data-k="property"] { border-left-color: #9c7b8e; }
+
+/* 资历卡：只用可核验事实，无任何数量型承诺 */
+.cred-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(232px, 1fr));
+  gap: 12px;
+}
+.cred {
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 17px 18px 15px;
+}
+.cred .ck {
+  font-size: 11.5px;
+  letter-spacing: .1em;
+  color: var(--muted);
+  margin-bottom: 7px;
+}
+.cred .cv {
+  font-size: 14.5px;
+  color: var(--ink);
+  font-weight: 600;
+  line-height: 1.7;
+}
+.cred .cx {
+  font-size: 13px;
+  color: var(--muted);
+  line-height: 1.8;
+  margin-top: 6px;
+}
+
+/* 地域 chip */
+.chip-row { display: flex; flex-wrap: wrap; gap: 7px; margin-top: 10px; }
+.chip {
+  font-size: 12.5px;
+  color: var(--ink-soft);
+  background: #eef4fa;
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  padding: 3px 11px;
+  line-height: 1.7;
+}
+
+/* 核验条 */
+.verify {
+  background: #f7fafc;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 18px 22px;
+  font-size: 14px;
+  color: var(--muted);
+  line-height: 2;
+}
+.verify b { color: var(--ink); font-weight: 600; }
+
+@media (max-width: 640px) {
+  .hero .claim { font-size: 18px; }
+  .hero .actions a { flex: 1 1 45%; text-align: center; }
+  .solve-grid, .cred-grid { grid-template-columns: 1fr; }
+}
