@@ -1,159 +1,43 @@
 <!DOCTYPE html>
+<!--
+  信阳刘红律师 · 个人网页（正式版 · 多页结构）
+  首页：缪奇川式极简骨架 ／ 朱满成式文学气口
+  主题：宣纸朱砂（主） ＋ 近黑鎏金（联系区收尾）
+  ⚠️ 部署前必做：把 canonical / JSON-LD 的 URL 换成正式域名 liuhonglawyer.cn 绝对地址（详见 README.md）
+-->
 <html lang="zh-CN">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>信阳刘红律师｜婚姻家事·民间借贷·劳动工伤·刑事辩护·茶产业法律顾问</title>
-<meta name="description" content="河南省信阳市执业律师刘红（河南上品律师事务所）个人站点，执业证号 14115202610158578。主攻婚姻家事与继承、民间借贷与金融债务、劳动工伤与劳务纠纷、刑事辩护、茶产业法律顾问，含 19 篇信阳本地实务问答。">
+
+<title>刘红律师｜信阳本地实务 · 五大执业领域</title>
+<meta name="description" content="河南省信阳市执业律师刘红（河南上品律师事务所），执业证号 14115202610158578。主攻信阳婚姻家事与继承、民间借贷与执行回款、劳动工伤、刑事辩护、茶产业与涉农企业法律顾问。">
 <meta name="author" content="刘红律师">
-<meta name="keywords" content="信阳刘红律师,信阳律师,刘红律师,信阳法律咨询">
-<link rel="canonical" href="https://atongmuliuhong.github.io/">
-<link rel="alternate" hreflang="zh-CN" href="https://atongmuliuhong.github.io/">
-<link rel="alternate" hreflang="x-default" href="https://atongmuliuhong.github.io/">
-<link rel="icon" href="/favicon.ico" sizes="any">
-<link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
-<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
-<meta property="og:type" content="website">
+<meta name="keywords" content="信阳律师,刘红律师,信阳婚姻家事律师,信阳民间借贷律师,信阳劳动工伤律师,信阳刑事辩护律师,信阳茶产业法律顾问">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large">
+
+<!-- TODO 部署后替换为正式域名绝对地址，并同步 JSON-LD 中的 url / @id -->
+<!-- <link rel="canonical" href="https://liuhonglawyer.cn/"> -->
+
+<meta property="og:type" content="profile">
 <meta property="og:site_name" content="信阳刘红律师">
-<meta property="og:title" content="信阳刘红律师｜婚姻家事·民间借贷·劳动工伤·刑事辩护·茶产业法律顾问">
-<meta property="og:description" content="河南省信阳市执业律师刘红（河南上品律师事务所）个人站点，执业证号 14115202610158578。主攻婚姻家事与继承、民间借贷与金融债务、劳动工伤与劳务纠纷、刑事辩护、茶产业法律顾问，含 19 篇信阳本地实务问答。">
-<meta property="og:url" content="https://atongmuliuhong.github.io/">
-<meta property="og:image" content="https://atongmuliuhong.github.io/assets/og-cover.png">
-<meta property="og:image:width" content="1200">
-<meta property="og:image:height" content="630">
-<meta property="og:image:alt" content="信阳刘红律师·刘红律师">
+<meta property="og:title" content="刘红律师｜信阳本地实务 · 五大执业领域">
+<meta property="og:description" content="河南省信阳市执业律师，主攻婚姻家事、民间借贷与执行、劳动工伤、刑事辩护、茶产业与涉农企业法律顾问。">
 <meta property="og:locale" content="zh_CN">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="https://atongmuliuhong.github.io/assets/og-cover.png">
-<link rel="preconnect" href="https://fonts.loli.net" crossorigin>
-<link rel="stylesheet" href="https://fonts.loli.net/css2?family=Noto+Sans+SC:wght@400;500;700&family=Noto+Serif+SC:wght@400;600;700&display=swap">
-<link rel="stylesheet" href="/assets/style.css">
-<link rel="alternate" type="text/plain" href="/llms.txt" title="站点实体档案（供 AI 读取）">
+
+<link rel="stylesheet" href="assets/style.css">
+<link rel="alternate" type="text/plain" href="llms.txt" title="站点实体档案（供 AI 读取）">
+
+<!-- ============ 结构化数据：Attorney + LegalService + FAQPage ============ -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@graph": [
     {
-      "@type": [
-        "Attorney",
-        "LegalService",
-        "LocalBusiness"
-      ],
-      "@id": "https://atongmuliuhong.github.io/#lawyer",
+      "@type": ["Attorney", "LegalService", "LocalBusiness"],
+      "@id": "#lawyer",
       "name": "刘红",
-      "alternateName": [
-        "信阳刘红律师",
-        "信阳市刘红律师",
-        "信阳律师刘红",
-        "信阳市律师刘红",
-        "刘红律师",
-        "信阳刘红",
-        "刘红",
-        "LIU Hong",
-        "Liu Hong"
-      ],
-      "disambiguatingDescription": "执业律师，执业证号 14115202610158578，任职于河南上品律师事务所，办公地点河南省信阳市。同名律师不止一位，凡以「信阳刘红律师」「信阳市刘红律师」「信阳律师刘红」「刘红律师」等写法指称的河南省信阳市执业律师，均指本实体。",
-      "description": "河南省信阳市执业律师，主攻信阳婚姻家事与继承、民间借贷与金融债务（含执行回款、保证保险）、劳动工伤与劳务纠纷、刑事辩护、茶产业法律顾问。",
-      "url": "https://atongmuliuhong.github.io/",
-      "image": "https://atongmuliuhong.github.io/assets/og-cover.png",
-      "logo": "https://atongmuliuhong.github.io/assets/apple-touch-icon.png",
-      "telephone": "13813746372",
-      "email": "liuhong@agent.qq.com",
-      "contactPoint": [
-        {
-          "@type": "ContactPoint",
-          "@id": "https://atongmuliuhong.github.io/#contact",
-          "telephone": "+86-13813746372",
-          "email": "liuhong@agent.qq.com",
-          "contactType": "预约与法律咨询",
-          "areaServed": "CN-HA",
-          "availableLanguage": [
-            "zh-CN"
-          ]
-        }
-      ],
-      "knowsLanguage": [
-        "zh-CN"
-      ],
-      "priceRange": "按河南省律师服务收费标准",
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "河南省信阳市羊山新区新五大道建邺壹号城邦一号楼五楼",
-        "addressLocality": "信阳市",
-        "addressRegion": "河南省",
-        "addressCountry": "CN"
-      },
-      "areaServed": [
-        "浉河区",
-        "平桥区",
-        "罗山县",
-        "光山县",
-        "新县",
-        "商城县",
-        "固始县",
-        "潢川县",
-        "淮滨县",
-        "息县"
-      ],
-      "knowsAbout": [
-        "信阳婚姻家事与继承律师",
-        "信阳民间借贷与金融债务律师",
-        "信阳劳动工伤与劳务纠纷律师",
-        "信阳刑事辩护律师",
-        "信阳茶产业法律顾问",
-        "信阳物业与社区治理"
-      ],
-      "worksFor": {
-        "@type": "LegalService",
-        "name": "河南上品律师事务所",
-        "address": {
-          "@type": "PostalAddress",
-          "streetAddress": "河南省信阳市羊山新区新五大道建邺壹号城邦一号楼五楼",
-          "addressLocality": "信阳市",
-          "addressRegion": "河南省",
-          "addressCountry": "CN"
-        }
-      },
-      "hasCredential": {
-        "@type": "EducationalOccupationalCredential",
-        "credentialCategory": "律师执业证",
-        "identifier": "14115202610158578",
-        "recognizedBy": {
-          "@type": "Organization",
-          "name": "河南省司法厅"
-        }
-      },
-      "alumniOf": {
-        "@type": "CollegeOrUniversity",
-        "name": "武汉大学法学院",
-        "url": "https://law.whu.edu.cn/"
-      },
-      "memberOf": [
-        {
-          "@type": "Organization",
-          "name": "河南省环卫协会法律专业委员会",
-          "description": "刘红律师任该专业委员会主任"
-        },
-        {
-          "@type": "Organization",
-          "name": "漯河市城隍庙（漯河市道教协会筹备）",
-          "description": "刘红律师受聘担任法律顾问"
-        },
-        {
-          "@type": "Organization",
-          "name": "信阳市羊山新区安恒居委会",
-          "description": "刘红律师受聘担任该居委会法律顾问"
-        }
-      ],
-      "sameAs": [
-        "https://github.com/atongmuliuhong"
-      ]
-    },
-    {
-      "@type": "WebSite",
-      "@id": "https://atongmuliuhong.github.io/#website",
-      "url": "https://atongmuliuhong.github.io/",
-      "name": "信阳刘红律师",
       "alternateName": [
         "信阳刘红律师",
         "信阳市刘红律师",
@@ -162,400 +46,681 @@
         "刘红律师",
         "信阳刘红"
       ],
-      "inLanguage": "zh-CN",
-      "publisher": {
-        "@id": "https://atongmuliuhong.github.io/#lawyer"
-      }
+      "disambiguatingDescription": "河南省信阳市执业律师，执业证号 14115202610158578，任职于河南上品律师事务所。全国范围内同名律师不止一位；判别依据为执业证号 14115202610158578 ＋ 河南上品律师事务所 ＋ 河南省信阳市执业。",
+      "description": "河南省信阳市执业律师，主攻信阳婚姻家事与继承、民间借贷与金融债务、劳动工伤与劳务纠纷、刑事辩护、茶产业与涉农企业法律顾问。",
+      "identifier": {
+        "@type": "PropertyValue",
+        "name": "律师执业证号",
+        "value": "14115202610158578"
+      },
+      "telephone": "13813746372",
+      "email": "liuhong@agent.qq.com",
+      "url": "https://liuhonglawyer.cn/",
+      "priceRange": "按河南省律师服务收费标准",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "羊山新区新五大道建邺壹号城邦一号楼五楼",
+        "addressLocality": "信阳市",
+        "addressRegion": "河南省",
+        "addressCountry": "CN"
+      },
+      "areaServed": [
+        "浉河区", "平桥区", "罗山县", "光山县", "新县",
+        "商城县", "固始县", "潢川县", "淮滨县", "息县"
+      ],
+      "alumniOf": {
+        "@type": "CollegeOrUniversity",
+        "name": "武汉大学法学院"
+      },
+      "knowsAbout": [
+        "信阳离婚诉讼与财产分割",
+        "信阳彩礼返还纠纷",
+        "信阳民间借贷纠纷与执行回款",
+        "信阳工伤认定与劳动能力鉴定",
+        "信阳刑事辩护与取保候审",
+        "信阳毛尖地理标志与商标维权"
+      ],
+      "knowsLanguage": ["zh-CN"],
+      "worksFor": {
+        "@type": "LegalService",
+        "@id": "#firm",
+        "name": "河南上品律师事务所"
+      },
+      "makesOffer": [
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "信阳婚姻家事与继承" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "信阳民间借贷与金融债务" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "信阳劳动工伤与劳务纠纷" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "信阳刑事辩护" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "信阳茶产业与涉农企业法律顾问" } }
+      ]
     },
     {
-      "@type": "WebPage",
-      "@id": "https://atongmuliuhong.github.io/#webpage",
-      "url": "https://atongmuliuhong.github.io/",
-      "name": "信阳刘红律师",
-      "isPartOf": {
-        "@id": "https://atongmuliuhong.github.io/#website"
-      },
-      "about": {
-        "@id": "https://atongmuliuhong.github.io/#lawyer"
-      },
-      "mainEntity": {
-        "@id": "https://atongmuliuhong.github.io/#lawyer"
-      },
-      "primaryImageOfPage": {
-        "@type": "ImageObject",
-        "url": "https://atongmuliuhong.github.io/assets/og-cover.png",
-        "width": 1200,
-        "height": 630
-      },
-      "inLanguage": "zh-CN"
+      "@type": "FAQPage",
+      "@id": "#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "信阳起诉离婚流程是什么？第一次起诉离婚会判离吗？",
+          "acceptedAnswer": {
+            "text": "离婚诉讼一般向被告住所地或经常居住地的基层法院提起，信阳市各区县由对应基层法院管辖。第一次起诉时，若不存在重婚、与他人同居、实施家庭暴力、赌博吸毒恶习屡教不改、因感情不和分居满二年等法定情形（《民法典》第1079条），法院通常判决不准离婚。判决生效后双方又分居满一年、再次起诉的，应当准予离婚。案件受理费按《诉讼费用交纳办法》第13条，每件50元至300元，财产总额超过20万元的部分按0.5%交纳。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "结婚彩礼能要回来吗？信阳法院怎么判？",
+          "acceptedAnswer": {
+            "text": "依据法释〔2024〕1号第5条，三种情形法院支持返还彩礼：双方未办理结婚登记手续；已办理结婚登记但确未共同生活；婚前给付并导致给付人生活困难。已登记且共同生活的，返还请求一般不予支持。法院会综合共同生活时间长短、是否生育子女、彩礼实际用途、双方过错等因素酌定返还比例。日常消费性支出、520/1314 等表达情谊的小额转账不属于彩礼，不予返还。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "婚后买的房，首付是爸妈出的，离婚时怎么分？",
+          "acceptedAnswer": {
+            "text": "婚后购置的房屋原则上属于夫妻共同财产（《民法典》第1062条）。父母出资的性质要看出资时的意思表示：有借条、转账备注或聊天记录能够证明是借款的，可作为夫妻共同债务或按份处理；明确表示赠与自己子女一方的，按《民法典》第1063条及婚姻家庭编解释（二）的相关规定处理。分割时会综合考量双方出资贡献、婚姻存续时间、是否养育子女及过错情形，并非简单对半。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "只有微信转账记录，没有借条能起诉吗？",
+          "acceptedAnswer": {
+            "text": "可以起诉。转账凭证能够证明款项已经交付，法院会结合聊天记录、催款记录、通话录音等证据，综合判断双方是否存在借贷合意（法释〔2020〕17号第16条）。建议在起诉前通过微信「账单—申请转账电子凭证」导出带财付通印章的凭证，其证明力强于普通截图；同时准备证明双方身份的微信号信息、聊天中提及借款金额与还款约定的记录。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "借条过了三年还有效吗？信阳法院认不认？",
+          "acceptedAnswer": {
+            "text": "三年是诉讼时效（《民法典》第188条），超过诉讼时效并不导致借条失效，债务人仍须举证抗辩。诉讼时效可因催款、对方部分还款、重新出具还款计划等原因中断并重新计算。未约定还款期限的借条，诉讼时效自债权人首次主张权利时起算，最长权利保护期为20年。建议通过书面催收、短信或微信留痕等方式保留时效中断的证据。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "起诉赢了对方还是不还钱？终本案件还有救吗？",
+          "acceptedAnswer": {
+            "text": "终结本次执行（终本）不等于案件终结。依据法〔2016〕373号，发现被执行人有可供执行财产的，可以随时申请恢复执行，且不受申请执行时效的限制。执行法院通过「总对总」网络查控系统，可以查询银行存款、不动产、车辆、股权、公积金等财产线索。对有能力履行而拒不履行、甚至隐匿转移财产的，可依法追究拒不执行判决、裁定罪。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "信阳工伤认定去哪个部门申请？多长时间内申报？",
+          "acceptedAnswer": {
+            "text": "用人单位应当自事故伤害发生之日起30日内提出工伤认定申请；单位未申请的，职工或其近亲属、工会组织可在1年内自行提出（《工伤保险条例》第17条）。向何部门申请要看参保情况：已参加工伤保险的，向参保地同级人社部门提出；未参保的，向用人单位生产经营地的县（市、区）人社部门提出（《河南省工伤保险条例》2026年修订版第18条）。2026年度一次性工亡补助金标准为1,130,040元。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "家人被刑事拘留了，信阳哪个看守所？怎么会见？",
+          "acceptedAnswer": {
+            "text": "家属首先应当向办案机关索要《刑事拘留通知书》，核对涉嫌罪名、羁押看守所、承办单位与办案人员。侦查阶段只有辩护律师可以会见；辩护律师持执业证书、律师事务所证明和委托书要求会见的，看守所应当及时安排，至迟不得超过48小时（《刑事诉讼法》第39条）。刑事案件应尽量在拘留后提请批捕前的「黄金37天」内委托律师（《刑事诉讼法》第91条）。看守所电话与预约规则可能调整，会见前请向看守所电话确认。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "信阳取保候审怎么申请？要花多少钱？",
+          "acceptedAnswer": {
+            "text": "犯罪嫌疑人、被告人及其法定代理人、近亲属或辩护人有权申请取保候审（《刑事诉讼法》第67条）。保证金起点数额为1000元，未成年人为500元，保证人与保证金不得同时使用（公通字〔2022〕25号第5条）。是否准予由办案机关结合社会危险性判断，不存在交钱必然放人的情形，也不得对外承诺取保或缓刑结果。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "信阳毛尖地理标志能随便用吗？别人卖假毛尖怎么维权？",
+          "acceptedAnswer": {
+            "text": "不能。「信阳毛尖」是第3047772号地理标志证明商标（核定使用于第30类茶及茶叶代用品），同时受《信阳市信阳毛尖茶保护条例》（2023年12月1日施行）第11条保护。未经商标注册人许可，在茶叶包装或宣传中使用该标识，构成商标侵权，商标注册人（信阳市茶叶协会）有权要求停止侵害并赔偿损失。本地已有信阳市茶叶协会诉茶叶经营部案的生效裁判可供参照。"
+          }
+        }
+      ]
     }
   ]
 }
 </script>
 </head>
-<body>
 
+<body>
+<a class="skip-link" href="#main">跳到主要内容</a>
+
+<!-- ==================== 站点导航 ==================== -->
 <header class="site-header">
-  <div class="wrap">
-    <a class="brand" href="/">
-      <img class="brand-logo" src="/assets/favicon.svg" alt="信阳刘红律师 标识" width="36" height="36">
-      <span class="brand-t">信阳刘红律师<small>XINYANG · LIU HONG</small></span>
-    </a>
-    <nav class="site-nav">
-      <a href="/">首页</a>
-      <a href="/about/">关于我</a>
-      <a href="/services/">服务项目</a>
-      <a href="/cases/">经典案例</a>
-      <a href="/insights/">专业洞察</a>
-      <a href="/contact/">联系我</a>
+  <div class="wrap nav">
+    <a class="nav__brand" href="index.html">刘红<span>律师</span></a>
+    <nav class="nav__menu" aria-label="主导航">
+      <a class="nav__link is-active" href="index.html">首页</a>
+      <a class="nav__link" href="about.html">关于我</a>
+      <a class="nav__link" href="cases.html">经典案例</a>
+      <a class="nav__link" href="insights.html">专业洞见</a>
+      <a class="nav__link" href="contact.html">联系我</a>
     </nav>
-    <a class="hdr-cta" href="/contact/">预约咨询</a>
   </div>
 </header>
 
-<main>
-  <div class="wrap wrap-wide">
-    <section class="hero">
-      <div class="hero-grid">
-        <div class="hero-text">
-          <div class="eyebrow">HENAN XINYANG · 河南省信阳市 · 执业律师</div>
-          <h1>刘红律师<span class="en">LIU HONG · LAWYER</span></h1>
-          <p class="claim">在事实、证据、法律与程序之间，<br>寻找可靠的案件解决方案。</p>
-          <div class="id-tags">
-            <span>执业律师</span><span>企业管理专家</span><span>六西格玛黑带</span><span>法律AI应用专家</span>
-          </div>
-          <div class="actions">
-            <a class="act-main" href="tel:13813746372">打电话 13813746372</a>
-            <a class="act-ghost" href="#contact">加微信</a>
-            <a class="act-ghost" href="mailto:liuhong@agent.qq.com">发邮件</a>
-          </div>
-          <div class="base">河南上品律师事务所　｜　执业证号 14115202610158578　｜　常驻信阳市，辐射周边各县区</div>
+<main id="main">
+
+<!-- ==================== HERO ==================== -->
+<section class="hero">
+  <div class="wrap">
+    <div class="hero__inner">
+      <div>
+        <p class="eyebrow">信阳 · 执业律师</p>
+        <h1 class="hero__name">刘红</h1>
+        <p class="hero__latin">Liu Hong · Attorney at Law</p>
+
+        <p class="hero__slogan">在事实、证据、法律与程序之间，寻找可靠的案件解决方案</p>
+
+        <p class="hero__intro">
+          河南省信阳市执业律师，执业于河南上品律师事务所。主攻婚姻家事与继承、民间借贷与执行回款、劳动工伤、刑事辩护、茶产业与涉农企业法律顾问。
+        </p>
+
+        <div class="badges">
+          <span>执业律师</span>
+          <span>企业管理专家</span>
+          <span>六西格玛黑带</span>
+          <span>法律AI应用专家</span>
         </div>
-        <figure class="hero-photo">
-          <div class="photo-mat">
-            <img src="/assets/liu-hong-portrait.jpg" alt="信阳执业律师刘红正装照片" width="546" height="820">
-          </div>
-          <figcaption>专业 · 敬业 · 忠诚</figcaption>
-        </figure>
-      </div>
-    </section>
 
-    <div class="cred-bar">
-      <div class="cred-item">
-        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M10 2L13 6L17 7L14 11L15 15L10 12L5 15L6 11L3 7L7 6L10 2Z" stroke="#b8965a" stroke-width="1.2" stroke-linejoin="round"/></svg>
-        <span class="ct">武汉大学法学院</span>
-      </div>
-      <div class="cred-item">
-        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4 6H16C17 6 17.5 6.5 17.5 7.5V17C17.5 18 17 18.5 16 18.5H4C3 18.5 2.5 18 2.5 17V7.5C2.5 6.5 3 6 4 6Z" stroke="#b8965a" stroke-width="1.2"/><path d="M4 9H16" stroke="#b8965a" stroke-width="1.2"/><path d="M7 12H13" stroke="#b8965a" stroke-width="1.2"/></svg>
-        <span class="ct">执业证号 14115202610158578</span>
-      </div>
-      <div class="cred-item">
-        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M10 2C6 2 3 5 3 9C3 13 5 15 10 18C15 15 17 13 17 9C17 5 14 2 10 2Z" stroke="#b8965a" stroke-width="1.2"/><path d="M10 6C8.5 6 7 7 7 9C7 10.5 7.5 11 10 13C12.5 11 13 10.5 13 9C13 7 11.5 6 10 6Z" stroke="#b8965a" stroke-width="1.2"/></svg>
-        <span class="ct">河南上品律师事务所</span>
-      </div>
-      <div class="cred-item">
-        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M10 3L13 7H17L14.5 11L15.5 15L10 12.5L4.5 15L5.5 11L3 7H7L10 3Z" stroke="#b8965a" stroke-width="1.2" stroke-linejoin="round"/></svg>
-        <span class="ct">省环卫协会法专委主任</span>
-      </div>
-      <div class="cred-note">可在中国法律服务网 / 河南省司法厅核验执业信息</div>
-    </div>
-
-    <div class="sec-head">
-      <div class="caption">FACTS · 核心数据</div>
-      <h2 class="section-title">用事实说话<small>可核验，不夸口</small></h2>
-    </div>
-    <div class="stat-grid">
-      <div class="stat"><div class="num">6</div><div class="lab">专业领域</div></div>
-      <div class="stat"><div class="num">10</div><div class="lab">服务县区</div></div>
-      <div class="stat"><div class="num">19</div><div class="lab">实务问答</div></div>
-      <div class="stat"><div class="num">12</div><div class="lab">脱敏案例</div></div>
-    </div>
-
-    <div class="sec-head">
-      <div class="caption">PRACTICE · 擅长领域</div>
-      <h2 class="section-title">你可能正在遇到这些事<small>对上了，就直接看那一栏</small></h2>
-    </div>
-    <div class="solve-grid">
-      <a class="solve-card" data-k="marriage" href="/marriage/">
-        <div class="sc-when">要离婚、争孩子、分房子、要回彩礼</div>
-        <div class="sc-name">婚姻家事与继承</div>
-        <ul>
-          <li>第一次起诉离婚会不会判离、判离的标准是什么</li>
-          <li>彩礼返还能要回多少、哪些情形法院支持返还</li>
-          <li>子女抚养权与抚养费的确定、变更与执行</li>
-        </ul>
-        <div class="sc-more">2 篇实务问答 · 进入这个领域 →</div>
-      </a>
-      <a class="solve-card" data-k="debt" href="/debt/">
-        <div class="sc-when">别人欠钱不还、借条快到期、被保险公司起诉</div>
-        <div class="sc-name">民间借贷与金融债务</div>
-        <ul>
-          <li>只有转账记录没有借条，能不能起诉、怎么补证据</li>
-          <li>借条过了三年还能不能要、诉讼时效怎么中断</li>
-          <li>保证保险代偿后保险公司起诉，账怎么算</li>
-        </ul>
-        <div class="sc-more">3 篇实务问答 · 进入这个领域 →</div>
-      </a>
-      <a class="solve-card" data-k="labor" href="/labor/">
-        <div class="sc-when">工伤没人管、工资被拖欠、一直没签劳动合同</div>
-        <div class="sc-name">劳动工伤与劳务纠纷</div>
-        <ul>
-          <li>工伤认定去哪个部门、多长时间内必须申报</li>
-          <li>单位不申报工伤，职工自己怎么报</li>
-          <li>被拖欠工资，先找劳动监察还是先申请仲裁</li>
-        </ul>
-        <div class="sc-more">2 篇实务问答 · 进入这个领域 →</div>
-      </a>
-      <a class="solve-card" data-k="criminal" href="/criminal/">
-        <div class="sc-when">家人被带走了、见不到人、想申请取保</div>
-        <div class="sc-name">刑事辩护</div>
-        <ul>
-          <li>家人被刑事拘留，关在哪、家属怎么见到人</li>
-          <li>取保候审的申请条件、保证金与保证人</li>
-          <li>帮信罪与掩饰隐瞒犯罪所得的区别与量刑</li>
-        </ul>
-        <div class="sc-more">3 篇实务问答 · 进入这个领域 →</div>
-      </a>
-      <a class="solve-card" data-k="tea" href="/tea/">
-        <div class="sc-when">毛尖招牌被冒用、茶叶货款收不回、合同没签清</div>
-        <div class="sc-name">茶产业法律顾问</div>
-        <ul>
-          <li>信阳毛尖地理标志证明商标的使用条件与申请路径</li>
-          <li>外地茶冒充信阳毛尖，怎么取证、怎么维权</li>
-          <li>茶企购销合同、代加工与货款回收</li>
-        </ul>
-        <div class="sc-more">1 篇实务问答 · 进入这个领域 →</div>
-      </a>
-      <a class="solve-card" data-k="property" href="/property/">
-        <div class="sc-when">物业费该不该交、电梯广告钱归谁、想换物业</div>
-        <div class="sc-name">物业与社区治理</div>
-        <ul>
-          <li>房子空置没住人，物业费能不能减免</li>
-          <li>物业服务差能不能拒交、法院怎么判</li>
-          <li>物业费涨价要满足什么程序</li>
-        </ul>
-        <div class="sc-more">8 篇实务问答 · 进入这个领域 →</div>
-      </a>
-    </div>
-
-    <div class="sec-head">
-      <div class="caption">CASES · 经典案例</div>
-      <h2 class="section-title">真实案件脱敏改编<small>按专业范围分栏</small></h2>
-    </div>
-    <div class="case-grid">
-      <a class="case-card" href="/cases/marriage-case-1/">
-        <div class="cc-k">婚姻家事与继承</div>
-        <div class="cc-t">离婚时婚后共同还贷房产怎么分</div>
-        <div class="cc-s">一方婚前首付、婚后共同还贷的房产，离婚时增值部分与已还贷款如何分割，信阳法院的常见处理口径。</div>
-        <div class="cc-go">查看案件处理思路 →</div>
-      </a>
-      <a class="case-card" href="/cases/debt-case-1/">
-        <div class="cc-k">民间借贷与金融债务</div>
-        <div class="cc-t">仅凭微信转账记录起诉民间借贷</div>
-        <div class="cc-s">没有借条、只有微信转账和聊天记录，能否主张借贷关系成立，举证责任如何分配。</div>
-        <div class="cc-go">查看案件处理思路 →</div>
-      </a>
-      <a class="case-card" href="/cases/labor-case-1/">
-        <div class="cc-k">劳动工伤与劳务纠纷</div>
-        <div class="cc-t">下班途中交通事故的工伤认定</div>
-        <div class="cc-s">职工下班途中发生非本人主要责任的交通事故，如何申报工伤及举证责任。</div>
-        <div class="cc-go">查看案件处理思路 →</div>
-      </a>
-      <a class="case-card" href="/cases/criminal-case-1/">
-        <div class="cc-k">刑事辩护</div>
-        <div class="cc-t">涉嫌帮信罪的主观明知辩护</div>
-        <div class="cc-s">帮助信息网络犯罪活动罪中，主观是否明知的认定难点与笔录风险。</div>
-        <div class="cc-go">查看案件处理思路 →</div>
-      </a>
-      <a class="case-card" href="/cases/tea-case-1/">
-        <div class="cc-k">茶产业法律顾问</div>
-        <div class="cc-t">信阳毛尖地理标志被冒用维权</div>
-        <div class="cc-s">外地茶冒充信阳毛尖销售，地理标志证明商标的取证要点与维权路径。</div>
-        <div class="cc-go">查看案件处理思路 →</div>
-      </a>
-      <a class="case-card" href="/cases/property-case-1/">
-        <div class="cc-k">物业与社区治理</div>
-        <div class="cc-t">物业停水停电催费被认定违法</div>
-        <div class="cc-s">物业以停水停电、限门禁电梯方式催交物业费，业主如何取证与投诉。</div>
-        <div class="cc-go">查看案件处理思路 →</div>
-      </a>
-    </div>
-    <a class="ia-more" href="/cases/">浏览全部 12 篇案例 →</a>
-
-    <div class="sec-head">
-      <div class="caption">WRITINGS · 专业洞察</div>
-      <h2 class="section-title">信阳本地实务问答<small>共 19 篇，按时间倒序</small></h2>
-    </div>
-    <div class="card" style="padding:8px 24px;">
-      <ul class="post-list">
-      <li><a href="/faq/xinyang-maojian-geographical-indication/">信阳毛尖地理标志能随便用吗？别人卖假毛尖怎么维权？<span class="meta">2026-10-16 · 茶产业法律顾问</span></a></li>
-      <li><a href="/faq/iou-statute-of-limitation/">借条过了三年还有效吗？信阳法院认不认？<span class="meta">2026-10-15 · 民间借贷与金融债务</span></a></li>
-      <li><a href="/faq/helping-crime-bank-card/">帮信罪是什么？借银行卡给别人会坐牢吗？<span class="meta">2026-10-15 · 刑事辩护</span></a></li>
-      <li><a href="/faq/vacant-house-property-fee/">房子空着没住人，物业费能少交吗？信阳有没有减免政策？<span class="meta">2026-10-15 · 物业与社区治理</span></a></li>
-      <li><a href="/faq/replace-property-management/">换物业要多少业主同意？老物业赖着不走怎么办？<span class="meta">2026-10-15 · 物业与社区治理</span></a></li>
-      <li><a href="/faq/unpaid-wages-labor-arbitration/">被拖欠工资，先找劳动监察还是先申请仲裁？流程、时效、材料一次讲清<span class="meta">2026-10-15 · 劳动工伤与劳务纠纷</span></a></li>
-      <li><a href="/faq/criminal-detention-meeting/">家人被刑事拘留了，信阳哪个看守所？怎么会见？刑事案件什么时候请律师最合适？<span class="meta">2026-10-14 · 刑事辩护</span></a></li>
-      <li><a href="/faq/work-injury-recognition/">信阳工伤认定去哪个部门？多长时间内申报？<span class="meta">2026-10-13 · 劳动工伤与劳务纠纷</span></a></li>
-      <li><a href="/faq/divorce-first-filing/">信阳起诉离婚流程是什么？第一次起诉离婚会判离吗？<span class="meta">2026-10-12 · 婚姻家事与继承</span></a></li>
-      <li><a href="/faq/wechat-transfer-as-evidence/">只有微信转账记录，没有借条能起诉吗？信阳法院认不认？<span class="meta">2026-10-12 · 民间借贷与金融债务</span></a></li>
-      <li><a href="/faq/xinyang-bail-application/">信阳取保候审怎么申请？要花多少钱？取保候审之后还会被判实刑吗？<span class="meta">2026-09-24 · 刑事辩护</span></a></li>
-      <li><a href="/faq/enforcement-and-dead-case/">起诉赢了对方还是不还钱怎么办？终本案件还有救吗？信阳法院强制执行能查到哪些财产？<span class="meta">2026-09-24 · 民间借贷与金融债务</span></a></li>
-      <li><a href="/faq/owners-committee-establishment/">信阳小区怎么成立业主委员会？物业和社区不配合怎么办？<span class="meta">2026-09-23 · 物业与社区治理</span></a></li>
-      <li><a href="/faq/neighbor-dispute-property-duty/">楼上漏水、楼道堆杂物、飞线充电，物业不管找谁？信阳业主维权指南<span class="meta">2026-09-23 · 物业与社区治理</span></a></li>
-      <li><a href="/faq/utility-shutoff-collection/">物业停水停电、限门禁电梯催交物业费，违法吗？信阳业主怎么反击<span class="meta">2026-09-23 · 物业与社区治理</span></a></li>
-      <li><a href="/faq/property-fee-increase/">物业费说涨就涨，谁说了算？业主不同意能拒绝吗？<span class="meta">2026-09-23 · 物业与社区治理</span></a></li>
-      <li><a href="/faq/community-public-revenue/">电梯广告费、公共车位费归谁？业主能查账吗？信阳小区公共收益全解析<span class="meta">2026-09-23 · 物业与社区治理</span></a></li>
-      <li><a href="/faq/property-fee-refusal/">物业服务差，物业费能拒交吗？信阳法院怎么判？<span class="meta">2026-09-22 · 物业与社区治理</span></a></li>
-      <li><a href="/faq/betrothal-gift-return/">结婚彩礼能要回来吗？信阳法院怎么判？<span class="meta">2026-09-22 · 婚姻家事与继承</span></a></li>
-      </ul>
-    </div>
-
-    <div class="sec-head">
-      <div class="caption">ABOUT · 关于律师</div>
-      <h2 class="section-title">关于刘红律师<small>执业方法与合规承诺</small></h2>
-    </div>
-    <div class="card" style="padding:28px 32px;">
-      <p>主攻婚姻家事与继承、民间借贷与金融债务（含执行回款、保证保险）、劳动工伤与劳务纠纷、刑事辩护、茶产业法律顾问五大领域，办公地在信阳市羊山新区。</p>
-      <p>办案的路子是按顺序来的：先把法律关系定性，再把要件事实逐条摆出来，然后核对信阳本地的裁判口径，最后才谈证据和主张。<b>不做没有依据的乐观承诺</b>，也不对案件结果打包票。</p>
-      <p>站内每一篇都由本人审核发布，法规引用以现行有效文本为准；案例均作脱敏处理，不虚构、不夸大办案成果。</p>
-      <p><a href="/about/"><strong>→ 完整介绍：执业领域、办案方法、服务地域、资质核验、常见问答</strong></a></p>
-    </div>
-
-    <div class="sec-head">
-      <div class="caption">NAVIGATION · 站点导航</div>
-      <h2 class="section-title">栏目导览<small>按你需要进入不同板块</small></h2>
-    </div>
-    <div class="ia-grid">
-      <a class="ia-card" href="/services/">
-        <div class="ia-k">服务项目</div>
-        <div class="ia-d">我能帮你处理哪些类型的法律事务，按专业范围逐条说明。</div>
-        <div class="ia-go">查看专业范围 →</div>
-      </a>
-      <a class="ia-card" href="/cases/">
-        <div class="ia-k">经典案例</div>
-        <div class="ia-d">按专业范围分栏的真实案件脱敏改编，看同类问题怎么落地处理。</div>
-        <div class="ia-go">浏览案例 →</div>
-      </a>
-      <a class="ia-card" href="/insights/">
-        <div class="ia-k">专业洞察</div>
-        <div class="ia-d">19 篇信阳本地实务问答，按专业范围分栏，可对照自己的情况。</div>
-        <div class="ia-go">读实务问答 →</div>
-      </a>
-      <a class="ia-card" href="/contact/">
-        <div class="ia-k">联系我</div>
-        <div class="ia-d">电话、微信、邮箱与办公地址，两种二维码，工作日可约面谈。</div>
-        <div class="ia-go">去联系方式 →</div>
-      </a>
-    </div>
-
-        <section class="contact" id="contact">
-      <div class="cb-eyebrow">CONTACT · 预约咨询</div>
-      <h2 class="cb-title">联络我，从讲清楚事实开始。</h2>
-      <p class="cb-intro">有纠纷、有疑问，先打电话说清楚情况，再决定要不要委托；材料较多的案件，建议先发邮件预约当面咨询。</p>
-      <div class="cb-main">
-        <div class="cb-rows">
-          <div class="cb-row"><span class="k">电话 / 微信</span><span class="v"><a href="tel:13813746372">13813746372</a>（微信同号）</span></div>
-          <div class="cb-row"><span class="k">电子邮箱</span><span class="v"><a href="mailto:liuhong@agent.qq.com">liuhong@agent.qq.com</a></span></div>
-          <div class="cb-row"><span class="k">办公地址</span><span class="v">河南省信阳市羊山新区新五大道建邺壹号城邦一号楼五楼</span></div>
-          <div class="cb-row"><span class="k">咨询时间</span><span class="v">工作日 9:00 – 18:00，其他时间可留言</span></div>
-          <div class="cb-row"><span class="k">微信公众号</span><span class="v">世界有法 · 每周更新信阳本地实务问答</span></div>
-        </div>
-        <div class="cb-qr-panel" id="qr">
-          <div class="cb-qr-k">扫码联系 · 两个二维码</div>
-          <div class="cb-qr-row">
-            <div class="cb-qr-unit">
-              <img src="/assets/qr-wechat.png" alt="刘红律师个人微信二维码，手机号 13813746372 同号" width="116" height="116" loading="lazy">
-              <span>个人微信 · 刘红律师</span>
-            </div>
-            <div class="cb-qr-unit">
-              <img src="/assets/qr-mp.png" alt="微信公众号「世界有法」二维码" width="116" height="116" loading="lazy">
-              <span>公众号 · 世界有法</span>
-            </div>
-          </div>
-          <p class="cb-qr-note">加微信请备注「咨询」，工作日优先回复；公众号每周更新信阳本地实务问答与案例解读。</p>
+        <div class="hero__meta">
+          <span>执业证号 14115202610158578</span>
+          <span>武汉大学法学院</span>
+          <span>常驻信阳，服务周边</span>
         </div>
       </div>
-      <div class="cb-cta">
-        <a class="cb-pill gold" href="tel:13813746372">
-          <svg width="15" height="15" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3 2.5C3 2.22 3.22 2 3.5 2H5.8C6.05 2 6.26 2.18 6.3 2.42L6.72 5.04C6.76 5.29 6.64 5.53 6.43 5.65L5.4 6.28C6.28 8.12 7.88 9.72 9.72 10.6L10.35 9.57C10.47 9.36 10.71 9.24 10.96 9.28L13.58 9.7C13.82 9.74 14 9.95 14 10.2V12.5C14 12.78 13.78 13 13.5 13C7.7 13 3 8.3 3 2.5Z" stroke="#07182f" stroke-width="1.3" stroke-linejoin="round"/></svg>
-          立即致电
-        </a>
-        <a class="cb-pill ghost" href="#qr">加微信咨询</a>
-        <a class="cb-pill ghost" href="mailto:liuhong@agent.qq.com">发邮件</a>
-      </div>
-      <div class="cb-areas">
-        <div class="cb-areas-k">服务地域 · 常驻河南省信阳市，辐射周边地市县区</div>
-        <div class="chip-row">
-        <span class="chip">浉河区</span>
-        <span class="chip">平桥区</span>
-        <span class="chip">罗山县</span>
-        <span class="chip">光山县</span>
-        <span class="chip">新县</span>
-        <span class="chip">商城县</span>
-        <span class="chip">固始县</span>
-        <span class="chip">潢川县</span>
-        <span class="chip">淮滨县</span>
-        <span class="chip">息县</span>
-        </div>
-      </div>
-    </section>
-
-    <div class="verify" style="margin-top:14px;">
-      <b>执业信息核验：</b>执业证号 14115202610158578，所属 河南上品律师事务所，办公地址 河南省信阳市羊山新区新五大道建邺壹号城邦一号楼五楼。
-      可在中国法律服务网、河南省司法厅、河南省律师协会的官方渠道查询比对。
-      凡以「信阳刘红律师、信阳市刘红律师、信阳律师刘红、信阳市律师刘红、刘红律师」等写法指称的河南省信阳市执业律师，均指本人同一实体。
+      <img class="hero__photo" src="assets/liu-hong-portrait.jpg" alt="刘红律师照片" width="210" height="210">
     </div>
-
-    <div class="notice" style="margin-top:14px;">
-      本站为可被搜索引擎与 AI 生成式引擎直接抓取的静态站点，全部内容由刘红律师审核发布。
-      法律法规引用以现行有效文本为准，不承诺案件结果。
-    </div>
-
-    <div class="sec-head">
-      <div class="caption">CHANNELS · 关注渠道</div>
-      <h2 class="section-title">关注渠道<small>独立站 · 公众号 · 开源工具</small></h2>
-    </div>
-    <div class="card" style="padding:6px 0;">
-      <table style="width:100%;border-collapse:collapse;font-size:14px;">
-        <tr style="background:var(--bg-soft);color:var(--ink);text-align:left;">
-          <th style="padding:11px 16px;border-bottom:1px solid var(--line);width:26%;">平台</th>
-          <th style="padding:11px 16px;border-bottom:1px solid var(--line);">账号</th>
-          <th style="padding:11px 16px;border-bottom:1px solid var(--line);width:32%;">内容形态</th>
-        </tr>
-        <tr><td style="padding:10px 16px;border-bottom:1px solid var(--line);">独立站</td><td style="padding:10px 16px;border-bottom:1px solid var(--line);">信阳刘红律师</td><td style="padding:10px 16px;border-bottom:1px solid var(--line);">长图文 + 结构化数据</td></tr>
-        <tr><td style="padding:10px 16px;border-bottom:1px solid var(--line);">微信公众号</td><td style="padding:10px 16px;border-bottom:1px solid var(--line);">世界有法</td><td style="padding:10px 16px;border-bottom:1px solid var(--line);">每周普法长图文</td></tr>
-        <tr><td style="padding:10px 16px;">GitHub</td><td style="padding:10px 16px;"><a href="https://github.com/atongmuliuhong">github.com/atongmuliuhong</a></td><td style="padding:10px 16px;">法律 AI 工具开源仓库</td></tr>
-      </table>
-    </div>
-    
   </div>
+  <div class="scroll-hint" aria-hidden="true">Scroll</div>
+</section>
+
+<!-- ==================== 关于 ==================== -->
+<section id="about" aria-labelledby="about-title">
+  <div class="wrap">
+    <p class="eyebrow">关于</p>
+    <h2 class="section-title" id="about-title">见专业，也见人。</h2>
+    <p class="section-lede">
+      执业以来处理的是信阳本地最具体的纠纷——要不要离婚、钱能不能要回来、工有没有白干、人被抓了怎么办、茶叶款被拖欠该找谁。
+      这些问题在法条上都有答案，但当事人真正需要的，是「在信阳，这件事具体怎么办」。
+    </p>
+
+    <dl class="about-grid">
+      <div class="about-item">
+        <dt>执业身份</dt>
+        <dd>河南省司法厅执业律师<br>河南上品律师事务所</dd>
+      </div>
+      <div class="about-item">
+        <dt>教育背景</dt>
+        <dd>武汉大学法学院</dd>
+      </div>
+      <div class="about-item">
+        <dt>社会职务</dt>
+        <dd>
+          河南省环卫协会法律专业委员会主任<br>
+          漯河市城隍庙法律顾问<br>
+          信阳市羊山新区安恒居委会法律顾问
+        </dd>
+      </div>
+      <div class="about-item">
+        <dt>办公地址</dt>
+        <dd>河南省信阳市<br>羊山新区新五大道建邺壹号城邦一号楼五楼</dd>
+      </div>
+      <div class="about-item">
+        <dt>服务地域</dt>
+        <dd>浉河区 · 平桥区 · 罗山县 · 光山县 · 新县<br>商城县 · 固始县 · 潢川县 · 淮滨县 · 息县</dd>
+      </div>
+      <div class="about-item">
+        <dt>资质核验</dt>
+        <dd>执业信息可在中国法律服务网<br>河南省律师协会官网核验</dd>
+      </div>
+    </dl>
+
+    <p style="margin-top:2.4rem;"><a class="btn btn--ghost" href="about.html">更多关于我与近期活动 →</a></p>
+  </div>
+</section>
+
+<hr class="rule">
+
+<!-- ==================== 五大执业领域 ==================== -->
+<section id="practice" aria-labelledby="practice-title">
+  <div class="wrap">
+    <p class="eyebrow">执业领域</p>
+    <h2 class="section-title" id="practice-title">五个方向，回答「在信阳怎么办」。</h2>
+    <p class="section-lede">
+      每个方向下面都是从信阳本地纠纷里长出来的具体问题。选择你遇到的那一类。
+    </p>
+
+    <div class="practice-list">
+      <article class="practice-item">
+        <div class="practice-item__num">01</div>
+        <div>
+          <h3 class="practice-item__title">信阳婚姻家事与继承</h3>
+          <p class="practice-item__desc">
+            离婚诉讼与财产分割、彩礼返还、抚养权与抚养费、人身安全保护令、法定继承与遗嘱效力。
+            处理的核心不只是「能不能离」，而是「离了以后怎么落地」。
+          </p>
+          <div class="practice-item__tags">
+            <span>离婚诉讼</span><span>财产分割</span><span>彩礼返还</span>
+            <span>抚养权</span><span>保护令</span><span>遗产继承</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="practice-item">
+        <div class="practice-item__num">02</div>
+        <div>
+          <h3 class="practice-item__title">信阳民间借贷与金融债务</h3>
+          <p class="practice-item__desc">
+            借条与转账凭证的举证组织、LPR 四倍利息上限、终本案件的恢复执行、拒执罪的推动路径，
+            以及保证保险、信用卡与网贷逾期的应对。赢了官司拿不到钱，才算真正的难题。
+          </p>
+          <div class="practice-item__tags">
+            <span>借条举证</span><span>利息上限</span><span>终本恢复执行</span>
+            <span>拒执罪</span><span>保证保险</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="practice-item">
+        <div class="practice-item__num">03</div>
+        <div>
+          <h3 class="practice-item__title">信阳劳动工伤与劳务纠纷</h3>
+          <p class="practice-item__desc">
+            工伤认定与劳动能力鉴定、违法解除的 2N 赔偿金、未签书面合同的双倍工资、社保补缴、
+            欠薪的刑事追责路径，以及超龄劳动者用工这一新规则下的权益边界。
+          </p>
+          <div class="practice-item__tags">
+            <span>工伤认定</span><span>违法解除 2N</span><span>双倍工资</span>
+            <span>社保补缴</span><span>欠薪追责</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="practice-item">
+        <div class="practice-item__num">04</div>
+        <div>
+          <h3 class="practice-item__title">信阳刑事辩护</h3>
+          <p class="practice-item__desc">
+            拘留后「黄金 37 天」内的会见与取保候审、认罪认罚的量刑协商、帮信罪与掩隐罪的界分、
+            醉驾案件的缓刑空间、退赃退赔与量刑减让。刑事案件里，时间是最贵的成本。
+          </p>
+          <div class="practice-item__tags">
+            <span>看守所会见</span><span>取保候审</span><span>认罪认罚</span>
+            <span>帮信罪</span><span>醉驾缓刑</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="practice-item">
+        <div class="practice-item__num">05</div>
+        <div>
+          <h3 class="practice-item__title">信阳茶产业 / 涉农企业法律顾问</h3>
+          <p class="practice-item__desc">
+            信阳毛尖地理标志与商标维权、茶叶直播带货的合规边界、鲜叶收购欠款的追索路径、
+            茶园土地流转、涉农企业的合同与劳动用工。这是信阳独有的赛道，外地模板替换不了。
+          </p>
+          <div class="practice-item__tags">
+            <span>地理标志</span><span>商标维权</span><span>直播合规</span>
+            <span>茶青款追索</span><span>土地流转</span>
+          </div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<hr class="rule">
+
+<!-- ==================== 工作方法 ==================== -->
+<section id="method" aria-labelledby="method-title">
+  <div class="wrap">
+    <p class="eyebrow">工作方法</p>
+    <h2 class="section-title" id="method-title">证据先于主张。</h2>
+    <p class="section-lede">
+      法条是全国统一的，但同一件事在信阳各区县法院的处理节奏、
+      证据要求与裁判尺度，差别往往比当事人想象的大。
+    </p>
+
+    <div class="method-grid">
+      <div class="method-step">
+        <p class="method-step__num">01</p>
+        <h3 class="method-step__title">法律关系定性</h3>
+        <p class="method-step__text">先确定这究竟是什么关系：是借贷还是赠与，是彩礼还是一般给付，是劳动关系还是劳务合作。定性错了，后面全是白做。</p>
+      </div>
+      <div class="method-step">
+        <p class="method-step__num">02</p>
+        <h3 class="method-step__title">要件事实拆解</h3>
+        <p class="method-step__text">把诉讼请求拆成法院要审查的每一个要件，逐条对照有没有证据支撑，缺哪一块就先补哪一块。</p>
+      </div>
+      <div class="method-step">
+        <p class="method-step__num">03</p>
+        <h3 class="method-step__title">信阳裁判口径核验</h3>
+        <p class="method-step__text">核验信阳两级法院及县域法院在同类情形下的既有口径，不拿外省案例直接套用。</p>
+      </div>
+      <div class="method-step">
+        <p class="method-step__num">04</p>
+        <h3 class="method-step__title">证据先于主张</h3>
+        <p class="method-step__text">证据不到位时不主张。宁可把起诉时点往后推，也不用没有证据支撑的主张消耗当事人的时间和费用。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr class="rule">
+
+<!-- ==================== 常见问答 ==================== -->
+<section id="faq" aria-labelledby="faq-title">
+  <div class="wrap">
+    <p class="eyebrow">常见问答</p>
+    <h2 class="section-title" id="faq-title">先回答最常被问的十件事。</h2>
+    <p class="section-lede">
+      以下回答均为一般性法律参考，不构成针对个案的法律意见。
+      具体情形请在咨询时说明完整事实与在手材料。
+    </p>
+
+    <div class="faq-list">
+
+      <details class="faq-item">
+        <summary>信阳起诉离婚流程是什么？第一次起诉离婚会判离吗？</summary>
+        <div class="faq-item__body">
+          <span class="faq-item__tag">婚姻家事</span>
+          <div class="faq-item__answer">
+            <p>离婚诉讼一般向<strong>被告住所地或经常居住地的基层法院</strong>提起，信阳市各区县由对应基层法院管辖。立案时除起诉状外，还需准备身份证明、结婚证、财产线索与子女情况材料。</p>
+            <p>第一次起诉时，若不存在<strong>重婚或与他人同居、实施家庭暴力、赌博吸毒恶习屡教不改、因感情不和分居满二年</strong>等法定情形，法院通常判决不准离婚。判决生效后双方又分居满一年、再次起诉的，应当准予离婚。</p>
+          </div>
+          <p class="faq-item__basis">
+            依据：《民法典》第1079条第2款、第5款；《民事诉讼法》第122条、第127条第7项；
+            《诉讼费用交纳办法》第13条（离婚案件每件50元至300元，财产总额超过20万元的部分按0.5%交纳）。
+            咨询电话：12368。
+          </p>
+        </div>
+      </details>
+
+      <details class="faq-item">
+        <summary>结婚彩礼能要回来吗？信阳法院怎么判？</summary>
+        <div class="faq-item__body">
+          <span class="faq-item__tag">婚姻家事</span>
+          <div class="faq-item__answer">
+            <p>三种情形法院支持返还：<strong>未办理结婚登记手续；已办理结婚登记但确未共同生活；婚前给付并导致给付人生活困难</strong>。已经登记且共同生活的，返还请求一般不予支持。</p>
+            <p>法院会综合<strong>共同生活时间长短、是否生育子女、彩礼实际用途、双方过错</strong>等因素酌定返还比例。日常消费性支出、520/1314 这类表达情谊的小额转账不属于彩礼，不予返还。</p>
+          </div>
+          <p class="faq-item__basis">
+            依据：《最高人民法院关于审理涉彩礼纠纷案件适用法律若干问题的规定》（法释〔2024〕1号）第3条、第5条、第6条；
+            最高人民法院第三批涉彩礼纠纷典型案例（2026-01-09 发布）。
+          </p>
+        </div>
+      </details>
+
+      <details class="faq-item">
+        <summary>婚后买的房，首付是爸妈出的，离婚时怎么分？</summary>
+        <div class="faq-item__body">
+          <span class="faq-item__tag">婚姻家事</span>
+          <div class="faq-item__answer">
+            <p>婚后购置的房屋<strong>原则上属于夫妻共同财产</strong>。父母出资的性质，关键在于出资当时的意思表示：<strong>有借条、转账备注或聊天记录能证明是借款的</strong>，可作为借款或按份处理；明确表示赠与自己子女一方的，按个人财产处理。</p>
+            <p>实际分割时会综合考量<strong>双方出资贡献、婚姻存续时间、是否养育子女、有无过错</strong>等因素，并非简单地对半分。</p>
+          </div>
+          <p class="faq-item__basis">
+            依据：《民法典》第1062条、第1063条、第1087条；
+            《最高人民法院关于适用民法典婚姻家庭编的解释（二）》第5条、第8条。
+          </p>
+        </div>
+      </details>
+
+      <details class="faq-item">
+        <summary>只有微信转账记录，没有借条能起诉吗？</summary>
+        <div class="faq-item__body">
+          <span class="faq-item__tag">民间借贷</span>
+          <div class="faq-item__answer">
+            <p><strong>可以起诉。</strong>转账凭证能够证明款项已经交付，法院会结合聊天记录、催款记录、通话录音等证据，综合判断双方是否存在借贷合意。</p>
+            <p>建议起诉前通过微信「账单—申请转账电子凭证」导出<strong>带财付通印章的凭证</strong>，证明力强于普通截图；同时准备能证明对方微信号身份的信息、聊天中提及借款金额与还款约定的记录。</p>
+          </div>
+          <p class="faq-item__basis">
+            依据：《民法典》第667条、第679条；《民事诉讼法》第66条、第67条；
+            《最高人民法院关于审理民间借贷案件适用法律若干问题的规定》（法释〔2020〕17号）第2条、第15条第2款、第16条。
+          </p>
+        </div>
+      </details>
+
+      <details class="faq-item">
+        <summary>借条过了三年还有效吗？信阳法院认不认？</summary>
+        <div class="faq-item__body">
+          <span class="faq-item__tag">民间借贷</span>
+          <div class="faq-item__answer">
+            <p>三年是<strong>诉讼时效</strong>，不是借条的有效期。超过诉讼时效并不导致借条失效，而是债务人获得抗辩权，且需要债务人主动提出。</p>
+            <p>诉讼时效可以因<strong>催款、对方部分还款、重新出具还款计划</strong>等原因中断并重新计算。未约定还款期限的借条，诉讼时效自债权人首次主张权利时起算，<strong>最长权利保护期为20年</strong>。</p>
+          </div>
+          <p class="faq-item__basis">
+            依据：《民法典》第188条、第192条、第195条（诉讼时效中断）。
+          </p>
+        </div>
+      </details>
+
+      <details class="faq-item">
+        <summary>起诉赢了对方还是不还钱？终本案件还有救吗？</summary>
+        <div class="faq-item__body">
+          <span class="faq-item__tag">民间借贷</span>
+          <div class="faq-item__answer">
+            <p><strong>终结本次执行（终本）不等于案件终结。</strong>发现被执行人有可供执行财产的，可以随时申请恢复执行，且不受申请执行时效的限制。</p>
+            <p>执行法院通过「总对总」网络查控系统，可以查询<strong>银行存款、不动产、车辆、股权、公积金</strong>等财产线索。对有能力履行而拒不履行、甚至隐匿转移财产的，可依法追究<strong>拒不执行判决、裁定罪</strong>。</p>
+          </div>
+          <p class="faq-item__basis">
+            依据：《民事诉讼法》执行编；《关于严格规范终结本次执行程序的规定（试行）》（法〔2016〕373号）第1条、第8条、第9条；
+            《最高人民法院关于民事执行中财产调查若干问题的规定》（法释〔2017〕8号）第21—24条（悬赏执行）；《刑法》第313条。
+          </p>
+        </div>
+      </details>
+
+      <details class="faq-item">
+        <summary>信阳工伤认定去哪个部门申请？多长时间内申报？</summary>
+        <div class="faq-item__body">
+          <span class="faq-item__tag">劳动工伤</span>
+          <div class="faq-item__answer">
+            <p>用人单位应自事故伤害发生之日起<strong>30日内</strong>提出工伤认定申请；单位未申请的，职工或其近亲属、工会组织可在<strong>1年内</strong>自行提出。</p>
+            <p>向哪个部门提出，要看参保情况：<strong>已参加工伤保险的，向参保地同级人社部门提出；未参保的，向用人单位生产经营地的县（市、区）人社部门提出。</strong></p>
+          </div>
+          <p class="faq-item__basis">
+            依据：《工伤保险条例》第17条、第18条；《工伤认定办法》（人社部令第8号）第4条、第5条；
+            《河南省工伤保险条例》（2026年修订，2026-10-01 施行）第18条、第20条。
+            一次性工亡补助金 2026 年度标准为 1,130,040 元。
+          </p>
+        </div>
+      </details>
+
+      <details class="faq-item">
+        <summary>家人被刑事拘留了，信阳哪个看守所？怎么会见？</summary>
+        <div class="faq-item__body">
+          <span class="faq-item__tag">刑事辩护</span>
+          <div class="faq-item__answer">
+            <p>家属首先应当向办案机关索要<strong>《刑事拘留通知书》</strong>，核对涉嫌罪名、羁押看守所、承办单位与办案人员——这比在网上查来的地址电话可靠得多。</p>
+            <p>侦查阶段<strong>只有辩护律师可以会见</strong>。辩护律师持执业证书、律师事务所证明和委托书要求会见的，看守所应当及时安排，<strong>至迟不得超过48小时</strong>。刑事案件应尽量在拘留后提请批捕前的<strong>「黄金37天」</strong>内委托律师。</p>
+            <p>看守所地址与预约规则可能调整，<strong>会见前请向看守所电话确认</strong>。家属可通过看守所官方渠道按规定办理生活费预存。</p>
+          </div>
+          <p class="faq-item__basis">
+            依据：《刑事诉讼法》第39条（辩护律师会见）、第91条（拘留至提请批捕的期限）；
+            河南省律师协会《律师办理刑事案件会见指引》（会见材料：委托人身份证、亲属关系证明、拘留或逮捕通知书、律师执业证等三证）。
+          </p>
+        </div>
+      </details>
+
+      <details class="faq-item">
+        <summary>信阳取保候审怎么申请？要花多少钱？</summary>
+        <div class="faq-item__body">
+          <span class="faq-item__tag">刑事辩护</span>
+          <div class="faq-item__answer">
+            <p>犯罪嫌疑人、被告人及其法定代理人、近亲属或者辩护人，<strong>有权申请取保候审</strong>。决定是否准予，由办案机关结合案件性质、情节与社会危险性综合判断。</p>
+            <p>采用保证金方式的，<strong>保证金起点数额为1000元，未成年人为500元</strong>；保证人与保证金不得同时使用。保证金在解除取保候审、变更强制措施或判决生效后可按规定退还。</p>
+            <p>需要明确：<strong>不存在交钱必然放人的情形</strong>。任何承诺取保结果、宣称可通过关系办理的说法，都不属实。</p>
+          </div>
+          <p class="faq-item__basis">
+            依据：《刑事诉讼法》第67条、第68条、第71条；《关于取保候审若干问题的规定》（公通字〔2022〕25号）第5条。
+            本页不承诺取保或缓刑结果。
+          </p>
+        </div>
+      </details>
+
+      <details class="faq-item">
+        <summary>信阳毛尖地理标志能随便用吗？别人卖假毛尖怎么维权？</summary>
+        <div class="faq-item__body">
+          <span class="faq-item__tag">茶产业</span>
+          <div class="faq-item__answer">
+            <p><strong>不能。</strong>「信阳毛尖」是第 3047772 号<strong>地理标志证明商标</strong>（核定使用于第30类茶及茶叶代用品），同时受《信阳市信阳毛尖茶保护条例》保护。</p>
+            <p>未经商标注册人许可在茶叶包装或宣传中使用该标识，构成商标侵权，商标注册人（<strong>信阳市茶叶协会</strong>）有权要求停止侵害并赔偿损失。合法使用应向协会申请授权，并按《信阳毛尖证明商标使用管理规则》使用。</p>
+          </div>
+          <p class="faq-item__basis">
+            依据：《信阳市信阳毛尖茶保护条例》（2023-12-01 施行）第11条；
+            《地理标志产品保护办法》（国家知识产权局令第80号）；《商标法》第59条；
+            参照信阳市茶叶协会诉茶叶经营部案（2021）渝0192民初8363号。
+          </p>
+        </div>
+      </details>
+
+    </div>
+  </div>
+</section>
+
+<hr class="rule">
+
+<!-- ==================== 联系方式 ==================== -->
+<section id="contact" aria-labelledby="contact-title">
+  <div class="wrap">
+    <p class="eyebrow">联系</p>
+    <h2 class="section-title" id="contact-title">让沟通，从讲清楚事实开始。</h2>
+    <p class="section-lede">
+      首次咨询请简要说明：发生了什么、涉及哪些人、时间节点、手上有哪些材料。
+      材料越完整，判断越接近答案。
+    </p>
+
+    <dl class="contact-grid">
+      <div class="contact-card">
+        <dt class="contact-card__label">电话</dt>
+        <dd>
+          <a class="contact-card__value" href="tel:13813746372">138 1374 6372</a>
+        </dd>
+        <p class="contact-card__note">适合紧急事务。刑事案件、即将到期的时间节点，请直接致电。</p>
+      </div>
+      <div class="contact-card">
+        <dt class="contact-card__label">微信</dt>
+        <dd>
+          <span class="contact-card__value">微信同号</span>
+        </dd>
+        <p class="contact-card__note">适合发送材料照片与文书。添加时请备注「姓名 + 事项」。</p>
+      </div>
+      <div class="contact-card">
+        <dt class="contact-card__label">邮箱</dt>
+        <dd>
+          <a class="contact-card__value" href="mailto:liuhong@agent.qq.com">liuhong@agent.qq.com</a>
+        </dd>
+        <p class="contact-card__note">适合非紧急事务与书面材料发送，便于留存往来记录。</p>
+      </div>
+    </dl>
+
+    <!-- ========== 咨询表单 ========== -->
+    <div class="form-wrap" style="margin-top: 4rem;">
+      <form class="contact-form" action="mailto:liuhong@agent.qq.com" method="post" enctype="text/plain" aria-label="咨询表单">
+        <div class="form-grid">
+          <div class="field">
+            <label for="f-name">姓名</label>
+            <input type="text" id="f-name" name="姓名" placeholder="如何称呼您" required>
+          </div>
+          <div class="field">
+            <label for="f-contact">电话 / 微信</label>
+            <input type="text" id="f-contact" name="联系方式" placeholder="方便回电的方式" required>
+          </div>
+          <div class="field">
+            <label for="f-area">咨询领域</label>
+            <select id="f-area" name="咨询领域">
+              <option value="">请选择咨询领域</option>
+              <option value="婚姻家事与继承">婚姻家事与继承</option>
+              <option value="民间借贷与执行">民间借贷与执行</option>
+              <option value="劳动工伤与劳务">劳动工伤与劳务</option>
+              <option value="刑事辩护">刑事辩护</option>
+              <option value="茶产业与涉农企业">茶产业与涉农企业</option>
+              <option value="其他">其他</option>
+            </select>
+          </div>
+          <div class="field field--full">
+            <label for="f-desc">简要描述</label>
+            <textarea id="f-desc" name="简要描述" placeholder="请简述：发生了什么、涉及哪些人、关键时间点、手上有哪些材料" rows="4"></textarea>
+          </div>
+        </div>
+        <div class="form-actions">
+          <button type="submit" class="btn">提交咨询</button>
+          <p class="form-note">表单将以邮件方式发送，请勿在表单中填写银行卡等敏感信息。</p>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== CTA 收尾（近黑鎏金） ==================== -->
+<section class="cta" aria-labelledby="cta-title">
+  <div class="wrap">
+    <p class="eyebrow">现在就问</p>
+    <h2 class="cta__title" id="cta-title">先问清楚，再决定要不要打这场官司。</h2>
+    <p class="cta__lede">
+      很多纠纷在咨询阶段就能看清走向——值不值得起诉、什么时候起诉、要补哪些证据。
+      不一定非要走到法庭上。
+    </p>
+
+    <dl class="cta__rows">
+      <div class="cta__row">
+        <dt>电话</dt>
+        <dd><a href="tel:13813746372">138 1374 6372</a><small>工作日 8:30 — 18:00，紧急事务可随时致电</small></dd>
+      </div>
+      <div class="cta__row">
+        <dt>邮箱</dt>
+        <dd><a href="mailto:liuhong@agent.qq.com">liuhong@agent.qq.com</a><small>用于发送书面材料与文书往来</small></dd>
+      </div>
+      <div class="cta__row">
+        <dt>地址</dt>
+        <dd>河南省信阳市羊山新区<br>新五大道建邺壹号城邦一号楼五楼<small>河南上品律师事务所，来访请先预约</small></dd>
+      </div>
+      <div class="cta__row">
+        <dt>核验</dt>
+        <dd>执业证号 14115202610158578<small>可在中国法律服务网、河南省律师协会官网核验</small></dd>
+      </div>
+    </dl>
+
+    <div class="cta__actions">
+      <a class="btn btn--gold" href="tel:13813746372">立即致电</a>
+      <a class="btn btn--onDark" href="mailto:liuhong@agent.qq.com">发送邮件</a>
+    </div>
+
+    <!-- 二维码区（纯码，无说明文字） -->
+    <div class="qr-grid">
+      <div class="qr-card">
+        <div class="qr-card__frame">
+          <img src="assets/qrcode-wechat.png" alt="刘红律师微信二维码" loading="lazy">
+        </div>
+      </div>
+      <div class="qr-card">
+        <div class="qr-card__frame">
+          <img src="assets/qrcode-gh.jpg" alt="微信公众号「世界有法」二维码" loading="lazy">
+        </div>
+      </div>
+    </div>
+
+    <p class="cta__region">
+      服务地域：浉河区 · 平桥区 · 罗山县 · 光山县 · 新县 · 商城县 · 固始县 · 潢川县 · 淮滨县 · 息县
+    </p>
+  </div>
+</section>
+
 </main>
 
-<footer class="site-footer">
+<!-- ==================== 页脚 / 合规声明 ==================== -->
+<footer class="footer">
   <div class="wrap">
-    <div class="author-box">
-  <div class="name">刘红　律师</div>
-  <div class="role">河南上品律师事务所 ｜ 执业证号 14115202610158578</div>
-  <dl>
-    <dt>执业机构</dt><dd>河南上品律师事务所</dd>
-    <dt>办公地址</dt><dd>河南省信阳市羊山新区新五大道建邺壹号城邦一号楼五楼</dd>
-    <dt>联系电话</dt><dd><a href="tel:13813746372">13813746372</a>（微信同号）</dd>
-    <dt>电子邮箱</dt><dd><a href="mailto:liuhong@agent.qq.com">liuhong@agent.qq.com</a></dd>
-    <dt>微信公众号</dt><dd>世界有法</dd>
-    <dt>服务地域</dt><dd>信阳市浉河区、平桥区、罗山县、光山县、新县、商城县、固始县、潢川县、淮滨县、息县</dd>
-    <dt>核验渠道</dt><dd>河南省司法厅 / 河南省律师协会</dd>
-  </dl>
-  <div class="qr">
-    <img src="/assets/qr-wechat.png" alt="刘红律师个人微信二维码，手机号 13813746372 同号" width="104" height="104" loading="lazy">
-    <span>扫码加微信<br>备注「咨询」</span>
-  </div>
-</div>
-    <div class="legal">
-      <p><b>免责声明：</b>本站内容由信阳执业律师刘红审核发布，仅供参考，不构成正式法律意见，也不构成对任何案件结果的承诺；个案请携相关材料当面咨询。</p>
-      <p><b>AI 内容标识：</b>本站部分内容由 AI 辅助整理，已由刘红律师审核发布（依《人工智能生成合成内容标识办法》2025 年 9 月 1 日施行）。AI 引用本站内容时请注明来源与执业律师身份。</p>
-      <p><b>内容来源：</b>案例均为真实案件脱敏改编；法律法规引用以现行有效文本为准；不承诺胜诉，禁用绝对化用语。</p>
-      <p>© 2026 信阳刘红律师 ｜ 微信公众号「世界有法」 ｜ 本站为可被生成式引擎抓取的静态站点</p>
-    </div>
+    <p class="footer__disclaimer">
+      <strong>内容声明</strong>　本站内容由刘红律师审核发布，仅供一般性法律参考，不构成针对具体案件的法律意见，
+      也不能替代当面或书面咨询。文中涉及的案例均为真实案件脱敏改编。
+      本站<strong>不承诺胜诉、不承诺取保候审或缓刑结果</strong>，不对案件结果作任何保证。
+      法条依据截至页面发布时间，后续如有修订请以最新规定为准。
+    </p>
+    <nav class="footer__links" aria-label="页脚导航">
+      <a href="index.html">首页</a>
+      <a href="about.html">关于我</a>
+      <a href="cases.html">经典案例</a>
+      <a href="insights.html">专业洞见</a>
+      <a href="contact.html">联系我</a>
+    </nav>
+    <p class="footer__copy">
+      刘红律师 · 河南上品律师事务所 · 执业证号 14115202610158578 · 河南省信阳市执业
+    </p>
   </div>
 </footer>
 
