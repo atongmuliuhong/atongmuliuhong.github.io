@@ -639,12 +639,13 @@ code {
 /* ── IP 视觉画廊 ──────────────────────────────────────── */
 .brand-block {
   display: grid;
-  grid-template-columns: 330px 1fr;
-  gap: 26px;
+  grid-template-columns: 400px 1fr;
+  gap: 40px;
+  align-items: center;
   background: var(--paper);
   border: 1px solid var(--line);
   border-radius: 12px;
-  padding: 26px;
+  padding: 28px;
   box-shadow: 0 1px 3px rgba(10, 31, 61, .07), 0 8px 28px rgba(10, 31, 61, .045);
 }
 .bb-poster { margin: 0; }
@@ -653,42 +654,11 @@ code {
   display: block;
   border-radius: 6px;
   border: 1px solid var(--line);
+  box-shadow: 0 14px 40px rgba(10, 31, 61, .16);
 }
-.bb-poster figcaption {
-  font-size: 12px;
-  color: var(--faint);
-  margin-top: 9px;
-  text-align: center;
-  letter-spacing: .04em;
-}
-.bb-intro { font-size: 14.5px; color: var(--text); line-height: 2.0; margin: 2px 0 18px; }
+.bb-intro { font-size: 15px; color: var(--text); line-height: 2.05; margin: 0 0 16px; }
 .bb-intro b { color: var(--ink); }
-.bb-grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 13px;
-  margin-bottom: 16px;
-}
-.bb-grid figure { margin: 0; }
-.bb-grid img {
-  width: 100%;
-  display: block;
-  border: 1px solid var(--line);
-  border-radius: 6px;
-  transition: transform .15s, box-shadow .15s;
-}
-.bb-grid figure:hover img {
-  transform: translateY(-2px);
-  box-shadow: 0 8px 22px rgba(10, 31, 61, .13);
-}
-.bb-grid figcaption {
-  font-size: 11.5px;
-  color: var(--faint);
-  text-align: center;
-  margin-top: 7px;
-  letter-spacing: .05em;
-}
-.bb-note { font-size: 13px; color: var(--muted); line-height: 1.9; margin: 0; }
+.bb-note { font-size: 14px; color: var(--muted); line-height: 2.0; margin: 0; }
 .bb-note b { color: var(--ink); }
 
 /* ── CONTACT 大区块（参考 zhumc #contact 结构）────────── */
@@ -801,8 +771,7 @@ code {
 @media (max-width: 960px) {
   .hero-grid { grid-template-columns: 1fr; gap: 36px; padding: 42px 30px 38px; }
   .hero-photo { max-width: 330px; margin: 0 auto; }
-  .brand-block { grid-template-columns: 1fr; }
-  .bb-grid { grid-template-columns: repeat(2, 1fr); }
+  .brand-block { grid-template-columns: 1fr; gap: 26px; }
   .cb-cards { grid-template-columns: 1fr; }
   .cb-meta { flex-direction: column; gap: 24px; }
   .contact { padding: 40px 28px 36px; }
