@@ -1,19 +1,26 @@
 /* 信阳刘红律师 · 独立站样式表
-   设计基调：靛蓝瓷 —— 深靛蓝 + 瓷白，衬线标题 + 无衬线正文，长文阅读优先
+   设计基调：深靛蓝 + 金 —— 像律所门面的分量感
+   字体：Noto Serif SC（标题/衬线）+ Noto Sans SC（正文）
+   2026-10-19 升级：金色升为第二主色、衬线字体、卡片层级、资质背书条、清单式联系区
    ───────────────────────────────────────────────────────── */
 
 :root {
-  --ink:      #0a1f3d;
+  --ink:      #07182f;
   --ink-soft: #1a4a73;
   --blue:     #1a5276;
-  --line:     #dde5ee;
-  --line-2:   #eef2f7;
-  --bg:       #f4f7fa;
+  --gold:     #b8965a;
+  --gold-deep:#9a7c46;
+  --line:     #e8e2d8;
+  --line-2:   #f0ebe4;
+  --bg:       #f6f8fa;
   --paper:    #ffffff;
   --text:     #23384f;
   --muted:    #5f7488;
   --faint:    #9aa9ba;
-  --amber:    #b07d16;
+  --amber:    #b8965a;
+  --font-serif: "Noto Serif SC", "Source Han Serif SC", "Songti SC", "SimSun", Georgia, serif;
+  --font-sans:  "Noto Sans SC", -apple-system, BlinkMacSystemFont, "PingFang SC",
+                "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
 }
 
 * { box-sizing: border-box; }
@@ -24,8 +31,7 @@ body {
   margin: 0;
   background: var(--bg);
   color: var(--text);
-  font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB",
-               "Microsoft YaHei", "Source Han Sans SC", "Noto Sans CJK SC", sans-serif;
+  font-family: var(--font-sans);
   font-size: 16.5px;
   line-height: 1.95;
   -webkit-font-smoothing: antialiased;
@@ -41,7 +47,7 @@ a:hover { text-decoration: underline; }
 .site-header {
   background: var(--ink);
   color: #fff;
-  border-bottom: 3px solid var(--blue);
+  border-bottom: 3px solid var(--gold);
 }
 .site-header .wrap {
   display: flex;
@@ -54,39 +60,63 @@ a:hover { text-decoration: underline; }
   max-width: 1000px;
 }
 .brand {
-  font-family: Georgia, "Songti SC", "Noto Serif CJK SC", serif;
+  font-family: var(--font-serif);
   font-size: 19px;
   font-weight: 700;
   color: #fff;
   letter-spacing: .5px;
   white-space: nowrap;
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 .brand:hover { text-decoration: none; opacity: .88; }
+.brand-logo { display: block; width: 36px; height: 36px; flex-shrink: 0; }
+.brand-t { display: block; }
 .brand small {
   display: block;
-  font-family: inherit;
+  font-family: var(--font-sans);
   font-size: 10.5px;
   font-weight: 400;
-  letter-spacing: 2px;
-  color: #8fb4d9;
+  letter-spacing: 2.4px;
+  color: var(--gold);
   margin-top: 1px;
 }
-.site-nav { display: flex; flex-wrap: wrap; gap: 4px 16px; }
+.site-nav { display: flex; flex-wrap: wrap; gap: 4px 0; }
 .site-nav a {
   color: #c8d8ea;
   font-size: 14px;
   padding: 2px 0;
   border-bottom: 2px solid transparent;
 }
+.site-nav a + a {
+  margin-left: 14px;
+  padding-left: 14px;
+  border-left: 1px solid rgba(255, 255, 255, .16);
+}
 .site-nav a:hover { color: #fff; text-decoration: none; }
-.site-nav a.on { color: #fff; border-bottom-color: #5b93c7; }
+.site-nav a.on { color: #fff; border-bottom-color: var(--gold); }
+
+/* 站头「预约咨询」金色按钮 */
+.hdr-cta {
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: .12em;
+  color: var(--ink);
+  background: var(--gold);
+  border-radius: 6px;
+  padding: 8px 18px;
+  white-space: nowrap;
+  transition: background .15s;
+}
+.hdr-cta:hover { background: #c9ad74; text-decoration: none; }
 
 /* ── 主体容器 ─────────────────────────────────────────── */
-main { padding: 40px 0 8px; }
+main { padding: 44px 0 8px; }
 .card {
   background: var(--paper);
   border-radius: 10px;
-  box-shadow: 0 1px 3px rgba(10, 31, 61, .07), 0 8px 28px rgba(10, 31, 61, .045);
+  box-shadow: 0 2px 8px rgba(7, 24, 47, .06), 0 12px 32px rgba(7, 24, 47, .05);
   padding: 44px 52px 52px;
 }
 
@@ -97,7 +127,7 @@ main { padding: 40px 0 8px; }
 
 /* ── 标题 ─────────────────────────────────────────────── */
 h1 {
-  font-family: Georgia, "Songti SC", "Noto Serif CJK SC", serif;
+  font-family: var(--font-serif);
   font-size: 29px;
   line-height: 1.42;
   color: var(--ink);
@@ -106,13 +136,13 @@ h1 {
   font-weight: 700;
 }
 h2 {
-  font-family: Georgia, "Songti SC", "Noto Serif CJK SC", serif;
+  font-family: var(--font-serif);
   font-size: 20px;
   line-height: 1.55;
   color: var(--ink);
   margin: 44px 0 16px;
   padding-left: 13px;
-  border-left: 5px solid var(--blue);
+  border-left: 5px solid var(--gold);
   font-weight: 700;
 }
 h3 {
@@ -129,7 +159,7 @@ em { font-style: normal; color: var(--ink-soft); font-weight: 600; }
 
 ul, ol { margin: 0 0 1.15em; padding-left: 1.5em; }
 li { margin-bottom: .5em; }
-li::marker { color: var(--blue); }
+li::marker { color: var(--gold-deep); }
 
 hr { border: 0; border-top: 1px solid var(--line); margin: 34px 0; }
 
@@ -168,7 +198,7 @@ code {
 /* ── 文章结论摘要（AI 抽取友好）───────────────────────── */
 .lead {
   background: #f6f9fc;
-  border-left: 4px solid var(--blue);
+  border-left: 4px solid var(--gold);
   border-radius: 0 7px 7px 0;
   padding: 18px 22px;
   margin: 26px 0 8px;
@@ -178,7 +208,7 @@ code {
   display: block;
   font-size: 11.5px;
   letter-spacing: 2px;
-  color: var(--blue);
+  color: var(--gold-deep);
   font-weight: 700;
   margin-bottom: 8px;
 }
@@ -192,7 +222,7 @@ code {
   margin: 0 0 22px;
 }
 .author-box .name {
-  font-family: Georgia, "Songti SC", serif;
+  font-family: var(--font-serif);
   font-size: 19px;
   font-weight: 700;
   color: var(--ink);
@@ -248,12 +278,12 @@ code {
 .hero .facts b { color: #fff; font-weight: 600; }
 
 .section-title {
-  font-family: Georgia, "Songti SC", serif;
+  font-family: var(--font-serif);
   font-size: 20px;
   color: var(--ink);
-  border-left: 5px solid var(--blue);
+  border-left: 5px solid var(--gold);
   padding-left: 13px;
-  margin: 42px 0 18px;
+  margin: 56px 0 18px;
   font-weight: 700;
 }
 .section-title small {
@@ -284,7 +314,7 @@ code {
   text-decoration: none;
 }
 .cat-card .cn {
-  font-family: Georgia, "Songti SC", serif;
+  font-family: var(--font-serif);
   font-size: 17px;
   font-weight: 700;
   color: var(--ink);
@@ -303,7 +333,7 @@ code {
 .post-list li:last-child { border-bottom: 0; }
 .post-list a {
   display: block;
-  padding: 17px 4px;
+  padding: 20px 4px;
   font-size: 16.5px;
   line-height: 1.7;
   color: var(--ink-soft);
@@ -319,8 +349,8 @@ code {
 
 /* ── 声明条 ───────────────────────────────────────────── */
 .notice {
-  background: #fdf7ec;
-  border-left: 4px solid var(--amber);
+  background: #fdf8ed;
+  border-left: 4px solid var(--gold);
   padding: 13px 18px;
   font-size: 13.5px;
   border-radius: 0 6px 6px 0;
@@ -335,11 +365,11 @@ code {
   .wrap { padding: 0 18px; }
   .card { padding: 30px 22px 36px; border-radius: 8px; }
   .hero { padding: 32px 24px 30px; }
-  .hero h1 { font-size: 26px; }
+  .hero h1 { font-size: 44px; letter-spacing: 3px; }
   h1 { font-size: 23px; }
   h2 { font-size: 18.5px; margin-top: 36px; }
   .site-header .wrap { padding-top: 13px; padding-bottom: 13px; }
-  .site-nav { gap: 3px 14px; }
+  .site-nav { gap: 3px 0; }
   .site-nav a { font-size: 13.5px; }
   .author-box dt { float: none; width: auto; display: inline; }
   .author-box dd { margin-left: 0; margin-bottom: 6px; }
@@ -371,18 +401,18 @@ code {
 .hero .eyebrow {
   font-size: 12.5px;
   letter-spacing: .18em;
-  color: #c6a664;
+  color: var(--gold);
   margin-bottom: 14px;
   font-weight: 600;
 }
 .hero .claim {
-  font-family: Georgia, "Songti SC", "Noto Serif CJK SC", serif;
+  font-family: var(--font-serif);
   font-size: 21px;
   line-height: 1.85;
   color: #fff;
   margin: 0 0 20px;
   padding-left: 14px;
-  border-left: 3px solid var(--amber);
+  border-left: 3px solid var(--gold);
   font-weight: 400;
 }
 .hero .id-tags {
@@ -416,7 +446,7 @@ code {
   transition: opacity .15s;
 }
 .hero .actions a:hover { opacity: .85; text-decoration: none; }
-.hero .actions .act-main { background: #c6a664; color: #0a1f3d; font-weight: 700; }
+.hero .actions .act-main { background: var(--gold); color: var(--ink); font-weight: 700; }
 .hero .actions .act-ghost {
   background: transparent;
   color: #d6e4f2;
@@ -435,23 +465,23 @@ code {
 .solve-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 14px;
+  gap: 20px;
 }
 .solve-card {
   display: block;
   background: var(--paper);
   border: 1px solid var(--line);
-  border-left: 4px solid var(--blue);
+  border-left: 4px solid var(--gold);
   border-radius: 8px;
   padding: 20px 22px 17px;
   text-decoration: none;
   color: var(--text);
-  transition: box-shadow .16s, transform .16s;
+  transition: box-shadow .16s, transform .16s, border-color .16s;
 }
 .solve-card:hover {
   text-decoration: none;
-  box-shadow: 0 4px 18px rgba(10, 31, 61, .09);
-  transform: translateY(-1px);
+  box-shadow: 0 6px 22px rgba(7, 24, 47, .10);
+  transform: translateY(-2px);
 }
 .solve-card .sc-when {
   font-size: 15.5px;
@@ -579,7 +609,7 @@ code {
   padding: 0;
   overflow: hidden;
   position: relative;
-  background: linear-gradient(135deg, #0a1f3d 0%, #0d2648 55%, #14325a 100%);
+  background: linear-gradient(135deg, #07182f 0%, #0a2240 55%, #0e2b52 100%);
   margin-bottom: 34px;
 }
 .hero::before {
@@ -587,7 +617,7 @@ code {
   position: absolute;
   top: 0; left: 0; right: 0;
   height: 3px;
-  background: linear-gradient(90deg, #c6a664, rgba(198, 166, 100, .12));
+  background: linear-gradient(90deg, #b8965a, rgba(184, 150, 90, .12));
 }
 .hero-grid {
   display: grid;
@@ -597,18 +627,18 @@ code {
   align-items: center;
 }
 .hero h1 {
-  font-size: 54px;
+  font-size: 64px;
   line-height: 1.15;
   margin: 0 0 4px;
-  letter-spacing: 3px;
+  letter-spacing: 6px;
 }
 .hero h1 .en {
   display: block;
-  font-family: Georgia, "Times New Roman", serif;
+  font-family: var(--font-serif);
   font-size: 15px;
   font-weight: 400;
-  letter-spacing: .42em;
-  color: #c6a664;
+  letter-spacing: .55em;
+  color: var(--gold);
   margin-top: 12px;
 }
 .hero .claim {
@@ -622,18 +652,79 @@ code {
 }
 .hero-photo {
   margin: 0;
-  padding: 10px;
-  background: rgba(255, 255, 255, .035);
-  border: 1px solid rgba(198, 166, 100, .45);
+}
+.hero-photo .photo-mat {
+  padding: 12px;
+  background: rgba(255, 255, 255, .94);
+  border: 1px solid rgba(184, 150, 90, .60);
   box-shadow: 0 24px 60px rgba(0, 0, 0, .35);
 }
-.hero-photo img { display: block; width: 100%; height: auto; }
+.hero-photo img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 1px solid rgba(184, 150, 90, .30);
+}
 .hero-photo figcaption {
   text-align: center;
   font-size: 12px;
   letter-spacing: .55em;
-  color: #c6a664;
+  color: var(--gold);
   padding: 12px 0 2px;
+}
+
+/* ── 资质背书条（2026-10-19 新增：转化前先过「是不是真律师」这一关）── */
+.cred-bar {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 8px 0;
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  margin: 30px 0 0;
+  padding: 16px 20px;
+  overflow: hidden;
+  box-shadow: 0 1px 4px rgba(7, 24, 47, .06);
+}
+.cred-bar::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, var(--gold), rgba(184, 150, 90, 0));
+}
+.cred-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 22px;
+}
+.cred-item svg { display: block; }
+.cred-item .ct {
+  font-family: var(--font-serif);
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--ink);
+  letter-spacing: .04em;
+  white-space: nowrap;
+}
+.cred-note {
+  font-size: 12px;
+  color: #8a7e6e;
+  line-height: 1.8;
+  padding: 6px 8px 6px 26px;
+  border-left: 1px solid var(--line);
+  max-width: 210px;
+}
+@media (max-width: 960px) {
+  .cred-item { padding: 6px 16px; }
+}
+@media (max-width: 640px) {
+  .cred-note { border-left: 0; padding: 4px 16px; max-width: none; text-align: center; }
 }
 
 /* ── IP 视觉画廊 ──────────────────────────────────────── */
@@ -661,7 +752,7 @@ code {
 .bb-note { font-size: 14px; color: var(--muted); line-height: 2.0; margin: 0; }
 .bb-note b { color: var(--ink); }
 
-/* ── CONTACT 大区块（参考 zhumc #contact 结构）────────── */
+/* ── CONTACT 大区块（2026-10-19 重构：清单式双栏，参考 chenkslawyer 联系页）── */
 .contact {
   background: var(--ink);
   border-radius: 14px;
@@ -675,86 +766,133 @@ code {
   position: absolute;
   left: 0; top: 0; bottom: 0;
   width: 3px;
-  background: linear-gradient(180deg, #c6a664, rgba(198, 166, 100, .15));
+  background: linear-gradient(180deg, #b8965a, rgba(184, 150, 90, .15));
 }
 .cb-eyebrow {
   font-size: 12px;
   letter-spacing: .45em;
-  color: #c6a664;
+  color: var(--gold);
   font-weight: 600;
   margin-bottom: 14px;
 }
 .cb-title {
-  font-family: Georgia, "Songti SC", "Noto Serif CJK SC", serif;
+  font-family: var(--font-serif);
   font-size: 29px;
   line-height: 1.5;
   color: #fff;
-  margin: 0 0 32px;
+  margin: 0 0 12px;
   border-left: none;
   padding-left: 0;
   font-weight: 700;
 }
-.cb-cards {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 16px;
-  margin-bottom: 32px;
+.cb-intro {
+  font-size: 14px;
+  color: #a9c4dd;
+  line-height: 1.9;
+  margin: 0;
+  max-width: 720px;
 }
-.cb-card {
+
+/* 双栏：左清单 + 右二维码面板 */
+.cb-main {
+  display: grid;
+  grid-template-columns: 1fr 340px;
+  gap: 44px;
+  align-items: start;
+  margin-top: 30px;
+}
+.cb-row {
+  display: flex;
+  align-items: baseline;
+  gap: 0;
+  padding: 14px 0;
+  border-top: 1px solid rgba(255, 255, 255, .10);
+}
+.cb-row:first-child { border-top: 0; padding-top: 4px; }
+.cb-row .k {
+  flex-shrink: 0;
+  width: 96px;
+  font-size: 13px;
+  color: #8fb4d9;
+  letter-spacing: .08em;
+}
+.cb-row .v {
+  font-size: 15px;
+  color: #fff;
+  font-weight: 600;
+  line-height: 1.7;
+}
+.cb-row .v a { color: #fff; text-decoration: none; border-bottom: 1px solid rgba(184, 150, 90, .5); }
+.cb-row .v a:hover { color: var(--gold); }
+
+/* 胶囊按钮组 */
+.cb-cta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 28px;
+}
+.cb-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  letter-spacing: .14em;
+  border-radius: 999px;
+  padding: 13px 26px;
+  text-decoration: none;
+  line-height: 1.5;
+  transition: background .15s, border-color .15s, color .15s;
+}
+.cb-pill svg { flex-shrink: 0; }
+.cb-pill.gold { background: var(--gold); color: var(--ink); font-weight: 700; }
+.cb-pill.gold:hover { background: #c9ad74; text-decoration: none; }
+.cb-pill.ghost { border: 1px solid rgba(255, 255, 255, .28); color: #d6e4f2; }
+.cb-pill.ghost:hover { border-color: rgba(184, 150, 90, .75); color: var(--gold); text-decoration: none; }
+
+/* 右栏：二维码面板 */
+.cb-qr-panel {
+  background: rgba(255, 255, 255, .04);
+  border: 1px solid rgba(255, 255, 255, .12);
+  border-radius: 12px;
+  padding: 24px 26px 22px;
+}
+.cb-qr-k {
+  font-size: 13px;
+  color: var(--gold);
+  letter-spacing: .14em;
+  font-weight: 600;
+}
+.cb-qr-row {
+  display: flex;
+  gap: 22px;
+  margin-top: 16px;
+}
+.cb-qr-unit {
   display: flex;
   flex-direction: column;
-  gap: 7px;
-  background: rgba(255, 255, 255, .055);
-  border: 1px solid rgba(255, 255, 255, .14);
-  border-radius: 10px;
-  padding: 24px 28px;
-  text-decoration: none;
-  transition: border-color .16s, background .16s;
-}
-.cb-card:hover {
-  text-decoration: none;
-  border-color: rgba(198, 166, 100, .65);
-  background: rgba(255, 255, 255, .09);
-}
-.cb-k { font-size: 12px; letter-spacing: .25em; color: #8fb4d9; }
-.cb-v {
-  font-family: Georgia, "Songti SC", serif;
-  font-size: 25px;
-  font-weight: 700;
-  color: #fff;
-  word-break: break-all;
-}
-.cb-s { font-size: 12.5px; color: #a9c4dd; line-height: 1.7; }
-.cb-meta {
-  display: flex;
-  gap: 36px;
-  justify-content: space-between;
-  align-items: flex-start;
-  border-top: 1px solid rgba(255, 255, 255, .14);
-  padding-top: 26px;
-}
-.cb-info { flex: 1; }
-.cb-info p { margin: 0 0 11px; font-size: 14px; color: #d6e4f2; line-height: 1.9; }
-.cb-info p:last-child { margin-bottom: 0; }
-.cb-info span {
-  display: inline-block;
-  width: 6em;
-  color: #8fb4d9;
-  font-size: 12.5px;
-  letter-spacing: .05em;
-}
-.cb-qr {
-  display: flex;
   align-items: center;
-  gap: 13px;
-  font-size: 12px;
-  color: #a9c4dd;
-  text-align: center;
-  line-height: 1.7;
-  flex-shrink: 0;
+  gap: 9px;
 }
-.cb-qr img { display: block; border-radius: 6px; background: #fff; padding: 4px; }
-.cb-areas { margin-top: 24px; }
+.cb-qr-unit img {
+  display: block;
+  width: 116px;
+  height: 116px;
+  background: #fff;
+  padding: 6px;
+  border-radius: 8px;
+}
+.cb-qr-unit span { font-size: 12px; color: #a9c4dd; letter-spacing: .04em; }
+.cb-qr-note {
+  font-size: 12px;
+  color: #8fa8c8;
+  line-height: 1.9;
+  margin: 16px 0 0;
+  padding-top: 14px;
+  border-top: 1px solid rgba(255, 255, 255, .12);
+}
+
+.cb-areas { margin-top: 26px; }
 .cb-areas-k {
   font-size: 12px;
   color: #8fb4d9;
@@ -772,13 +910,18 @@ code {
   .hero-grid { grid-template-columns: 1fr; gap: 36px; padding: 42px 30px 38px; }
   .hero-photo { max-width: 330px; margin: 0 auto; }
   .brand-block { grid-template-columns: 1fr; gap: 26px; }
-  .cb-cards { grid-template-columns: 1fr; }
-  .cb-meta { flex-direction: column; gap: 24px; }
+  .cb-main { grid-template-columns: 1fr; gap: 30px; }
   .contact { padding: 40px 28px 36px; }
 }
 @media (max-width: 640px) {
-  .hero h1 { font-size: 40px; }
+  .hero h1 { font-size: 36px; letter-spacing: 3px; }
   .hero .claim { font-size: 19px; }
   .cb-title { font-size: 22px; }
-  .cb-v { font-size: 20px; }
+  .cb-row { flex-direction: column; gap: 3px; }
+  .cb-row .k { width: auto; }
+  .cb-qr-row { justify-content: center; }
+  .cb-pill { flex: 1 1 45%; justify-content: center; }
+}
+@media (max-width: 900px) {
+  .site-nav a + a { border-left: 0; margin-left: 10px; padding-left: 0; }
 }
