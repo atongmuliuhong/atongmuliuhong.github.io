@@ -106,7 +106,20 @@ section { padding-block: var(--gap-section); }
 .section-title {
   font-size: clamp(1.55rem, 3.6vw, 2.15rem);
   margin-bottom: 0.9rem;
+  position: relative;
+  display: inline-block;
 }
+.section-title::after {
+  content: "";
+  display: block;
+  width: 2.4rem;
+  height: 2px;
+  background: var(--cinnabar);
+  margin-top: 0.5rem;
+  opacity: 0.7;
+  transition: width 0.35s var(--ease);
+}
+.section-title:hover::after { width: 3.6rem; }
 .section-lede {
   color: var(--ash);
   max-width: 46ch;
@@ -130,6 +143,9 @@ section { padding-block: var(--gap-section); }
   justify-content: center;
   padding-block: clamp(88px, 14vh, 150px);
   position: relative;
+  background:
+    radial-gradient(ellipse at 80% 0%, rgba(156, 58, 46, 0.04) 0%, transparent 55%),
+    radial-gradient(ellipse at 20% 100%, rgba(184, 148, 78, 0.05) 0%, transparent 50%);
 }
 
 .hero__name {
@@ -242,11 +258,25 @@ section { padding-block: var(--gap-section); }
   color: var(--cinnabar);
   letter-spacing: 0.1em;
   padding-top: 0.32em;
+  position: relative;
+}
+.practice-item__num::after {
+  content: "";
+  position: absolute;
+  right: -0.5rem;
+  top: 0.4em;
+  width: 16px;
+  height: 1px;
+  background: var(--cinnabar);
+  opacity: 0.3;
 }
 .practice-item__title {
   font-size: 1.28rem;
   margin-bottom: 0.55rem;
+  color: var(--ink);
+  transition: color 0.25s var(--ease);
 }
+.practice-item:hover .practice-item__title { color: var(--cinnabar); }
 .practice-item__desc {
   color: var(--ash);
   font-size: 0.96rem;
@@ -265,7 +295,9 @@ section { padding-block: var(--gap-section); }
   border-radius: 999px;
   padding: 0.28em 0.85em;
   white-space: nowrap;
+  transition: border-color 0.25s var(--ease), color 0.25s var(--ease);
 }
+.practice-item:hover .practice-item__tags span { border-color: var(--cinnabar); color: var(--cinnabar); }
 
 /* =========================================================
    7. 工作方法（四步）
@@ -283,10 +315,15 @@ section { padding-block: var(--gap-section); }
   color: var(--cinnabar);
   letter-spacing: 0.14em;
   margin-bottom: 0.7rem;
+  display: inline-block;
+  padding: 0.2em 0.6em;
+  background: rgba(156, 58, 46, 0.06);
+  border-radius: 3px;
 }
 .method-step__title {
   font-size: 1.12rem;
   margin-bottom: 0.5rem;
+  color: var(--ink);
 }
 .method-step__text {
   font-size: 0.94rem;
@@ -298,7 +335,10 @@ section { padding-block: var(--gap-section); }
    ========================================================= */
 .faq-list { border-top: 1px solid var(--line); }
 
-.faq-item { border-bottom: 1px solid var(--line); }
+.faq-item { border-bottom: 1px solid var(--line); transition: background 0.3s var(--ease); }
+.faq-item:nth-child(odd) { background: var(--paper); }
+.faq-item:nth-child(even) { background: var(--paper-deep); }
+.faq-item:hover { background: var(--paper-deep) !important; }
 
 .faq-item summary {
   list-style: none;
@@ -395,6 +435,23 @@ a.contact-card__value:hover { color: var(--cinnabar); }
 /* =========================================================
    10. 咨询表单
    ========================================================= */
+.form-wrap {
+  margin-top: 2.4rem;
+  padding: 2.4rem 2.2rem;
+  background: var(--paper-deep);
+  border-radius: 12px;
+  border: 1px solid var(--line);
+  position: relative;
+}
+.form-wrap::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 3px;
+  background: linear-gradient(90deg, var(--cinnabar), var(--gold));
+  border-radius: 12px 12px 0 0;
+}
 .form-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
@@ -462,6 +519,8 @@ a.contact-card__value:hover { color: var(--cinnabar); }
   color: var(--paper);
   cursor: pointer;
   transition: all 0.3s var(--ease);
+  position: relative;
+  overflow: hidden;
 }
 .btn:hover { background: var(--cinnabar); border-color: var(--cinnabar); }
 .btn--ghost {
@@ -473,6 +532,26 @@ a.contact-card__value:hover { color: var(--cinnabar); }
   background: transparent;
   color: var(--cinnabar);
   border-color: var(--cinnabar);
+}
+.btn--gold {
+  background: var(--gold);
+  border-color: var(--gold);
+  color: var(--dark-bg);
+  font-weight: 600;
+}
+.btn--gold:hover {
+  background: transparent;
+  color: var(--gold);
+}
+.btn--onDark {
+  background: transparent;
+  color: var(--dark-paper);
+  border-color: #3A332C;
+}
+.btn--onDark:hover {
+  border-color: var(--gold);
+  color: var(--gold);
+  background: transparent;
 }
 .form-note { font-size: 0.82rem; color: var(--ash); }
 
@@ -578,8 +657,28 @@ a.contact-card__value:hover { color: var(--cinnabar); }
   color: #8E877D;
   padding: 8px;
   line-height: 1.5;
+  transition: transform 0.3s var(--ease), box-shadow 0.3s var(--ease);
 }
+.qr-card__frame:hover { transform: scale(1.04); box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25); }
 .qr-card__frame img { width: 100%; height: 100%; object-fit: contain; }
+
+/* 两个二维码差异化：个人微信用金边框，公众号用朱砂边框 */
+.qr-card:first-child .qr-card__frame {
+  border: 2px solid var(--gold);
+  box-shadow: 0 0 0 1px var(--gold);
+}
+.qr-card:last-child .qr-card__frame {
+  border: 2px solid var(--cinnabar);
+  box-shadow: 0 0 0 1px var(--cinnabar);
+}
+.qr-card__label {
+  margin-top: 0.8rem;
+  font-size: 0.8rem;
+  letter-spacing: 0.06em;
+  color: #A8A096;
+}
+.qr-card:first-child .qr-card__label { color: var(--gold); }
+.qr-card:last-child .qr-card__label { color: #C89088; }
 
 /* 无二维码时的文字型卡片（如仅提供手机号） */
 .qr-card__frame--text {
@@ -624,6 +723,16 @@ a.contact-card__value:hover { color: var(--cinnabar); }
   border-top: 1px solid #2C2722;
   font-size: 0.82rem;
   line-height: 1.9;
+  position: relative;
+}
+.footer::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 2px;
+  background: var(--gold);
 }
 .footer__disclaimer {
   max-width: 62ch;
@@ -773,6 +882,13 @@ a.contact-card__value:hover { color: var(--cinnabar); }
   border-radius: 999px;
   padding: 0.28em 0.9em;
   white-space: nowrap;
+  transition: all 0.25s var(--ease);
+  cursor: default;
+}
+.badges span:hover {
+  background: var(--cinnabar);
+  color: var(--paper);
+  transform: translateY(-1px);
 }
 
 /* 内页头图（subhero） */
@@ -780,14 +896,25 @@ a.contact-card__value:hover { color: var(--cinnabar); }
   padding-block: clamp(56px, 8vw, 92px);
   border-bottom: 1px solid var(--line);
   background: var(--paper-deep);
+  position: relative;
+}
+.subhero::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 4px;
+  height: 100%;
+  background: var(--cinnabar);
 }
 .subhero__title {
   font-size: clamp(2rem, 6vw, 3rem);
   margin-bottom: 0.8rem;
+  padding-left: 0.5rem;
 }
 .subhero__lede {
   color: var(--ash);
   max-width: 56ch;
+  padding-left: 0.5rem;
 }
 
 /* 面包屑 */
@@ -816,6 +943,12 @@ a.contact-card__value:hover { color: var(--cinnabar); }
   object-fit: cover;
   border-radius: 8px;
   border: 1px solid var(--line);
+  box-shadow: 0 8px 28px rgba(31, 28, 24, 0.10);
+  transition: box-shadow 0.35s var(--ease), transform 0.35s var(--ease);
+}
+.about-hero .portrait:hover {
+  box-shadow: 0 12px 36px rgba(156, 58, 46, 0.18);
+  transform: scale(1.01);
 }
 .about-hero .about-hero__text { min-width: 0; }
 @media (max-width: 620px) {
@@ -858,16 +991,29 @@ a.contact-card__value:hover { color: var(--cinnabar); }
   border-radius: 10px;
   padding: 1.8rem 1.7rem;
   background: var(--paper);
-  transition: border-color 0.3s var(--ease), transform 0.3s var(--ease);
+  transition: border-color 0.3s var(--ease), transform 0.3s var(--ease), box-shadow 0.3s var(--ease);
   display: flex;
   flex-direction: column;
+  position: relative;
+  overflow: hidden;
 }
-.card:hover { border-color: var(--cinnabar); transform: translateY(-3px); }
+.card::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 3px;
+  height: 0;
+  background: var(--cinnabar);
+  transition: height 0.35s var(--ease);
+}
+.card:hover { border-color: var(--cinnabar); transform: translateY(-3px); box-shadow: 0 12px 32px rgba(31, 28, 24, 0.10); }
+.card:hover::before { height: 100%; }
 .card__tag {
   font-size: 0.74rem;
   letter-spacing: 0.12em;
   color: var(--cinnabar);
   margin-bottom: 0.9rem;
+  display: inline-block;
 }
 .card__title {
   font-size: 1.18rem;
@@ -895,6 +1041,10 @@ a.contact-card__value:hover { color: var(--cinnabar); }
 }
 a.card { color: inherit; }
 a.card:hover .card__title { color: var(--cinnabar); }
+
+/* 卡片交替底色（列表页） */
+.cards .card:nth-child(odd) { background: var(--paper); }
+.cards .card:nth-child(even) { background: var(--paper-deep); }
 
 /* 文章详情排版 */
 .article { padding-block: clamp(48px, 7vw, 88px); max-width: 760px; margin-inline: auto; }
@@ -953,6 +1103,43 @@ a.card:hover .card__title { color: var(--cinnabar); }
   .contact-full .contact-card + .contact-card { padding-left: 0; }
 }
 
+/* 联系卡片：不同渠道差异化视觉 */
+.contact-card {
+  padding: 2.2rem 1.6rem 2.2rem 0;
+  border-bottom: 1px solid var(--line);
+  transition: background 0.3s var(--ease);
+  position: relative;
+}
+.contact-card:hover { background: var(--paper-deep); }
+.contact-card__label {
+  font-size: 0.74rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--ash);
+  margin-bottom: 0.7rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+}
+.contact-card__label::before {
+  content: "";
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--cinnabar);
+  flex: none;
+}
+.contact-card__value {
+  font-family: var(--serif);
+  font-size: 1.24rem;
+  line-height: 1.5;
+  margin-bottom: 0.6rem;
+  display: block;
+  transition: color 0.25s var(--ease);
+}
+a.contact-card__value:hover { color: var(--cinnabar); }
+.contact-card__note { font-size: 0.87rem; color: var(--ash); }
+
 /* =========================================================
    14. 关于我页（借鉴苏迎式结构：计数区块 + 教育卡片 + 叙事段）
    ========================================================= */
@@ -970,7 +1157,8 @@ a.card:hover .card__title { color: var(--cinnabar); }
   font-size: clamp(1.15rem, 3vw, 1.4rem);
   color: var(--ink);
 }
-.about-role__sep { color: var(--line); }
+.about-role__sep { color: var(--line); transition: color 0.25s var(--ease); }
+.about-role:hover .about-role__sep { color: var(--cinnabar); }
 .about-role__loc {
   font-size: 0.9rem;
   color: var(--ash);
@@ -996,9 +1184,10 @@ a.card:hover .card__title { color: var(--cinnabar); }
   border-radius: 10px;
   padding: 1.7rem 1.6rem;
   background: var(--paper);
-  transition: border-color 0.3s var(--ease);
+  transition: border-color 0.3s var(--ease), box-shadow 0.3s var(--ease), transform 0.3s var(--ease);
+  position: relative;
 }
-.edu-card:hover { border-color: var(--cinnabar); }
+.edu-card:hover { border-color: var(--cinnabar); box-shadow: 0 8px 24px rgba(156, 58, 46, 0.10); transform: translateY(-2px); }
 .edu-card__deg {
   font-family: var(--serif);
   font-size: 1.12rem;
@@ -1009,11 +1198,22 @@ a.card:hover .card__title { color: var(--cinnabar); }
   font-size: 0.95rem;
   color: var(--cinnabar);
   margin-bottom: 0.8rem;
+  font-weight: 500;
 }
 .edu-card__note {
   font-size: 0.9rem;
   color: var(--ash);
   line-height: 1.75;
+}
+.edu-card__badge {
+  display: inline-block;
+  font-size: 0.72rem;
+  letter-spacing: 0.06em;
+  color: var(--cinnabar);
+  background: rgba(156, 58, 46, 0.08);
+  border-radius: 3px;
+  padding: 0.15em 0.6em;
+  margin-top: 0.6rem;
 }
 
 /* 苏迎式编号计数列表（专业身份 / 社会职务） */
@@ -1024,6 +1224,11 @@ a.card:hover .card__title { color: var(--cinnabar); }
   gap: 1.4rem;
   padding: 1.9rem 0;
   border-bottom: 1px solid var(--line);
+  transition: background 0.3s var(--ease), padding-inline 0.3s var(--ease);
+}
+.count-item:hover {
+  background: var(--paper-deep);
+  padding-inline: 0.8rem;
 }
 .count-item__num {
   font-family: var(--serif);
@@ -1032,11 +1237,23 @@ a.card:hover .card__title { color: var(--cinnabar); }
   letter-spacing: 0.1em;
   padding-top: 0.4em;
   white-space: nowrap;
+  position: relative;
+}
+.count-item__num::after {
+  content: "";
+  position: absolute;
+  right: -0.6rem;
+  top: 0.5em;
+  width: 20px;
+  height: 1px;
+  background: var(--cinnabar);
+  opacity: 0.4;
 }
 .count-item__title {
   font-size: 1.12rem;
   line-height: 1.5;
   margin-bottom: 0.5rem;
+  color: var(--ink);
 }
 .count-item__text {
   font-size: 0.94rem;
