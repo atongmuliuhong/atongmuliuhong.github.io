@@ -878,14 +878,17 @@ a.contact-card__value:hover { color: var(--cinnabar); }
   .nav__menu { gap: 0.35rem 1rem; }
 }
 
-/* ---------- 菜单项点击反馈（桌面 + 移动端均生效） ---------- */
-.nav__link:active {
-  background: var(--cinnabar);
+/* ---------- 菜单项悬停反馈（桌面 + 移动端均生效） ---------- */
+.nav__link {
+  transition: color 0.3s var(--ease), background 0.3s var(--ease),
+              transform 0.25s var(--ease), padding 0.3s var(--ease);
+}
+.nav__link:hover {
   color: #fff;
-  transform: scale(1.05);
-  border-radius: 4px;
-  padding: 0.4rem 0.6rem;
-  transition: background 0.15s var(--ease), color 0.15s var(--ease), transform 0.1s var(--ease);
+  background: var(--cinnabar);
+  transform: scale(1.06);
+  border-radius: 5px;
+  padding: 0.45rem 0.7rem;
 }
 
 /* ---------- 汉堡按钮（仅移动端显示） ---------- */
@@ -907,7 +910,14 @@ a.contact-card__value:hover { color: var(--cinnabar); }
   height: 2px;
   background: var(--ink);
   border-radius: 2px;
-  transition: 0.25s var(--ease);
+  transition: 0.3s var(--ease);
+}
+.nav__toggle:hover {
+  background: var(--cinnabar);
+  border-color: var(--cinnabar);
+}
+.nav__toggle:hover span {
+  background: #fff;
 }
 .nav__toggle[aria-expanded="true"] span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
 .nav__toggle[aria-expanded="true"] span:nth-child(2) { opacity: 0; }
@@ -959,15 +969,22 @@ a.contact-card__value:hover { color: var(--cinnabar); }
 @media (min-width: 860px) {
   .hero__inner { grid-template-columns: 1fr auto; gap: 3.4rem; }
 }
+/* ---------- 照片卡纸相框（遮挡黑底硬边，消除锯齿观感） ---------- */
+.photo-mat {
+  display: inline-block;
+  padding: 7px;
+  background: #fff;
+  border-radius: 22px;
+  box-shadow: 0 18px 50px rgba(31, 28, 24, 0.16), 0 2px 8px rgba(0, 0, 0, 0.06);
+  border: 1px solid var(--line);
+}
 .hero__photo {
   width: clamp(160px, 26vw, 240px);
   aspect-ratio: 3 / 4;
-  border-radius: 16px;
+  border-radius: 15px;
   object-fit: cover;
   object-position: center 18%;
-  border: 1px solid var(--line);
-  box-shadow: 0 16px 44px rgba(31, 28, 24, 0.14);
-  margin-inline: auto;
+  display: block;
 }
 
 /* 身份标签（缪奇川式多重身份） */
@@ -1040,17 +1057,20 @@ a.contact-card__value:hover { color: var(--cinnabar); }
   align-items: start;
   margin-bottom: 3.2rem;
 }
+.about-hero .photo-mat {
+  margin-bottom: 1.6rem;
+}
 .about-hero .portrait {
   width: 200px;
   aspect-ratio: 3 / 4;
+  border-radius: 12px;
   object-fit: cover;
-  border-radius: 8px;
-  border: 1px solid var(--line);
-  box-shadow: 0 8px 28px rgba(31, 28, 24, 0.10);
+  object-position: center 18%;
+  display: block;
   transition: box-shadow 0.35s var(--ease), transform 0.35s var(--ease);
 }
 .about-hero .portrait:hover {
-  box-shadow: 0 12px 36px rgba(156, 58, 46, 0.18);
+  box-shadow: 0 14px 40px rgba(156, 58, 46, 0.18);
   transform: scale(1.01);
 }
 .about-hero .about-hero__text { min-width: 0; }
