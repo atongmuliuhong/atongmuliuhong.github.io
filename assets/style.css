@@ -911,6 +911,17 @@ a.contact-card__value:hover { color: var(--cinnabar); }
   background: var(--cinnabar);
   color: #fff;
 }
+
+/* ---------- 导航栏邮箱链接 ---------- */
+.nav__link--email {
+  color: var(--cinnabar);
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}
+.nav__link--email:hover {
+  background: var(--cinnabar);
+  color: #fff;
+}
 .nav__qr {
   position: absolute;
   top: calc(100% + 8px);
@@ -943,7 +954,8 @@ a.contact-card__value:hover { color: var(--cinnabar); }
 }
 @media (max-width: 600px) {
   .nav__link--call,
-  .nav__link--wechat {
+  .nav__link--wechat,
+  .nav__link--email {
     display: none;
   }
 }
