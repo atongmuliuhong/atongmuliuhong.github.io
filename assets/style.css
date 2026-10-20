@@ -891,6 +891,63 @@ a.contact-card__value:hover { color: var(--cinnabar); }
   padding: 0.45rem 0.7rem;
 }
 
+/* ---------- 导航栏电话链接 ---------- */
+.nav__link--call {
+  color: var(--cinnabar);
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}
+.nav__link--call:hover {
+  background: var(--cinnabar);
+  color: #fff;
+}
+
+/* ---------- 导航栏微信二维码弹出 ---------- */
+.nav__link--wechat {
+  color: var(--cinnabar);
+  font-weight: 600;
+}
+.nav__link--wechat:hover {
+  background: var(--cinnabar);
+  color: #fff;
+}
+.nav__qr {
+  position: absolute;
+  top: calc(100% + 8px);
+  right: 0;
+  z-index: 60;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.6rem;
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 1rem 1.2rem;
+  box-shadow: 0 12px 40px rgba(31, 28, 24, 0.18);
+  min-width: 180px;
+}
+.nav__qr img {
+  width: 160px;
+  height: 160px;
+  border-radius: 8px;
+  object-fit: contain;
+}
+.nav__qr span {
+  font-size: 0.78rem;
+  color: var(--ash);
+  letter-spacing: 0.04em;
+}
+.nav__link--wechat:hover .nav__qr {
+  display: flex;
+}
+@media (max-width: 600px) {
+  .nav__link--call,
+  .nav__link--wechat {
+    display: none;
+  }
+}
+
 /* ---------- 汉堡按钮（仅移动端显示） ---------- */
 .nav__toggle {
   display: none;
