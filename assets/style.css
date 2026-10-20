@@ -975,7 +975,6 @@ a.contact-card__value:hover { color: var(--cinnabar); }
   border-radius: 16px;
   object-fit: cover;
   object-position: center 18%;
-  border: 1px solid var(--line);
   box-shadow: 0 16px 44px rgba(31, 28, 24, 0.14);
   margin-inline: auto;
 }
