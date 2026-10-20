@@ -969,22 +969,15 @@ a.contact-card__value:hover { color: var(--cinnabar); }
 @media (min-width: 860px) {
   .hero__inner { grid-template-columns: 1fr auto; gap: 3.4rem; }
 }
-/* ---------- 照片卡纸相框（遮挡黑底硬边，消除锯齿观感） ---------- */
-.photo-mat {
-  display: inline-block;
-  padding: 7px;
-  background: #fff;
-  border-radius: 22px;
-  box-shadow: 0 18px 50px rgba(31, 28, 24, 0.16), 0 2px 8px rgba(0, 0, 0, 0.06);
-  border: 1px solid var(--line);
-}
 .hero__photo {
   width: clamp(160px, 26vw, 240px);
   aspect-ratio: 3 / 4;
-  border-radius: 15px;
+  border-radius: 16px;
   object-fit: cover;
   object-position: center 18%;
-  display: block;
+  border: 1px solid var(--line);
+  box-shadow: 0 16px 44px rgba(31, 28, 24, 0.14);
+  margin-inline: auto;
 }
 
 /* 身份标签（缪奇川式多重身份） */
@@ -1057,20 +1050,17 @@ a.contact-card__value:hover { color: var(--cinnabar); }
   align-items: start;
   margin-bottom: 3.2rem;
 }
-.about-hero .photo-mat {
-  margin-bottom: 1.6rem;
-}
 .about-hero .portrait {
   width: 200px;
   aspect-ratio: 3 / 4;
-  border-radius: 12px;
   object-fit: cover;
-  object-position: center 18%;
-  display: block;
+  border-radius: 8px;
+  border: 1px solid var(--line);
+  box-shadow: 0 8px 28px rgba(31, 28, 24, 0.10);
   transition: box-shadow 0.35s var(--ease), transform 0.35s var(--ease);
 }
 .about-hero .portrait:hover {
-  box-shadow: 0 14px 40px rgba(156, 58, 46, 0.18);
+  box-shadow: 0 12px 36px rgba(156, 58, 46, 0.18);
   transform: scale(1.01);
 }
 .about-hero .about-hero__text { min-width: 0; }
