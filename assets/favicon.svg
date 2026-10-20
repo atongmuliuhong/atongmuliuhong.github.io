@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <rect x="2" y="2" width="60" height="60" rx="12" fill="#FBF8F2" stroke="#E8E2D6"/>
+  <!-- 摊开的法典书页 -->
+  <path d="M32 20c-4-3.6-9.6-5-16-4.4v25.2C22.4 40.4 27.6 41.8 32 45c4.4-3.2 9.6-4.6 16-4.2V15.6c-6.4-.6-12 .8-16 4.4z" fill="#9C3A2E"/>
+  <path d="M32 20v25" stroke="#FBF8F2" stroke-width="2.4"/>
+  <path d="M21 24h6M21 29h6M21 34h6M37 24h6M37 29h6M37 34h6" stroke="#FBF8F2" stroke-width="2" stroke-linecap="round" opacity=".85"/>
+</svg>
