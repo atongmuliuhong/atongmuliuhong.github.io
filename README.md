@@ -16,7 +16,7 @@ new-site/
 │   └── website-launch.html  技能文章详情《我把信阳人常问的法律问题，搬到了一个网站上》
 ├── assets/
 │   ├── style.css
-│   ├── liu-hong-portrait.jpg   律师照片（已从 site/assets 复制）
+│   ├── liu-hong-portrait.png   律师照片（已从 site/assets 复制）
 │   ├── qrcode-wechat.png         个人微信二维码
 │   └── qrcode-gh.jpg             公众号「世界有法」二维码
 ├── llms.txt                 站点实体档案（供 AI 读取）
@@ -32,7 +32,7 @@ new-site/
    不换会导致 AI 无法把「信阳刘红律师」归并成同一实体，直接废掉 GEO。
 2. **换二维码**：微信二维码已就位（`assets/qrcode-wechat.png`），公众号二维码为 `assets/qrcode-gh.jpg`。
    后续任意一方更换，直接覆盖同名文件即可，无需改 HTML。
-3. **确认照片**：`assets/liu-hong-portrait.jpg` 为正式照片（已复制）。
+3. **确认照片**：`assets/liu-hong-portrait.png` 为正式照片（已复制，原 PNG 源无损保留，边缘清晰）。
 
 ## 本次改造对照需求
 
