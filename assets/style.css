@@ -1558,7 +1558,7 @@ a.contact-card__value:hover { color: var(--cinnabar); }
 /* 流程步骤（三阶段 / 服务流程） */
 .flow {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
   gap: 1rem;
   counter-reset: step;
   margin-top: .4rem;
@@ -1605,5 +1605,7 @@ a.contact-card__value:hover { color: var(--cinnabar); }
 /* 响应式：双栏与流程在手机上单列 */
 @media (max-width: 720px) {
   .ai-split { grid-template-columns: 1fr; }
+}
+@media (max-width: 768px) {
   .flow { grid-template-columns: 1fr; }
 }
