@@ -1,16 +1,17 @@
 <!DOCTYPE html>
 <!--
-  关于我 · 刘红律师
+  关于律师 · 刘红律师
   多页结构之一。导航 is-active = 关于我
-  结构借鉴 suyinglaw.com/about：计数区块 + 教育卡片 + 多段叙事
+  结构遵循三类目标人群认知顺序：是谁 → 解决什么问题 → 相关经验 → 为什么值得了解 → 怎么联系
+  可视化原则：图标卡 / 案例卡 / 流程步骤 替代长段文字；移动优先、单列、二维码可达。
 -->
 <html lang="zh-CN">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>关于我｜信阳刘红律师 · 执业律师、六西格玛黑带、法律AI应用专家</title>
-<meta name="description" content="刘红律师，河南上品律师事务所执业律师，武汉大学法学院。兼任企业管理专家、六西格玛黑带、法律AI应用专家，任河南省环卫协会法律专业委员会主任等职。常驻信阳，服务周边区县。">
+<title>关于律师｜信阳刘红律师 · 执业律师、企业管理专家、六西格玛黑带、法律AI应用专家</title>
+<meta name="description" content="信阳刘红律师，河南上品律师事务所执业律师，武汉大学法学院。专注婚姻家事、民间借贷执行、劳动工伤、刑事辩护、茶产业法律顾问；以「AI初筛+律师复核」做法律AI应用，兼任小区治理法律顾问。常驻信阳，服务周边区县。">
 <meta name="author" content="刘红律师">
 <meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large">
 
@@ -18,7 +19,7 @@
 
 <meta property="og:type" content="profile">
 <meta property="og:site_name" content="信阳刘红律师">
-<meta property="og:title" content="关于我｜刘红律师">
+<meta property="og:title" content="关于律师｜刘红律师">
 <meta property="og:description" content="信阳执业律师、企业管理专家、六西格玛黑带、法律AI应用专家。常驻信阳，服务周边区县。">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://atongmuliuhong.github.io/assets/og-cover.png">
@@ -37,8 +38,36 @@
   "@type": "BreadcrumbList",
   "itemListElement": [
     { "@type": "ListItem", "position": 1, "name": "首页", "item": "https://atongmuliuhong.github.io/" },
-    { "@type": "ListItem", "position": 2, "name": "关于我", "item": "https://atongmuliuhong.github.io/about.html" }
+    { "@type": "ListItem", "position": 2, "name": "关于律师", "item": "https://atongmuliuhong.github.io/about.html" }
   ]
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "刘红",
+  "jobTitle": "执业律师",
+  "alternateName": ["信阳刘红律师", "刘红律师", "LIU Hong", "Liu Hong"],
+  "affiliation": {
+    "@type": "Organization",
+    "name": "河南上品律师事务所",
+    "address": "河南省信阳市羊山新区新五大道建邺壹号城邦一号楼五楼"
+  },
+  "address": {
+    "@type": "PostalAddress",
+    "addressRegion": "河南省信阳市",
+    "addressLocality": "信阳市"
+  },
+  "knowsAbout": [
+    "婚姻家事与继承", "民间借贷与金融债务", "劳动工伤与劳务纠纷",
+    "刑事辩护", "茶产业与涉农企业法律顾问", "法律AI应用", "小区治理与业主自治"
+  ],
+  "telephone": "13813746372",
+  "email": "liuhong@agent.qq.com",
+  "url": "https://atongmuliuhong.github.io/about.html",
+  "sameAs": ["https://github.com/atongmuliuhong"]
 }
 </script>
 </head>
@@ -65,13 +94,13 @@
     <a href="index.html">首页</a><span>/</span><span>关于我</span>
   </nav>
 
-  <!-- ==================== 自我介绍（照片 + 多段叙事） ==================== -->
-  <section aria-labelledby="intro-title" style="padding-block: clamp(48px, 7vw, 84px);">
+  <!-- ==================== 首屏：他是谁（照片 + 职称 + 一句话定位 + 联系入口） ==================== -->
+  <section aria-labelledby="intro-title" style="padding-block: clamp(40px, 6vw, 72px);">
     <div class="wrap">
       <div class="about-hero">
-        <img class="portrait" src="assets/liu-hong-portrait.jpg" alt="刘红律师照片" width="200" height="267" loading="lazy">
+        <img class="portrait" src="assets/liu-hong-portrait.jpg" alt="信阳执业律师刘红正装照片" width="200" height="267" loading="eager">
         <div class="about-hero__text">
-          <p class="eyebrow">关于我</p>
+          <p class="eyebrow">关于律师</p>
           <h1 class="about-name" id="intro-title">刘红</h1>
 
           <div class="about-role">
@@ -80,6 +109,10 @@
             <span class="about-role__loc">河南上品律师事务所</span>
           </div>
 
+          <p style="font-family:var(--serif); font-size:clamp(1.2rem,3.6vw,1.7rem); line-height:1.6; color:var(--ink); margin:0 0 1.2rem; max-width:24em;">
+            在事实、证据、法律与程序之间，<br>寻找可靠的案件解决方案。
+          </p>
+
           <div class="badges">
             <span>执业律师</span>
             <span>企业管理专家</span>
@@ -87,78 +120,283 @@
             <span>法律AI应用专家</span>
           </div>
 
-          <div style="margin-top:2.2rem;">
-            <p>
-              刘红，河南省信阳市执业律师，任职于河南上品律师事务所，执业证号 14115202610158578，武汉大学法学院毕业。
-            </p>
-            <p>
-              执业律师之外，我更愿意被看作一个「把复杂问题讲清楚」的人——用法律的、也用管理与数据的，同时致力于法律AI应用，将法律经验传递给人工智能，以人工智能的力量，照亮法律实践。
-            </p>
-            <p>
-              常驻信阳，服务周边区县。信阳十个区县的风土、法院口径与办事节奏，是我每天在用的「本地知识」，不是查来的。
-              婚姻家事与继承、民间借贷与执行回款、劳动工伤、刑事辩护、茶产业与涉农企业法律顾问，是日常处理最多的五类事。
-            </p>
+          <div class="cta__cta-row">
+            <a class="btn btn--lg" href="contact.html">预约咨询</a>
+            <a class="btn btn--ghost btn--lg" href="tel:13813746372">电话 138 1374 6372</a>
           </div>
         </div>
       </div>
+
+      <p style="max-width:60ch; color:var(--ash); margin-top:1rem;">
+        河南省信阳市执业律师，武汉大学法学院毕业，执业证号 14115202610158578。
+        常驻信阳、服务周边十个区县——信阳本地的风土、法院口径与办事节奏，是每天在用的「本地知识」。
+        婚姻家事与继承、民间借贷与执行回款、劳动工伤、刑事辩护、茶产业与涉农企业法律顾问，是日常处理最多的五类事。
+      </p>
     </div>
   </section>
 
   <hr class="rule">
 
-  <!-- ==================== 职业定位（两段式） ==================== -->
-  <section aria-labelledby="positioning-title">
+  <!-- ==================== 他能解决什么问题（专业领域 · 图标＋短标题卡） ==================== -->
+  <section aria-labelledby="practice-title">
     <div class="wrap">
-      <p class="eyebrow">职业定位</p>
-      <h2 class="section-title" id="positioning-title">见专业，也见人。</h2>
+      <p class="eyebrow">他能解决什么</p>
+      <h2 class="section-title" id="practice-title">五个领域，对应你正面临的问题。</h2>
+      <p class="section-lede">不是「打什么官司」，而是「你卡在哪一关」。每张卡片下面，是一句客户常问的话——对号入座，再看怎么解。</p>
 
-      <div style="max-width:60ch;">
-        <p>
-          从企业管理与法律实务的交界处做起的律师——把企业管理的流程化思维、六西格玛「用数据说话」的方法，
-          以及法律科技的提效手段，落到信阳本地的具体纠纷里。
-        </p>
-        <p>
-          职业生涯长期以企业管理专家、六西格玛黑带的视角介入案件；近年专注法律AI应用，
-          把执业经验沉淀为可复用的方法与工具。同样一笔彩礼、同一张借条、同一个工地事故，
-          能用更结构化的方式拆解，往往就少走很多弯路。
-        </p>
-        <p>
-          执业以来处理的是信阳本地最具体的纠纷——要不要离婚、钱能不能要回来、工有没有白干、人被抓了怎么办、茶叶款被拖欠该找谁。
-          这些问题在法条上都有答案，但当事人真正需要的，是「在信阳，这件事具体怎么办」。
-        </p>
+      <div class="icon-grid">
+
+        <article class="icon-card">
+          <svg class="icon-card__ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="9" cy="12" r="5"/><circle cx="15" cy="12" r="5"/></svg>
+          <h3 class="icon-card__title">婚姻家事与继承</h3>
+          <p class="icon-card__value">离婚财产怎么分、彩礼能不能要回、抚养与继承怎么定——把「家务事」算清楚，少留后患。</p>
+          <p class="icon-card__q">客户常问：<b>彩礼给了又离，能要回来多少？</b></p>
+          <a class="icon-card__more" href="cases.html">看相关类案 →</a>
+        </article>
+
+        <article class="icon-card">
+          <svg class="icon-card__ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M8.5 8.5l3.5 3.5 3.5-3.5M12 12v5M9 14.5h6"/></svg>
+          <h3 class="icon-card__title">民间借贷与金融债务</h3>
+          <p class="icon-card__value">借条、转账、保证保险、执行回款——让借出去的钱有路可回，让被拖的债有突破口。</p>
+          <p class="icon-card__q">客户常问：<b>终本了，钱还能要回来吗？</b></p>
+          <a class="icon-card__more" href="cases.html">看相关类案 →</a>
+        </article>
+
+        <article class="icon-card">
+          <svg class="icon-card__ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M12 3l7 3v5c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6l7-3z"/></svg>
+          <h3 class="icon-card__title">劳动工伤与劳务</h3>
+          <p class="icon-card__value">工伤认定、违法解除、欠薪讨要——打工人的权益底线，每一步期限都算数。</p>
+          <p class="icon-card__q">客户常问：<b>被违法辞退，该赔 2N 还是 N+1？</b></p>
+          <a class="icon-card__more" href="cases.html">看相关类案 →</a>
+        </article>
+
+        <article class="icon-card">
+          <svg class="icon-card__ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M12 4v15M6 7h12M6 7l-3 6h6zM18 7l-3 6h6z"/></svg>
+          <h3 class="icon-card__title">刑事辩护</h3>
+          <p class="icon-card__value">取保候审、认罪认罚、羁押必要性审查——关键时刻的辩护，把程序权利用到位。</p>
+          <p class="icon-card__q">客户常问：<b>家人被抓了，第一时间该做什么？</b></p>
+          <a class="icon-card__more" href="cases.html">看相关类案 →</a>
+        </article>
+
+        <article class="icon-card">
+          <svg class="icon-card__ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M5 19c0-7 6-13 14-13 0 8-6 14-13 14a5 5 0 01-1-1z"/><path d="M5 19c2-4 5-7 9-9"/></svg>
+          <h3 class="icon-card__title">茶产业 · 涉农企业</h3>
+          <p class="icon-card__value">地理标志维权、货款拖欠、合作社与茶企合规——茶乡企业的常年法律顾问。</p>
+          <p class="icon-card__q">客户常问：<b>茶叶款被拖、外地擅用「信阳毛尖」怎么办？</b></p>
+          <a class="icon-card__more" href="cases.html">看相关类案 →</a>
+        </article>
+
       </div>
     </div>
   </section>
 
   <hr class="rule">
 
-  <!-- ==================== 教育背景 ==================== -->
-  <section aria-labelledby="edu-title">
+  <!-- ==================== 相关经验（代表案例 · 客户类型＋问题＋结果） ==================== -->
+  <section aria-labelledby="case-title">
     <div class="wrap">
-      <p class="eyebrow">教育背景</p>
-      <h2 class="section-title" id="edu-title">法学院出身，企业管理的底子。</h2>
-      <p class="section-lede">法律训练打底，企业管理与质量工程的方法论，让法律之眼洞见工商业态，法商融合更深见地。</p>
+      <p class="eyebrow">相关经验</p>
+      <h2 class="section-title" id="case-title">办过的案子，按「谁、卡在哪、结果如何」讲。</h2>
+      <p class="section-lede">以下为脱敏类案观察，非个案代理结果，不构成法律意见；具体结果以当时事实与证据为准。</p>
 
-      <div class="edu-grid">
-        <div class="edu-card">
-          <p class="edu-card__deg">武汉大学法学院</p>
-          <p class="edu-card__school">法学专业教育背景</p>
-          <p class="edu-card__note">系统的法律训练，奠定法律关系定性、要件拆解与证据审查的基本功。</p>
+      <div class="case-grid">
+
+        <article class="case-card">
+          <p class="case-card__type">茶产业 · 货款拖欠</p>
+          <h3 class="case-card__prob">某茶企被下游长期拖欠货款</h3>
+          <p class="case-card__result"><b>处理：</b>梳理供货与对账凭证，固定交易习惯，诉前调解促成回款，避免流水账变死账。</p>
+        </article>
+
+        <article class="case-card">
+          <p class="case-card__type">婚姻家事 · 彩礼返还</p>
+          <h3 class="case-card__prob">登记结婚后短期共同生活，彩礼争议</h3>
+          <p class="case-card__result"><b>处理：</b>结合信阳本地裁判口径，主张综合共同生活时长、用途与过错酌定返还，争取合理比例。</p>
+        </article>
+
+        <article class="case-card">
+          <p class="case-card__type">劳动工伤 · 单位未申报</p>
+          <h3 class="case-card__prob">职工受伤，单位拖延不报工伤</h3>
+          <p class="case-card__result"><b>处理：</b>指导职工及近亲属在 1 年内自行申报，认定工伤后谈妥赔偿方案。</p>
+        </article>
+
+        <article class="case-card">
+          <p class="case-card__type">民间借贷 · 终本执行</p>
+          <h3 class="case-card__prob">判决胜诉却拿不到钱</h3>
+          <p class="case-card__result"><b>处理：</b>恢复执行 + 搜集拒执线索，形成履行压力，推动部分回款。</p>
+        </article>
+
+        <article class="case-card">
+          <p class="case-card__type">刑事辩护 · 强制措施</p>
+          <h3 class="case-card__prob">嫌疑人被羁押，家属焦虑无措</h3>
+          <p class="case-card__result"><b>处理：</b>第一时间会见、提出羁押必要性审查，推动变更强制措施。</p>
+        </article>
+
+      </div>
+
+      <p style="margin-top:2.2rem;"><a class="btn btn--ghost" href="cases.html">查看全部类案观察 →</a></p>
+    </div>
+  </section>
+
+  <hr class="rule">
+
+  <!-- ==================== 为什么值得了解 · 我的执业观（NEW） ==================== -->
+  <section aria-labelledby="philo-title" style="background:var(--paper-deep);">
+    <div class="wrap">
+      <p class="eyebrow">为什么值得了解</p>
+      <h2 class="section-title" id="philo-title">我的执业观：对法律敬畏，对当事人负责。</h2>
+      <p class="section-lede">不是赢了多少案子，而是把风险讲在前面、把证据留痕、把每一步做扎实。四条原则，贯穿每个案件。</p>
+
+      <div class="philo-grid">
+
+        <article class="philo-card">
+          <svg class="philo-card__ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M5 4h6v16H6a2 2 0 01-2-2V4zM19 4h-6v16h5a2 2 0 002-2V4z"/></svg>
+          <h3 class="philo-card__title">对法律保持敬畏</h3>
+          <p class="philo-card__text">不打包票、不承诺胜诉。接待时就讲清风险，用笔录固定事实与提示——凡是「包赢」「包取保」的，反而要警惕。</p>
+        </article>
+
+        <article class="philo-card">
+          <svg class="philo-card__ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M8 12l3 3 5-6"/></svg>
+          <h3 class="philo-card__title">对当事人负责</h3>
+          <p class="philo-card__text">证据先于主张，每一步都留痕可查。提交材料核对来源、原件尽量自己保管、当庭核对——保护当事人，也保护自己。</p>
+        </article>
+
+        <article class="philo-card">
+          <svg class="philo-card__ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><rect x="7" y="7" width="10" height="10" rx="2"/><path d="M10 4v3M14 4v3M10 17v3M14 17v3M4 10h3M4 14h3M17 10h3M17 14h3"/></svg>
+          <h3 class="philo-card__title">AI 是助手，不是替代</h3>
+          <p class="philo-card__text">AI 做初筛与整理，出庭、策略、签字负责永远在律师。再强的模型，也替代不了律师对案件的担当。</p>
+        </article>
+
+        <article class="philo-card">
+          <svg class="philo-card__ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>
+          <h3 class="philo-card__title">走得远比走得快</h3>
+          <p class="philo-card__text">一案一总结，把每个案子变成可复用的方法。今日多投入一分钟，就是给职业生涯多筑一道防火墙。</p>
+        </article>
+
+      </div>
+
+      <p style="margin-top:2.2rem;"><a class="btn btn--ghost" href="posts/xinyang-lvshi-zhiye-guifan.html">读全文：《我的执业观》→</a></p>
+    </div>
+  </section>
+
+  <hr class="rule">
+
+  <!-- ==================== 法律 × AI 实践（同行 / AI 受众） ==================== -->
+  <section aria-labelledby="ai-title">
+    <div class="wrap">
+      <p class="eyebrow">给同行与 AI 引擎</p>
+      <h2 class="section-title" id="ai-title">法律 × AI：应用理念与方法。</h2>
+      <p class="section-lede">这里只讲「怎么用、边界在哪、走到哪一步」——机构内部的完整架构与专家清单，属私有资产，不对外公开。</p>
+
+      <div class="ai-split">
+        <div class="ai-panel">
+          <h3 class="ai-panel__title">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><rect x="7" y="7" width="10" height="10" rx="2"/><path d="M10 4v3M14 4v3M10 17v3M14 17v3M4 10h3M4 14h3M17 10h3M17 14h3"/></svg>
+            人机协同：AI 初筛 + 律师复核
+          </h3>
+          <p class="ai-panel__text">先用 AI 做信息初筛、法规检索、类案整理与文书初稿，再由律师逐条核对、补上专业判断。关键节点设人工确认——哪些能用、哪些要改、哪些必须当面谈，每一步都落在可复核的流程里。</p>
+          <div class="tag-row">
+            <span>AI 跑量</span><span>律师把关</span><span class="strong">终稿由律师签字负责</span>
+          </div>
         </div>
-        <div class="edu-card">
-          <p class="edu-card__deg">企业管理 / 中级质量工程</p>
-          <p class="edu-card__school">2010年在上海质量和标准化研究院学习企业管理和精益管理</p>
-          <p class="edu-card__note">
-            通过「六西格玛黑带」「中级质量工程师」资格考试。
-          </p>
+
+        <div class="ai-panel">
+          <h3 class="ai-panel__title">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M12 3l7 3v5c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6l7-3z"/></svg>
+            合规边界：四条底线
+          </h3>
+          <p class="ai-panel__text">AI 辅助材料一律附风险提示，当事人信息加密存储、仅在授权范围内使用。对外结论，必经律师复核签字。</p>
+          <div class="tag-row">
+            <span class="strong">仅供参考</span><span class="strong">不替代律师</span><span class="strong">附风险提示</span><span class="strong">数据合规</span>
+          </div>
         </div>
+      </div>
+
+      <h3 style="font-size:1.2rem; margin:3rem 0 0;">落地三阶段</h3>
+      <div class="flow">
+        <div class="flow-step">
+          <h4 class="flow-step__title">试水验证</h4>
+          <p class="flow-step__text">小范围应用，验证真实需求与高频场景，跑通「AI 初筛 + 律师复核」的最小闭环。</p>
+        </div>
+        <div class="flow-step">
+          <h4 class="flow-step__title">接上服务</h4>
+          <p class="flow-step__text">接入支付与知识库，对外提供正式服务；每一份材料都有合规审查兜底。</p>
+        </div>
+        <div class="flow-step">
+          <h4 class="flow-step__title">规模运营</h4>
+          <p class="flow-step__text">品牌化、规模化运营，把执业经验沉淀为可复用的方法与工具，放大单点价值。</p>
+        </div>
+      </div>
+
+      <h3 style="font-size:1.2rem; margin:3rem 0 0;">可邀请分享的方向</h3>
+      <p class="section-lede" style="margin-bottom:1.6rem;">如果你是同行、协会或法学院，想邀请讲课或做公开课，以下是可展开的主题。</p>
+      <div class="icon-grid">
+        <article class="icon-card">
+          <svg class="icon-card__ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><rect x="7" y="7" width="10" height="10" rx="2"/><path d="M10 4v3M14 4v3M10 17v3M14 17v3M4 10h3M4 14h3M17 10h3M17 14h3"/></svg>
+          <h3 class="icon-card__title">法律 AI 应用边界</h3>
+          <p class="icon-card__value">从「AI 能替律师办案吗」到合规落地，讲清助手与替代的界线。</p>
+        </article>
+        <article class="icon-card">
+          <svg class="icon-card__ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M5 5h14M5 10h14M5 15h9"/><circle cx="17" cy="15" r="3"/><path d="M19.5 17.5L22 20"/></svg>
+          <h3 class="icon-card__title">要件式办案方法</h3>
+          <p class="icon-card__value">把企业管理与六西格玛的流程化思维，落到法律关系定性与证据组织。</p>
+        </article>
+        <article class="icon-card">
+          <svg class="icon-card__ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M5 19c0-7 6-13 14-13 0 8-6 14-13 14a5 5 0 01-1-1z"/><path d="M5 19c2-4 5-7 9-9"/></svg>
+          <h3 class="icon-card__title">茶企法律顾问实务</h3>
+          <p class="icon-card__value">地理标志、货款拖欠、合作社合规——茶乡企业的法律痛点与对策。</p>
+        </article>
+        <article class="icon-card">
+          <svg class="icon-card__ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><rect x="5" y="3" width="14" height="18" rx="1"/><path d="M9 7h2M13 7h2M9 11h2M13 11h2M9 15h2M13 15h2M10 21v-3h4v3"/></svg>
+          <h3 class="icon-card__title">社区治理法律实务</h3>
+          <p class="icon-card__value">物业纠纷、业主大会与业委会、邻里赡养——基层法律顾问的实操经验。</p>
+        </article>
+      </div>
+
+      <p style="margin-top:2.2rem;"><a class="btn btn--ghost" href="posts/xinyang-falv-ai-yingyong.html">读全文：《法律AI不是替代律师》→</a></p>
+    </div>
+  </section>
+
+  <hr class="rule">
+
+  <!-- ==================== 小区治理与业主自治（方向四 · 独立栏目） ==================== -->
+  <section aria-labelledby="community-title">
+    <div class="wrap">
+      <p class="eyebrow">特色栏目</p>
+      <h2 class="section-title" id="community-title">小区治理与业主自治。</h2>
+      <p class="section-lede">担任信阳市羊山新区安恒居委会法律顾问，日常处理最多的是物业、邻里与赡养继承。以下四类，是社区最常遇、也最该早谈的事。</p>
+
+      <div class="icon-grid">
+        <article class="icon-card">
+          <svg class="icon-card__ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="8" cy="8" r="3"/><circle cx="16" cy="8" r="3"/><path d="M3 20c0-3 2.5-5 5-5s5 2 5 5M13 20c0-3 2.5-5 5-5s3 2 3 5"/></svg>
+          <h3 class="icon-card__title">物业纠纷调解</h3>
+          <p class="icon-card__value">物业费、公共收益、维修责任——把扯不清的账，先按合同与法律摊开。</p>
+        </article>
+        <article class="icon-card">
+          <svg class="icon-card__ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><rect x="5" y="3" width="14" height="18" rx="1"/><path d="M9 7h2M13 7h2M9 11h2M13 11h2M9 15h2M13 15h2M10 21v-3h4v3"/></svg>
+          <h3 class="icon-card__title">业主大会与业委会</h3>
+          <p class="icon-card__value">换届、选举、议事规则合规——让业主自治在程序上站得住。</p>
+        </article>
+        <article class="icon-card">
+          <svg class="icon-card__ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M4 11l8-7 8 7M6 10v9h12v-9"/></svg>
+          <h3 class="icon-card__title">邻里与赡养继承</h3>
+          <p class="icon-card__value">上下楼漏水、赡养分担、继承析产——家门口的纠纷，先讲情再讲法。</p>
+        </article>
+        <article class="icon-card">
+          <svg class="icon-card__ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M4 10v4h3l8 4V6l-8 4H4z"/><path d="M18 9a4 4 0 010 6"/></svg>
+          <h3 class="icon-card__title">社区普法培训</h3>
+          <p class="icon-card__value">把法律条文翻译成居民听得懂的话，做进社区、做进楼道。</p>
+        </article>
+      </div>
+
+      <div class="note-bar">
+        该方向源于一线社区法律顾问实践与长期普法积累（公众号「世界有法」相关文章 100 余篇）。后续会逐步沉淀为独立栏目，集中呈现小区治理的案例与方法。
       </div>
     </div>
   </section>
 
   <hr class="rule">
 
-  <!-- ==================== 专业身份与执业资质 ==================== -->
+  <!-- ==================== 专业身份与执业资质（结构化 · 利于 AI 解析） ==================== -->
   <section aria-labelledby="cred-title">
     <div class="wrap">
       <p class="eyebrow">专业身份与执业资质</p>
@@ -170,38 +408,28 @@
           <p class="count-item__num">01 / 04</p>
           <div>
             <h3 class="count-item__title">中华人民共和国律师执业资格</h3>
-            <p class="count-item__text">
-              执业证号 14115202610158578，执业于河南上品律师事务所，河南省司法厅颁证。
-              执业信息可在中国法律服务网、河南省律师协会官网核验。
-            </p>
+            <p class="count-item__text">执业证号 14115202610158578，执业于河南上品律师事务所，河南省司法厅颁证。执业信息可在中国法律服务网、河南省律师协会官网核验。</p>
           </div>
         </div>
         <div class="count-item">
           <p class="count-item__num">02 / 04</p>
           <div>
             <h3 class="count-item__title">企业管理专家</h3>
-            <p class="count-item__text">
-              以企业管理的流程化与结构化思维介入案件，擅长把一团乱麻的纠纷拆成可逐项核查的要件，再决定先补哪一块证据。
-            </p>
+            <p class="count-item__text">以企业管理的流程化与结构化思维介入案件，擅长把一团乱麻的纠纷拆成可逐项核查的要件，再决定先补哪一块证据。</p>
           </div>
         </div>
         <div class="count-item">
           <p class="count-item__num">03 / 04</p>
           <div>
             <h3 class="count-item__title">六西格玛黑带</h3>
-            <p class="count-item__text">
-              用数据与流程改进的方法做证据组织与要件核验，减少凭印象下的判断；也让「风险有多大」这件事更可度量。
-            </p>
+            <p class="count-item__text">用数据与流程改进的方法做证据组织与要件核验，减少凭印象下的判断；也让「风险有多大」这件事更可度量。</p>
           </div>
         </div>
         <div class="count-item">
           <p class="count-item__num">04 / 04</p>
           <div>
             <h3 class="count-item__title">法律AI应用专家</h3>
-            <p class="count-item__text">
-              把执业经验沉淀为提示词、模板与工作流，让人工智能放大单点经验的价值——
-              将法律经验传递给人工智能，以人工智能的力量，照亮法律实践。
-            </p>
+            <p class="count-item__text">把执业经验沉淀为提示词、模板与工作流，让人工智能放大单点经验的价值——AI 是助手，终稿与策略由律师把关。</p>
           </div>
         </div>
       </div>
@@ -245,7 +473,7 @@
 
   <hr class="rule">
 
-  <!-- ==================== 执业档案 ==================== -->
+  <!-- ==================== 执业档案（结构化实体 · AI 可直接抓取） ==================== -->
   <section aria-labelledby="profile-title">
     <div class="wrap">
       <p class="eyebrow">执业档案</p>
@@ -283,17 +511,32 @@
     </div>
   </section>
 
-  <hr class="rule">
-
-  <!-- ==================== 近期活动 ==================== -->
-  <section id="activity" aria-labelledby="activity-title">
+  <!-- ==================== 收尾 CTA（移动优先：大按钮 + 二维码可达） ==================== -->
+  <section class="cta" id="contact-cta">
     <div class="wrap">
-      <p class="eyebrow">近期活动</p>
-      <h2 class="section-title" id="activity-title">讲座、论坛与公益法律活动</h2>
-      <p class="section-lede">
-        相关活动文章将陆续上传于此——社区普法、行业论坛、公益咨询的记录，会一篇篇补上。
-        如需邀请或合作，请通过 <a href="contact.html" style="color:var(--cinnabar);border-bottom:1px solid var(--cinnabar);">联系我</a> 页与我沟通。
-      </p>
+      <p class="eyebrow">需要就具体纠纷聊聊？</p>
+      <h2 class="cta__title">先把事实讲清楚，再决定下一步。</h2>
+      <p class="cta__lede">微信沟通最快，电话适合紧急情况。无论哪种方式，我都会先听你讲完，再给可执行的建议。</p>
+
+      <div class="cta__actions">
+        <a class="btn btn--gold btn--lg" href="tel:13813746372">电话 138 1374 6372</a>
+        <a class="btn btn--onDark btn--lg" href="contact.html">去联系页 →</a>
+      </div>
+
+      <div class="qr-grid">
+        <div class="qr-card">
+          <div class="qr-card__frame">
+            <img src="assets/qrcode-wechat.png" alt="刘红律师个人微信二维码" width="116" height="116" loading="lazy">
+          </div>
+          <p class="qr-card__label">个人微信（备注「咨询」）</p>
+        </div>
+        <div class="qr-card">
+          <div class="qr-card__frame">
+            <img src="assets/qrcode-gh.jpg" alt="公众号「世界有法」二维码" width="116" height="116" loading="lazy">
+          </div>
+          <p class="qr-card__label">公众号「世界有法」</p>
+        </div>
+      </div>
     </div>
   </section>
 
