@@ -1122,6 +1122,12 @@ a.card:hover .card__title { color: var(--cinnabar); }
   font-size: 0.86rem;
   color: var(--ash);
 }
+.article__sources {
+  margin-top: 2.2rem;
+  font-size: 0.8rem;
+  line-height: 1.9;
+  color: var(--ash);
+}
 
 /* 首页社交账号（参考缪奇川式「联系与关注」） */
 .social-row {

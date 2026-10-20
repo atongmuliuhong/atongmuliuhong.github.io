@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://liuhonglawyer.cn/sitemap.xml
+Sitemap: https://atongmuliuhong.github.io/sitemap.xml
