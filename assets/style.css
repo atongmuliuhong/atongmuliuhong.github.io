@@ -1364,6 +1364,7 @@ a.card:hover .card__title { color: var(--cinnabar); }
   gap: 0;
   border-top: 1px solid var(--line);
   margin-bottom: 3rem;
+  align-items: start;
 }
 .contact-full .contact-card + .contact-card { padding-left: 1.6rem; }
 @media (max-width: 700px) {
@@ -1376,6 +1377,9 @@ a.card:hover .card__title { color: var(--cinnabar); }
   border-bottom: 1px solid var(--line);
   transition: background 0.3s var(--ease);
   position: relative;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
 }
 .contact-card:hover { background: var(--paper-deep); }
 .contact-card__label {
@@ -1406,6 +1410,20 @@ a.card:hover .card__title { color: var(--cinnabar); }
 }
 a.contact-card__value:hover { color: var(--cinnabar); }
 .contact-card__note { font-size: 0.87rem; color: var(--ash); }
+
+/* 二维码卡片：内容居中对齐 */
+.contact-card--qr {
+  align-items: center;
+  text-align: center;
+  padding: 2.2rem 1.6rem;
+}
+.contact-card--qr .contact-card__label {
+  justify-content: center;
+}
+.contact-card--qr .contact-card__note {
+  text-align: center;
+  margin-top: 0.6rem;
+}
 
 /* =========================================================
    14. 关于我页（借鉴苏迎式结构：计数区块 + 教育卡片 + 叙事段）
