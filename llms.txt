@@ -45,6 +45,7 @@
 - 小区治理 /community.html ：物业纠纷调解、业主大会与业委会、邻里与赡养继承、社区普法培训——基层社区治理法律实务
 - 专业洞见 /insights.html ：专业文章与方法（含《婚后买的房，首付是爸妈出的，离婚怎么分？》《我把信阳人常问的法律问题，搬到了一个网站上》）
 - 联系我 /contact.html ：电话 / 微信 / 邮箱 / 地址 / 公众号 / 网址 + 咨询表单
+- 文章详情 /posts/prison-law-family-visits.html ：新《监狱法》11月1日施行：家属什么时候能见人？能视频会见吗？
 - 文章详情 /posts/renfang-chewei-shouyi-wuxi.html ：高院一锤定音：无锡业主苦战7年，196万人防车位收益终归全体业主
 - 文章详情 /posts/dixia-cheku-quanshu-weiquan.html ：小区地下车库权属现状与业主维权策略
 - 文章详情 /posts/wuye-hetong-wei-zhaobiao-wuxiao.html ：高院判例：未经招标入驻，前期物业合同竟无效，业主一分钱不用交
