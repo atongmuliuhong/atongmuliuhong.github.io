@@ -1,7 +1,30 @@
-# 信阳刘红律师 · 官网（new-site）
+# 信阳刘红律师 · 官网
 
-多页结构个人站：首页 / 关于我 / 经典案例 / 专业洞见 / 联系我。
+多页结构个人站：首页 / 关于我 / 经典案例 / 专业洞见 / 小区治理 / 联系我。
 主题：宣纸朱砂（主）＋ 近黑鎏金（联系区收尾）；结构取缪奇川式极简骨架，气口取朱满成式文学短句。
+
+## 🌐 线上地址（2026.10.21 起）
+
+| 项目 | 值 |
+|---|---|
+| **正式域名（主推）** | **https://liuhonglawyer.cn** |
+| 备用地址 | https://www.liuhonglawyer.cn |
+| Cloudflare 原生地址 | https://liuhonglawyer.pages.dev |
+| 历史过渡站（仍可访问） | https://atongmuliuhong.github.io/ |
+| 托管方式 | Cloudflare Pages（全球 CDN + 自动 HTTPS） |
+| 源目录 | `D:\phpstudy_pro\WWW\liuhong_lawyer`（本目录为其工作区源码） |
+
+**部署命令**（改完本目录内容后执行）：
+
+```bash
+cd C:/Users/86138/.workbuddy/binaries/node/workspace
+export CLOUDFLARE_API_TOKEN="<cfut_ 开头的 Pages Token>"
+export CLOUDFLARE_ACCOUNT_ID="06d32f145e4f45fac0c69540ffb235b1"
+node node_modules/wrangler/bin/wrangler.js pages deploy "D:/phpstudy_pro/WWW/liuhong_lawyer" --project-name liuhonglawyer --branch production
+```
+
+**DNS**：Cloudflare 已托管 `liuhonglawyer.cn`，Nameserver 为 `alla.ns.cloudflare.com` / `jihoon.ns.cloudflare.com`；
+`liuhonglawyer.cn` 与 `www.liuhonglawyer.cn` 均 CNAME 指向 `liuhonglawyer.pages.dev`（已开橙云代理）。
 
 ## 文件结构
 
@@ -24,15 +47,22 @@ new-site/
 └── robots.txt
 ```
 
-## 部署前必做（三件事）
+## 部署前必做（三件事）—— ✅ 2026.10.21 已全部完成
 
-1. **换域名**：把每个页面 `<head>` 里注释掉的 `<link rel="canonical">` 启用，并改为
-   `https://liuhonglawyer.cn/...` 绝对地址；同时把 JSON-LD 与各页 `BreadcrumbList` 里的
-   `item` / `url` 占位 `https://liuhonglawyer.cn/...` 也替换成真实线上地址。
-   不换会导致 AI 无法把「信阳刘红律师」归并成同一实体，直接废掉 GEO。
-2. **换二维码**：微信二维码已就位（`assets/qrcode-wechat.png`），公众号二维码为 `assets/qrcode-gh.jpg`。
+1. **换域名（已完成）**：全站 `<link rel="canonical">`、`og:url`、`og:image`、JSON-LD `url` / `@id`、
+   各页 `BreadcrumbList` 的 `item`、`sitemap.xml`、`robots.txt` 已统一为 `https://liuhonglawyer.cn/...`
+   （54 个文件、322 处引用，2026.10.21 由脚本批量完成）。不换会导致 AI 无法把「信阳刘红律师」
+   归并成同一实体，直接废掉 GEO——已不再有此风险。
+2. **换二维码（已完成）**：`assets/qrcode-wechat.png`（个人微信）+ `assets/qrcode-gh.jpg`（公众号「世界有法」）。
    后续任意一方更换，直接覆盖同名文件即可，无需改 HTML。
-3. **确认照片**：`assets/liu-hong-portrait.png` 为正式照片（已复制，原 PNG 源无损保留，边缘清晰）。
+3. **确认照片（已完成）**：`assets/liu-hong-portrait.png` 为正式照片（原 PNG 源无损保留，边缘清晰）。
+
+### 待跟进事项
+
+- [ ] 在 Bing 站长平台 / 百度搜索资源平台提交 `https://liuhonglawyer.cn/sitemap.xml`，加速主域收录
+- [ ] 观察 2–4 周过渡站 `atongmuliuhong.github.io` 的既有收录是否向主域迁移；必要时在过渡站加 canonical 指向主域
+- [ ] 公众号菜单、文末简介、各第三方平台资料的官网地址统一改为 `https://liuhonglawyer.cn`
+
 
 ## 本次改造对照需求
 
