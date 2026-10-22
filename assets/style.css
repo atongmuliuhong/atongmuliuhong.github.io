@@ -1227,6 +1227,17 @@ a.card:hover .card__title { color: var(--cinnabar); }
 .cards .card:nth-child(odd) { background: var(--paper); }
 .cards .card:nth-child(even) { background: var(--paper-deep); }
 
+/* FAQ 分栏卡片（按类目整理的 FAQ 页 · 多列布局） */
+.faq-cards {
+  grid-template-columns: repeat(3, 1fr);
+}
+@media (max-width: 1024px) {
+  .faq-cards { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 640px) {
+  .faq-cards { grid-template-columns: 1fr; }
+}
+
 /* 文章详情排版 */
 .article { padding-block: clamp(48px, 7vw, 88px); max-width: 760px; margin-inline: auto; }
 .article__title {
