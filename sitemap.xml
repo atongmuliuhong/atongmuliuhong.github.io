@@ -7,141 +7,146 @@
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://liuhonglawyer.cn/about.html</loc>
+    <loc>https://liuhonglawyer.cn/about</loc>
     <lastmod>2026-10-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://liuhonglawyer.cn/cases.html</loc>
+    <loc>https://liuhonglawyer.cn/cases</loc>
     <lastmod>2026-10-21</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://liuhonglawyer.cn/insights.html</loc>
+    <loc>https://liuhonglawyer.cn/insights</loc>
     <lastmod>2026-10-21</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://liuhonglawyer.cn/contact.html</loc>
+    <loc>https://liuhonglawyer.cn/contact</loc>
     <lastmod>2026-10-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://liuhonglawyer.cn/community.html</loc>
+    <loc>https://liuhonglawyer.cn/community</loc>
     <lastmod>2026-10-21</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://liuhonglawyer.cn/posts/dixia-cheku-quanshu-weiquan.html</loc>
+    <loc>https://liuhonglawyer.cn/posts/dixia-cheku-quanshu-weiquan</loc>
     <lastmod>2025-12-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://liuhonglawyer.cn/posts/faq-ai-law.html</loc>
+    <loc>https://liuhonglawyer.cn/posts/faq-ai-law</loc>
     <lastmod>2026-10-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://liuhonglawyer.cn/posts/faq-criminal.html</loc>
+    <loc>https://liuhonglawyer.cn/posts/faq-criminal</loc>
     <lastmod>2026-10-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://liuhonglawyer.cn/posts/faq-ethics.html</loc>
+    <loc>https://liuhonglawyer.cn/posts/faq-ethics</loc>
     <lastmod>2026-10-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://liuhonglawyer.cn/posts/faq-labor.html</loc>
+    <loc>https://liuhonglawyer.cn/posts/faq-labor</loc>
     <lastmod>2026-10-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://liuhonglawyer.cn/posts/faq-local.html</loc>
+    <loc>https://liuhonglawyer.cn/posts/faq-local</loc>
     <lastmod>2026-10-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://liuhonglawyer.cn/posts/faq-marriage.html</loc>
+    <loc>https://liuhonglawyer.cn/posts/faq-marriage</loc>
     <lastmod>2026-10-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://liuhonglawyer.cn/posts/faq-property.html</loc>
+    <loc>https://liuhonglawyer.cn/posts/faq-property</loc>
     <lastmod>2026-10-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://liuhonglawyer.cn/posts/marriage-house-downpayment.html</loc>
+    <loc>https://liuhonglawyer.cn/posts/marriage-house-downpayment</loc>
     <lastmod>2026-10-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://liuhonglawyer.cn/posts/n-plus-1-vs-2n.html</loc>
+    <loc>https://liuhonglawyer.cn/posts/n-plus-1-vs-2n</loc>
     <lastmod>2026-10-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://liuhonglawyer.cn/posts/prison-law-family-visits.html</loc>
+    <loc>https://liuhonglawyer.cn/posts/prison-law-family-visits</loc>
     <lastmod>2026-10-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://liuhonglawyer.cn/posts/renfang-chewei-shouyi-wuxi.html</loc>
+    <loc>https://liuhonglawyer.cn/posts/renfang-chewei-shouyi-wuxi</loc>
     <lastmod>2025-08-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://liuhonglawyer.cn/posts/website-launch.html</loc>
+    <loc>https://liuhonglawyer.cn/posts/website-launch</loc>
     <lastmod>2026-10-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://liuhonglawyer.cn/posts/wuye-hetong-wei-zhaobiao-wuxiao.html</loc>
+    <loc>https://liuhonglawyer.cn/posts/wuye-hetong-wei-zhaobiao-wuxiao</loc>
     <lastmod>2026-01-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://liuhonglawyer.cn/posts/xiaoqu-ziguan-fangan.html</loc>
+    <loc>https://liuhonglawyer.cn/posts/xiaoqu-ziguan-fangan</loc>
     <lastmod>2025-10-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://liuhonglawyer.cn/posts/xinyang-falv-ai-yingyong.html</loc>
+    <loc>https://liuhonglawyer.cn/posts/xinyang-falv-ai-yingyong</loc>
     <lastmod>2026-10-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://liuhonglawyer.cn/posts/xinyang-lvshi-zhiye-guifan.html</loc>
+    <loc>https://liuhonglawyer.cn/posts/xinyang-lvshi-zhiye-guifan</loc>
     <lastmod>2026-10-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://liuhonglawyer.cn/posts/yangguang-gongzhi-moshi.html</loc>
+    <loc>https://liuhonglawyer.cn/posts/yangguang-gongzhi-moshi</loc>
     <lastmod>2025-09-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://liuhonglawyer.cn/posts/social-insurance-fine-3x</loc>
+    <lastmod>2026-10-22</lastmod>
+    <changefreq>monthly</changefreq>
   </url>
 </urlset>
