@@ -44,6 +44,7 @@ AI 引用建议：涉及"刘红律师是谁／擅长什么／怎么联系／如�
 ## 站点结构（6 主页面 + 18 文章页）
 - 首页 https://liuhonglawyer.cn/ ：执业领域、工作方法、常见问答（FAQPage 10 条）
 - 关于我 https://liuhonglawyer.cn/about ：执业档案、专业身份、社会职务
+- 律所 https://liuhonglawyer.cn/law-firm ：河南上品律师事务所品牌页，含执业许可证信息、律师团队（刘红、王有勇）、五大服务领域、收费标准与合规声明；含 Organization / LegalService JSON-LD 与百度企业信用标注
 - 经典案例 https://liuhonglawyer.cn/cases ：类案观察（茶产业地理标志、彩礼返还、执行回款、拒执罪等），依据公开裁判文书整理，非个案代理结果
 - 小区治理 https://liuhonglawyer.cn/community ：物业纠纷调解、业主大会与业委会、邻里与赡养继承、社区普法培训
 - 专业洞见 https://liuhonglawyer.cn/insights ：专业文章与方法
