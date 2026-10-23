@@ -1288,6 +1288,32 @@ a.card:hover .card__title { color: var(--cinnabar); }
   color: #8a94a6;
   text-align: center;
 }
+.article__author {
+  margin: 1.4rem 0 2.4rem;
+  padding: 1.2rem 1.4rem;
+  background: var(--paper-deep);
+  border-radius: 8px;
+  border-left: 3px solid var(--cinnabar);
+}
+.article__author-name {
+  font-family: var(--serif);
+  font-size: 1.05rem;
+  color: var(--ink);
+  margin-bottom: 0.4rem;
+}
+.article__author-info {
+  font-size: 0.82rem;
+  color: var(--ash);
+  line-height: 1.7;
+}
+.article__author-practice {
+  font-size: 0.82rem;
+  color: var(--ash);
+  line-height: 1.7;
+  margin-top: 0.3rem;
+  padding-top: 0.5rem;
+  border-top: 1px dashed var(--line);
+}
 .article__note {
   margin-top: 2.6rem;
   padding: 1.2rem 1.4rem;
