@@ -190,4 +190,14 @@
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
+  <url>
+    <loc>https://liuhonglawyer.cn/posts/tea-leaf-payment</loc>
+    <lastmod>2026-10-23</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://liuhonglawyer.cn/publish-dashboard</loc>
+    <lastmod>2026-10-23</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
 </urlset>
