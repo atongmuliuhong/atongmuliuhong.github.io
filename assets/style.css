@@ -1653,6 +1653,18 @@ a.contact-card__value:hover { color: var(--cinnabar); }
   letter-spacing: .04em;
 }
 
+/* 五大方向 · 可点击卡片（首页 icon-card 转为链接） */
+.icon-card--link {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* 首页案例卡 · 可点击 */
+.case-card--link {
+  text-decoration: none;
+  color: inherit;
+}
+
 /* 案例卡（客户类型 ＋ 问题 ＋ 结果） */
 .case-grid {
   display: grid;

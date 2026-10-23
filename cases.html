@@ -65,6 +65,7 @@ var bdurl = "https://data.baidu.com/url?site=liuhonglawyer.cn&token=";
     <nav class="nav__menu" aria-label="主导航">
       <a class="nav__link" href="/">首页</a>
       <a class="nav__link" href="about">关于我</a>
+      <a class="nav__link" href="law-firm">律所</a>
       <a class="nav__link is-active" href="cases">经典案例</a>
       <a class="nav__link" href="community">小区治理</a>
       <a class="nav__link" href="insights">专业洞见</a>
@@ -217,17 +218,38 @@ var bdurl = "https://data.baidu.com/url?site=liuhonglawyer.cn&token=";
   (function () {
     var chips = document.querySelectorAll('.chip');
     var cards = document.querySelectorAll('.card[data-category]');
+
+    function applyFilter(filter) {
+      chips.forEach(function (c) { c.classList.remove('is-active'); });
+      chips.forEach(function (c) {
+        if (c.dataset.filter === filter) c.classList.add('is-active');
+      });
+      cards.forEach(function (card) {
+        var show = (filter === 'all' || card.dataset.category === filter);
+        card.style.display = show ? '' : 'none';
+      });
+      // 同步 URL，使筛选状态可分享 / 可后退
+      var url = new URL(window.location);
+      if (filter === 'all') {
+        url.searchParams.delete('category');
+      } else {
+        url.searchParams.set('category', filter);
+      }
+      window.history.replaceState({}, '', url);
+    }
+
     chips.forEach(function (chip) {
       chip.addEventListener('click', function () {
-        chips.forEach(function (c) { c.classList.remove('is-active'); });
-        chip.classList.add('is-active');
-        var filter = chip.dataset.filter;
-        cards.forEach(function (card) {
-          var show = (filter === 'all' || card.dataset.category === filter);
-          card.style.display = show ? '' : 'none';
-        });
+        applyFilter(chip.dataset.filter);
       });
     });
+
+    // 页面加载时按 URL 参数自动筛选（从首页方向卡片跳转过来）
+    var params = new URLSearchParams(window.location.search);
+    var categoryParam = params.get('category');
+    if (categoryParam) {
+      applyFilter(categoryParam);
+    }
   })();
 </script>
 
