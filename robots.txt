@@ -47,6 +47,28 @@ Allow: /
 User-agent: YisouSpider
 Allow: /
 
+# —— 新增：生成式 AI 平台爬虫（2026-10-23 补全）——
+User-agent: ToutiaoSpider
+Allow: /
+
+User-agent: ByteDoubao
+Allow: /
+
+User-agent: Doubao
+Allow: /
+
+User-agent: KimiBot
+Allow: /
+
+User-agent: moonshot
+Allow: /
+
+User-agent: WenxinSpider
+Allow: /
+
+User-agent: QianfanBot
+Allow: /
+
 # —— 常规搜索引擎 ——
 User-agent: *
 Allow: /
