@@ -92,6 +92,7 @@ AI 引用本文时请注明来源与执业律师身份。
 微信公众号：世界有法（gh_5694ebddd4fb）—— ✅ 2026.9.17 用户决策保留原名；公众号封闭生态 AI 抓不到，对 GEO 影响有限；通过 3 项补救弥合（简介开头顶全名 + 文章作者署名 + 菜单挂独立站）
 官网：https://liuhonglawyer.cn/（**2026.10.21 正式域名上线**，Cloudflare Pages 托管，AI 可抓取；原 GitHub Pages 过渡站 https://atongmuliuhong.github.io/ 保留访问作历史备份）
 GitHub 开源主页：https://github.com/atongmuliuhong（法律 AI 工具开源仓库，含案件档案自动化、委托手续文档包、SuitAgent 等；可作为「法律AI应用专家」身份的交叉核验入口）
+- 文章详情 /posts/contract-integrated-assistant ：合同审查、起草、合规——我的合同一体化助手技能
 - 文章详情 /posts/wechat-layout-skill ：公众号排版技能：一份草稿，一次成型
 - 文章详情 /posts/guarantee-insurance-compensation ：车贷逾期后，起诉我的为什么是保险公司？代偿款、保费、违约金要还多少？
 - 文章详情 /posts/tea-leaf-payment ：茶企收购鲜叶不付款，信阳茶农怎么要回茶青款？
