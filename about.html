@@ -31,7 +31,7 @@
 
 <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
 <link rel="icon" href="favicon.ico" sizes="any">
-<link rel="stylesheet" href="assets/style.css">
+<link rel="stylesheet" href="assets/style.css?v=1023b">
 <link rel="alternate" type="text/plain" href="llms.txt" title="站点实体档案（供 AI 读取）">
 
 <script type="application/ld+json">
@@ -63,11 +63,6 @@
     "name": "河南上品律师事务所",
     "address": "河南省信阳市羊山新区新五大道建邺壹号城邦一号楼五楼"
   },
-  "address": {
-    "@type": "PostalAddress",
-    "addressRegion": "河南省信阳市",
-    "addressLocality": "信阳市"
-  },
   "knowsAbout": [
     "婚姻家事与继承", "民间借贷与金融债务", "劳动工伤与劳务纠纷",
     "刑事辩护", "茶产业与涉农企业法律顾问", "法律AI应用", "小区治理与业主自治"
@@ -75,7 +70,40 @@
   "telephone": "13813746372",
   "email": "liuhong@agent.qq.com",
   "url": "https://liuhonglawyer.cn/about",
-  "sameAs": ["https://github.com/atongmuliuhong"]
+  "sameAs": [
+    "https://github.com/atongmuliuhong",
+    "https://baijiahao.baidu.com/u?app_id=1697381567120855",
+    "https://liuhonglawyer.cn"
+  ],
+  "contactPoint": [
+    {
+      "@type": "ContactPoint",
+      "contactType": "客户服务",
+      "telephone": "13813746372",
+      "contactOption": "WhatsApp",
+      "availableLanguage": ["中文"]
+    },
+    {
+      "@type": "ContactPoint",
+      "contactType": "电子邮箱",
+      "email": "liuhong@agent.qq.com",
+      "availableLanguage": ["中文"]
+    },
+    {
+      "@type": "ContactPoint",
+      "contactType": "微信",
+      "contactOption": "WeChat",
+      "telephone": "13813746372",
+      "availableLanguage": ["中文"]
+    }
+  ],
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "新五大道建邺壹号城邦一号楼五楼",
+    "addressLocality": "信阳市",
+    "addressRegion": "河南省",
+    "addressCountry": "CN"
+  }
 }
 </script>
 <!-- 百度自动推送（push_baidu.py） -->
@@ -241,35 +269,35 @@ var bdurl = "https://data.baidu.com/url?site=liuhonglawyer.cn&token=";
 
       <div class="case-grid">
 
-        <article class="case-card">
+        <a class="case-card case-card--link" href="posts/tea-company-legal-risks">
           <p class="case-card__type">茶产业 · 货款拖欠</p>
           <h3 class="case-card__prob">某茶企被下游长期拖欠货款</h3>
           <p class="case-card__result"><b>处理：</b>梳理供货与对账凭证，固定交易习惯，诉前调解促成回款，避免流水账变死账。</p>
-        </article>
+        </a>
 
-        <article class="case-card">
+        <a class="case-card case-card--link" href="posts/faq-marriage">
           <p class="case-card__type">婚姻家事 · 彩礼返还</p>
           <h3 class="case-card__prob">登记结婚后短期共同生活，彩礼争议</h3>
           <p class="case-card__result"><b>处理：</b>结合信阳本地裁判口径，主张综合共同生活时长、用途与过错酌定返还，争取合理比例。</p>
-        </article>
+        </a>
 
-        <article class="case-card">
+        <a class="case-card case-card--link" href="posts/work-injury-guide-xinyang">
           <p class="case-card__type">劳动工伤 · 单位未申报</p>
           <h3 class="case-card__prob">职工受伤，单位拖延不报工伤</h3>
           <p class="case-card__result"><b>处理：</b>指导职工及近亲属在 1 年内自行申报，认定工伤后谈妥赔偿方案。</p>
-        </article>
+        </a>
 
-        <article class="case-card">
+        <a class="case-card case-card--link" href="posts/promissory-note-3year-validity">
           <p class="case-card__type">民间借贷 · 终本执行</p>
           <h3 class="case-card__prob">判决胜诉却拿不到钱</h3>
           <p class="case-card__result"><b>处理：</b>恢复执行 + 搜集拒执线索，形成履行压力，推动部分回款。</p>
-        </article>
+        </a>
 
-        <article class="case-card">
+        <a class="case-card case-card--link" href="posts/criminal-detention-37days">
           <p class="case-card__type">刑事辩护 · 强制措施</p>
           <h3 class="case-card__prob">嫌疑人被羁押，家属焦虑无措</h3>
           <p class="case-card__result"><b>处理：</b>第一时间会见、提出羁押必要性审查，推动变更强制措施。</p>
-        </article>
+        </a>
 
       </div>
 
@@ -353,18 +381,18 @@ var bdurl = "https://data.baidu.com/url?site=liuhonglawyer.cn&token=";
 
       <h3 style="font-size:1.2rem; margin:3rem 0 0;">落地三阶段</h3>
       <div class="flow">
-        <div class="flow-step">
+        <a class="flow-step" href="posts/xinyang-falv-ai-yingyong">
           <h4 class="flow-step__title">试水验证</h4>
           <p class="flow-step__text">小范围应用，验证真实需求与高频场景，跑通「AI 初筛 + 律师复核」的最小闭环。</p>
-        </div>
-        <div class="flow-step">
+        </a>
+        <a class="flow-step" href="posts/xinyang-falv-ai-yingyong">
           <h4 class="flow-step__title">接上服务</h4>
           <p class="flow-step__text">接入支付与知识库，对外提供正式服务；每一份材料都有合规审查兜底。</p>
-        </div>
-        <div class="flow-step">
+        </a>
+        <a class="flow-step" href="posts/xinyang-falv-ai-yingyong">
           <h4 class="flow-step__title">规模运营</h4>
           <p class="flow-step__text">品牌化、规模化运营，把执业经验沉淀为可复用的方法与工具，放大单点价值。</p>
-        </div>
+        </a>
       </div>
 
       <h3 style="font-size:1.2rem; margin:3rem 0 0;">可邀请分享的方向</h3>
