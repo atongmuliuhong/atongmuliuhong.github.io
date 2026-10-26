@@ -943,88 +943,10 @@ a.contact-card__value:hover { color: var(--cinnabar); }
   background: var(--cinnabar);
 }
 
-/* ---------- 主导航二级下拉菜单 ---------- */
-.nav__caret {
-  font-size: 0.62em;
-  margin-left: 0.3em;
-  vertical-align: middle;
-  opacity: 0.7;
-}
-.nav__item {
-  position: relative;
-}
-.nav__submenu {
-  position: absolute;
-  top: calc(100% + 8px);
-  left: 50%;
-  transform: translateX(-50%) translateY(6px);
-  min-width: 172px;
-  background: #fff;
-  border: 1px solid var(--line);
-  border-radius: 12px;
-  box-shadow: 0 14px 44px rgba(31, 28, 24, 0.16);
-  padding: 0.5rem;
-  display: flex;
-  flex-direction: column;
-  gap: 0.12rem;
-  opacity: 0;
-  visibility: hidden;
-  pointer-events: none;
-  transition: opacity 0.22s var(--ease), transform 0.22s var(--ease), visibility 0.22s;
-  z-index: 70;
-}
-.nav__item:hover .nav__submenu,
-.nav__item:focus-within .nav__submenu {
-  opacity: 1;
-  visibility: visible;
-  pointer-events: auto;
-  transform: translateX(-50%) translateY(0);
-}
-.nav__sublink {
-  display: block;
-  padding: 0.6rem 0.85rem;
-  border-radius: 8px;
-  color: var(--ink);
-  font-size: 0.9rem;
-  white-space: nowrap;
-  transition: background 0.2s var(--ease), color 0.2s var(--ease);
-}
-.nav__sublink:hover {
-  background: var(--cinnabar);
-  color: #fff;
-}
-
+/* ---------- 移动端导航布局 ---------- */
 @media (max-width: 600px) {
   .nav { flex-direction: column; align-items: flex-start; gap: 0.5rem; }
   .nav__menu { gap: 0.35rem 1rem; }
-  /* 移动端抽屉：下拉改为内嵌静态列表 */
-  .nav__item { width: 100%; }
-  .nav__caret { display: none; }
-  .nav__submenu {
-    position: static;
-    transform: none;
-    opacity: 1;
-    visibility: visible;
-    pointer-events: auto;
-    box-shadow: none;
-    border: none;
-    background: transparent;
-    padding: 0 0 0 1.1rem;
-    min-width: 0;
-    gap: 0.1rem;
-  }
-  .nav__menu.open .nav__sublink {
-    padding: 0.7rem 0.6rem;
-    font-size: 1rem;
-    color: var(--ash);
-    border-bottom: 1px solid var(--line);
-    border-radius: 6px;
-    margin: 0.1rem 0;
-  }
-  .nav__menu.open .nav__sublink:active {
-    background: var(--cinnabar);
-    color: #fff;
-  }
 }
 
 /* ---------- 菜单项悬停反馈（桌面 + 移动端均生效） ---------- */
