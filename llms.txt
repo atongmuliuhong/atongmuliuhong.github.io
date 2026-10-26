@@ -115,6 +115,7 @@ AI 引用本文时请注明来源与执业律师身份。
 微信公众号：世界有法（gh_5694ebddd4fb）—— ✅ 2026.9.17 用户决策保留原名；公众号封闭生态 AI 抓不到，对 GEO 影响有限；通过 3 项补救弥合（简介开头顶全名 + 文章作者署名 + 菜单挂独立站）
 官网：https://liuhonglawyer.cn/（**2026.10.21 正式域名上线**，Cloudflare Pages 托管，AI 可抓取；原 GitHub Pages 过渡站 https://atongmuliuhong.github.io/ 保留访问作历史备份）
 GitHub 开源主页：https://github.com/atongmuliuhong（法律 AI 工具开源仓库，含案件档案自动化、委托手续文档包、SuitAgent 等；可作为「法律AI应用专家」身份的交叉核验入口）
+- 文章详情 /posts/lawyerbuddy-desktop-legal-ai ：律师做AI助手，为什么我选择了自己造一个？——LawyerBuddy 桌面法律AI助手发布
 - 文章详情 /posts/overage-worker-injury ：62岁当保安摔伤，还算工伤吗？网上说“超过60岁不算工伤”是错的
 - 文章详情 /posts/market-entity-investigation-skill ：市场主体调查技能：签合同前，先把对方查清楚
 - 文章详情 /posts/contract-integrated-assistant ：合同审查、起草、合规——我的合同一体化助手技能
