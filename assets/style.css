@@ -943,7 +943,7 @@ a.contact-card__value:hover { color: var(--cinnabar); }
   background: var(--cinnabar);
 }
 
-/* ---------- 主导航多级下拉（在线查阅 → 红宝书 → 文章） ---------- */
+/* ---------- 主导航下拉（在线查阅 → 子菜单） ---------- */
 .nav__caret {
   font-size: 0.6em;
   margin-left: 0.32em;
@@ -952,12 +952,12 @@ a.contact-card__value:hover { color: var(--cinnabar); }
 }
 .nav__item { position: relative; }
 
-/* 二级下拉（离婚红宝书 / 劳动纠纷红宝书） */
+/* 二级下拉（离婚红宝书 / 劳动纠纷红宝书）：默认隐藏，仅点击「在线查阅」(.open) 才显示，不响应悬停 */
 .nav__submenu {
   position: absolute;
   top: calc(100% + 8px);
   left: 0;
-  min-width: 216px;
+  min-width: 200px;
   background: #fff;
   border: 1px solid var(--line);
   border-radius: 12px;
@@ -973,22 +973,17 @@ a.contact-card__value:hover { color: var(--cinnabar); }
   transition: opacity 0.22s var(--ease), transform 0.22s var(--ease), visibility 0.22s;
   z-index: 70;
 }
-.nav__item:hover > .nav__submenu,
-.nav__item.open > .nav__submenu,
-.nav__item:focus-within > .nav__submenu {
+/* 仅点击展开（.open）才显示；去掉 :hover / :focus-within，做到「不点击不显示」 */
+.nav__item.open > .nav__submenu {
   opacity: 1;
   visibility: visible;
   pointer-events: auto;
   transform: translateY(0);
 }
 
-/* 二级项（含三级） */
-.nav__subitem { position: relative; }
+/* 二级项链接 */
 .nav__sublink {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 0.6rem;
+  display: block;
   padding: 0.6rem 0.85rem;
   border-radius: 8px;
   color: var(--ink);
@@ -1000,10 +995,7 @@ a.contact-card__value:hover { color: var(--cinnabar); }
 .nav__sublink--disabled {
   color: #a9adb5;
   cursor: default;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 0.6rem;
+  display: block;
   padding: 0.6rem 0.85rem;
   border-radius: 8px;
   font-size: 0.92rem;
@@ -1011,66 +1003,13 @@ a.contact-card__value:hover { color: var(--cinnabar); }
 }
 .nav__sublink--disabled em { font-style: normal; font-size: 0.8em; opacity: 0.9; }
 
-/* 三级（孙菜单：各章文章） */
-.nav__subsubmenu {
-  position: absolute;
-  top: -1px;
-  left: calc(100% + 8px);
-  min-width: 320px;
-  background: #fff;
-  border: 1px solid var(--line);
-  border-radius: 12px;
-  box-shadow: 0 14px 44px rgba(31, 28, 24, 0.16);
-  padding: 0.5rem;
-  display: flex;
-  flex-direction: column;
-  gap: 0.08rem;
-  opacity: 0;
-  visibility: hidden;
-  pointer-events: none;
-  transform: translateX(6px);
-  transition: opacity 0.22s var(--ease), transform 0.22s var(--ease), visibility 0.22s;
-  z-index: 71;
-}
-.nav__subitem:hover > .nav__subsubmenu,
-.nav__subitem.open > .nav__subsubmenu,
-.nav__subitem:focus-within > .nav__subsubmenu {
-  opacity: 1;
-  visibility: visible;
-  pointer-events: auto;
-  transform: translateX(0);
-}
-.nav__subsubmenu a {
-  display: block;
-  padding: 0.55rem 0.8rem;
-  border-radius: 8px;
-  color: var(--ink);
-  font-size: 0.9rem;
-  white-space: nowrap;
-  transition: background 0.2s var(--ease), color 0.2s var(--ease);
-}
-.nav__subsubmenu a:hover { background: var(--cinnabar); color: #fff; }
-
 /* ---------- 移动端导航布局 ---------- */
 @media (max-width: 600px) {
   .nav { flex-direction: column; align-items: flex-start; gap: 0.5rem; }
   .nav__menu { gap: 0.35rem 1rem; }
-  /* 抽屉内：二级横向展开为内嵌静态列表 */
-  .nav__item, .nav__subitem { width: 100%; }
+  /* 抽屉内：二级默认隐藏，点击「在线查阅」(.nav__item.open) 才显示（与桌面一致：不点击不显示） */
+  .nav__item { width: 100%; }
   .nav__submenu {
-    position: static;
-    transform: none;
-    opacity: 1;
-    visibility: visible;
-    pointer-events: auto;
-    box-shadow: none;
-    border: none;
-    background: transparent;
-    padding: 0 0 0 1.1rem;
-    min-width: 0;
-  }
-  /* 三级（孙菜单）默认收起，点击父项 .open 展开 */
-  .nav__subsubmenu {
     position: static;
     transform: none;
     opacity: 1;
@@ -1083,9 +1022,8 @@ a.contact-card__value:hover { color: var(--cinnabar); }
     min-width: 0;
     display: none;
   }
-  .nav__subitem.open > .nav__subsubmenu { display: flex; }
+  .nav__item.open > .nav__submenu { display: flex; }
   .nav__menu.open .nav__sublink { padding: 0.7rem 0.6rem; font-size: 1rem; color: var(--ash); border-bottom: 1px solid var(--line); border-radius: 6px; margin: 0.1rem 0; }
-  .nav__menu.open .nav__subsubmenu a { padding: 0.6rem 0.6rem; font-size: 0.95rem; color: var(--ash); border-bottom: 1px solid var(--line); border-radius: 6px; margin: 0.1rem 0; }
 }
 
 /* ---------- 菜单项悬停反馈（桌面 + 移动端均生效） ---------- */
