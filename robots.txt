@@ -60,6 +60,12 @@ Allow: /
 User-agent: KimiBot
 Allow: /
 
+# —— DeepSeek（2026-10-25 补）：官方 UA 为 DeepSeekBot，是否遵守 robots 存行业争议，
+#     写 Allow 不产生任何阻断风险；且末尾 User-agent: * 已兜底放行，此处仅作显式声明。
+User-agent: DeepSeekBot
+Allow: /
+
+
 User-agent: moonshot
 Allow: /
 
