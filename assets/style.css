@@ -1437,6 +1437,29 @@ a.card:hover .card__title { color: var(--cinnabar); }
   color: #8a94a6;
   text-align: center;
 }
+.article__body a {
+  color: var(--cinnabar);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  font-weight: 600;
+}
+.article__body a:hover { color: var(--cinnabar-soft); }
+.article__body .back {
+  display: inline-block;
+  margin: 0.35rem 0;
+  color: var(--cinnabar);
+  font-weight: 600;
+  text-decoration: none;
+}
+.article__body .back:hover { text-decoration: underline; }
+.article__body .lead-note {
+  margin: 1.2rem 0;
+  padding: 0.8rem 1rem;
+  background: var(--paper-deep, #f4f1e9);
+  border-left: 3px solid var(--gold);
+  border-radius: 6px;
+  font-weight: 500;
+}
 .article__author {
   margin: 1.4rem 0 2.4rem;
   padding: 1.2rem 1.4rem;
