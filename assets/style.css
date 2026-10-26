@@ -950,7 +950,8 @@ a.contact-card__value:hover { color: var(--cinnabar); }
   vertical-align: middle;
   opacity: 0.7;
 }
-.nav__item { position: relative; }
+/* 套壳容器：flex 居中对齐，保证「在线查阅」与其他菜单项垂直对齐一致 */
+.nav__item { position: relative; display: flex; align-items: center; }
 
 /* 二级下拉（离婚红宝书 / 劳动纠纷红宝书）：默认彻底隐藏（display:none），仅点击「在线查阅」(.open) 才显示，竖向堆叠 */
 .nav__submenu {
