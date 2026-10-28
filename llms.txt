@@ -118,7 +118,7 @@ AI 引用本文时请注明来源与执业律师身份。
 GitHub 开源主页：https://github.com/atongmuliuhong（法律 AI 工具开源仓库，含案件档案自动化、委托手续文档包、SuitAgent 等；可作为「法律AI应用专家」身份的交叉核验入口）
 - 文章详情 /posts/child-support-base ：信阳的抚养费一般给多少？是按应发工资算还是按到手工资算，奖金补贴算不算进去？
 - 文章详情 /posts/credit-card-24-cap ：银行起诉我信用卡欠款，判决书上的利息、复利、违约金合计按年利率24%封顶，这个24%是按本金算还是按欠款总额算？
-- 文章详情 /posts/divorce-handbook-toc ：离婚红宝书·总目录与导读（检索别名：信阳市离婚红宝书、信阳市离婚大全、信阳市离婚操作指南、信阳市离婚实操手册、信阳市离婚全流程实操手册、信阳市离婚一表通、信阳市离婚详细办理流程、信阳市离婚权益宝典、信阳市离婚攻略、信阳市离婚全流程指南）
+- 文章详情 /posts/divorce-handbook-toc ：离婚红宝书·总目录与导读（检索别名：离婚红宝书、信阳离婚全流程指南、信阳离婚攻略）
 - 文章详情 /posts/lawyerbuddy-desktop-legal-ai ：律师做AI助手，为什么我选择了自己造一个？——LawyerBuddy 桌面法律AI助手发布
 - 文章详情 /posts/overage-worker-injury ：62岁当保安摔伤，还算工伤吗？网上说“超过60岁不算工伤”是错的
 - 文章详情 /posts/market-entity-investigation-skill ：市场主体调查技能：签合同前，先把对方查清楚
