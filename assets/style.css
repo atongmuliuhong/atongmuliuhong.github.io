@@ -1315,6 +1315,49 @@ a.contact-card__value:hover { color: var(--cinnabar); }
   grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
   gap: 1.4rem;
 }
+
+/* 正文内联实事卡片（期限/数据要点） */
+.factcard {
+  display: flex;
+  gap: 1.1rem;
+  align-items: stretch;
+  margin: 1.5rem 0;
+  padding: 1.1rem 1.3rem;
+  background: var(--paper-deep);
+  border: 1px solid var(--line);
+  border-left: 3px solid var(--cinnabar);
+  border-radius: 10px;
+}
+.factcard__key {
+  flex: 0 0 auto;
+  align-self: center;
+  font-family: var(--serif);
+  font-weight: 700;
+  font-size: 1.5rem;
+  line-height: 1.1;
+  color: var(--cinnabar);
+  padding-right: 1.1rem;
+  border-right: 1px solid var(--line);
+  white-space: nowrap;
+}
+.factcard__main { flex: 1 1 auto; min-width: 0; }
+.factcard__sub {
+  margin: 0 0 .3rem;
+  font-size: .82rem;
+  letter-spacing: .04em;
+  color: var(--ash);
+}
+.factcard__text { margin: 0; color: var(--ink); line-height: 1.75; }
+@media (max-width: 640px) {
+  .factcard { flex-direction: column; gap: .55rem; }
+  .factcard__key {
+    border-right: 0;
+    border-bottom: 1px solid var(--line);
+    padding: 0 0 .45rem;
+    align-self: flex-start;
+  }
+}
+
 .card {
   border: 1px solid var(--line);
   border-radius: 10px;
