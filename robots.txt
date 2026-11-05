@@ -79,6 +79,7 @@ Allow: /
 User-agent: *
 Allow: /
 Disallow: /admin/
+Disallow: /publish-dashboard
 Disallow: /wp-login.php
 
 Sitemap: https://liuhonglawyer.cn/sitemap.xml
