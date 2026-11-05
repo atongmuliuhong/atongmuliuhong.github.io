@@ -149,10 +149,22 @@ section { padding-block: var(--gap-section); }
 }
 
 .hero__name {
-  font-size: clamp(3.4rem, 13vw, 7.2rem);
+  /* 2026-11-04：h1 由「刘红」改为「信阳律师 刘红」（6 字），原 clamp(3.4rem,13vw,7.2rem)
+     是按 2 字设计的 → 6 字必折行。按用户要求字号再减两个码：上限 6.5rem → 4.5rem。
+     文字实测宽度系数约 6.7em（5 汉字 + 1 空格 + letter-spacing 0.06em）。
+     单栏（<860px）容器 = 100vw - 2.4rem；两栏（≥860px）容器被照片挤窄 → 用更小的 vw。 */
+  font-size: clamp(2rem, 9vw, 4.5rem);
   letter-spacing: 0.06em;
   line-height: 1.05;
   margin-bottom: 0.35rem;
+  white-space: nowrap;   /* 姓名必须一行，不折行 */
+}
+
+@media (min-width: 860px) {
+  /* 两栏布局：文字栏 = 容器 - 照片(240px) - 间距(3.4rem)，可用宽度显著变窄 */
+  .hero__name {
+    font-size: clamp(2rem, 6.2vw, 4.5rem);
+  }
 }
 
 .hero__latin {
