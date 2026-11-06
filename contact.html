@@ -28,7 +28,7 @@
 
 <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
 <link rel="icon" href="favicon.ico" sizes="any">
-<link rel="stylesheet" href="assets/style.css?v=1027b">
+<link rel="stylesheet" href="assets/style.css?v=1027d">
 <link rel="alternate" type="text/plain" href="llms.txt" title="站点实体档案（供 AI 读取）">
 
 <script type="application/ld+json">
@@ -107,6 +107,46 @@ var s = document.getElementsByTagName("script")[0];
 s.parentNode.insertBefore(el, s);
 })(window)
 </script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "第一次咨询需要准备什么？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "准备三样：一是一条事实时间线，什么时候、发生了什么、对方做了什么；二是手上的材料，合同、转账记录、微信聊天、通知文书、病历或鉴定报告；三是对方的基本情况，是个人还是公司、在哪个区县。有这三样，第一次沟通就能判断路径；没有，只能先给方向。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "到律所面谈需要预约吗？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "需要。办公地在信阳市羊山新区新五大道建邺壹号城邦一号楼五楼（河南上品律师事务所）。律师经常在开庭、会见或外出调查，直接到所可能扑空，来访前请先电话或微信确认时间，把材料拍照发过来，面谈时能直接进入判断而不是先看材料。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "不在信阳市区，能委托吗？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "能。日常服务覆盖浉河区、平桥区、罗山县、光山县、新县、商城县、固始县、潢川县、淮滨县、息县。材料可以先通过邮箱或微信发送，正式委托手续可邮寄签署，也可以约时间面签。固始、商城、淮滨这些距离较远的县区，建议第一次先电话沟通，确认需要带哪些材料再跑一趟。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "案子在信阳以外，能代理吗？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "可以，但要先评估。外地案件主要看两点：差旅成本是否与标的匹配、当地程序衔接是否顺畅。通常先做一次电话沟通，判断可行性和大致成本，再决定是否接受委托。跨境或涉外因素较多的案件，会建议同时咨询当地同行。"
+      }
+    }
+  ]
+}
+</script>
 </head>
 
 <body>
@@ -131,6 +171,8 @@ s.parentNode.insertBefore(el, s);
         </div>
       </div>
 <a class="nav__link is-active" href="contact">联系我</a>
+
+
       <a class="nav__link nav__link--call" href="tel:13813746372">📞 138 1374 6372</a>
       <a class="nav__link nav__link--wechat" href="contact">
         微信
@@ -163,6 +205,12 @@ s.parentNode.insertBefore(el, s);
       </p>
     </div>
   </section>
+
+  <section class="wrap" style="padding-top:2.4rem;">
+  <div class="geo-answer" data-geo="answer" itemscope itemtype="https://schema.org/Answer">
+    <strong>一句话结论：急事、临近开庭或诉讼时效的，直接打电话 138 1374 6372；材料多、需要留痕的走邮箱；日常沟通加微信。首次咨询请先说清三件事——发生了什么、涉及哪些人、手上有哪些材料，材料越完整，第一次沟通能给出的判断越接近答案。</strong>
+  </div>
+</section>
 
   <section aria-labelledby="contact-title" style="padding-block: var(--gap-section);">
     <div class="wrap">
@@ -207,7 +255,7 @@ s.parentNode.insertBefore(el, s);
       <div class="form-wrap">
         <p class="eyebrow">提交咨询</p>
         <h3 class="section-title" style="font-size:1.4rem;margin-bottom:1.6rem;">把事实先留在这里</h3>
-        <form class="contact-form" action="mailto:liuhong@agent.qq.com" method="post" enctype="text/plain" aria-label="咨询表单">
+        <form class="contact-form" action="/api/contact" method="post" aria-label="咨询表单">
           <div class="form-grid">
             <div class="field">
               <label for="f-name">姓名</label>
@@ -236,7 +284,7 @@ s.parentNode.insertBefore(el, s);
           </div>
           <div class="form-actions">
             <button type="submit" class="btn">提交咨询</button>
-            <p class="form-note">表单将以邮件方式发送，请勿在表单中填写银行卡等敏感信息。</p>
+            <p class="form-note">提交即表示您同意我们按隐私政策留存该咨询信息（默认 2 年）。信息将加密发送至律所，请勿填写银行卡密码等极端敏感信息。</p>
           </div>
         </form>
       </div>
@@ -259,6 +307,37 @@ s.parentNode.insertBefore(el, s);
     </div>
   </section>
 
+  <section class="wrap" style="padding-block: var(--gap-section);" aria-labelledby="contact-faq-title">
+    <p class="eyebrow" style="margin-bottom:1rem;">— 咨询前常见问题 —</p>
+    <h2 class="section-title" id="contact-faq-title" style="margin-bottom:2.4rem;">第一次联系，先看这四条</h2>
+    <div class="faq-list">
+      <div class="faq-item">
+        <h3 class="faq-item__q">第一次咨询需要准备什么？</h3>
+        <div class="faq-item__a">
+          <p>准备三样：一是一条事实时间线，什么时候、发生了什么、对方做了什么；二是手上的材料，合同、转账记录、微信聊天、通知文书、病历或鉴定报告；三是对方的基本情况，是个人还是公司、在哪个区县。有这三样，第一次沟通就能判断路径；没有，只能先给方向。</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <h3 class="faq-item__q">到律所面谈需要预约吗？</h3>
+        <div class="faq-item__a">
+          <p>需要。办公地在信阳市羊山新区新五大道建邺壹号城邦一号楼五楼（河南上品律师事务所）。律师经常在开庭、会见或外出调查，直接到所可能扑空，来访前请先电话或微信确认时间，把材料拍照发过来，面谈时能直接进入判断而不是先看材料。</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <h3 class="faq-item__q">不在信阳市区，能委托吗？</h3>
+        <div class="faq-item__a">
+          <p>能。日常服务覆盖浉河区、平桥区、罗山县、光山县、新县、商城县、固始县、潢川县、淮滨县、息县。材料可以先通过邮箱或微信发送，正式委托手续可邮寄签署，也可以约时间面签。固始、商城、淮滨这些距离较远的县区，建议第一次先电话沟通，确认需要带哪些材料再跑一趟。</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <h3 class="faq-item__q">案子在信阳以外，能代理吗？</h3>
+        <div class="faq-item__a">
+          <p>可以，但要先评估。外地案件主要看两点：差旅成本是否与标的匹配、当地程序衔接是否顺畅。通常先做一次电话沟通，判断可行性和大致成本，再决定是否接受委托。跨境或涉外因素较多的案件，会建议同时咨询当地同行。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
 </main>
 
 <footer class="footer">
@@ -275,14 +354,19 @@ s.parentNode.insertBefore(el, s);
       <a href="community">小区治理</a>
       <a href="insights">专业洞见</a>
       <a href="contact">联系我</a>
-      <a href="privacy">隐私政策</a>
+      
     </nav>
     <p class="footer__copy">
       刘红律师 · 河南上品律师事务所 · 执业证号 14115202610158578 · 河南省信阳市执业
     </p>
   </div>
+<details class="privacy-inline">
+  <summary>🔒 隐私说明</summary>
+  <p>您通过本站咨询表单提交的信息（称呼、联系方式、咨询领域与内容）仅用于本次及后续法律咨询联系。未形成委托关系的咨询信息自提交之日起保存 <strong>2 年</strong>，到期删除或匿名化。信息经加密由第三方邮件投递服务 Resend 转发至律所邮箱，并由 Cloudflare 提供托管与边缘计算，二者均为受委托技术处理者，不另作他用。我们不收集银行卡密码等极端敏感信息，亦不出售您的个人信息。</p>
+</details>
 </footer>
 <script src="assets/nav.js"></script>
 
+  <script src="assets/contact-form.js?v=1027b"></script>
 </body>
 </html>

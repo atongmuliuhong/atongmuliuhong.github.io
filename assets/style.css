@@ -2078,3 +2078,51 @@ a.flow-step:hover .flow-step__title { color: var(--cinnabar); }
 @media (max-width: 768px) {
   .flow { grid-template-columns: 1fr; }
 }
+
+/* 咨询表单提交状态提示（contact-form.js 使用） */
+.form-status {
+  margin-top: 1rem;
+  padding: .85rem 1.1rem;
+  border-radius: 10px;
+  font-size: .95rem;
+  line-height: 1.6;
+  border: 1px solid transparent;
+  display: none;
+}
+.form-status--loading {
+  display: block;
+  background: rgba(138, 165, 191, .12);
+  border-color: rgba(138, 165, 191, .5);
+  color: #475569;
+}
+.form-status--ok {
+  display: block;
+  background: rgba(22, 163, 74, .08);
+  border-color: #16a34a;
+  color: #15803d;
+}
+.form-status--err {
+  display: block;
+  background: rgba(220, 38, 38, .08);
+  border-color: #dc2626;
+  color: #b91c1c;
+}
+
+/* 内联隐私说明（替代独立隐私政策页，点击展开） */
+.privacy-inline {
+  margin-top: 1.1rem;
+  font-size: .9rem;
+  line-height: 1.75;
+  color: #475569;
+}
+.privacy-inline > summary {
+  cursor: pointer;
+  font-weight: 600;
+  color: #0a1f3d;
+  display: inline-block;
+  user-select: none;
+}
+.privacy-inline > summary:hover { color: #2563eb; }
+.privacy-inline[open] > summary { margin-bottom: .5rem; }
+.privacy-inline > summary::-webkit-details-marker { display: none; }
+.privacy-inline > p { margin: .4rem 0 0; }
