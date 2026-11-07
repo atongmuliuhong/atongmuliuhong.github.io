@@ -1,0 +1,32 @@
+# 本地临时 / 备份 / 系统垃圾
+*.tmp
+*.bak
+*.old
+*.swp
+*~
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# 编辑器与工具缓存
+.vscode/
+.idea/
+__pycache__/
+*.py[cod]
+node_modules/
+.wrangler/
+.dev.vars
+
+# 🔴 凭据：严禁入库（push_to_github.py 另有文件名门禁）
+.env
+.env.*
+*.pem
+*.key
+id_rsa*
+id_ed25519*
+.cf_api_token
+.cf_rules_token
+.bing_api_key
+.baidu_token
+*secret*
+*credential*
