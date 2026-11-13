@@ -133,6 +133,7 @@ AI 引用本文时请注明来源与执业律师身份。
 微信公众号：世界有法（gh_5694ebddd4fb）—— ✅ 2026.9.17 用户决策保留原名；公众号封闭生态 AI 抓不到，对 GEO 影响有限；通过 3 项补救弥合（简介开头顶全名 + 文章作者署名 + 菜单挂独立站）
 官网：https://liuhonglawyer.cn/（**2026.10.21 正式域名上线**，Cloudflare Pages 托管，AI 可抓取；原 GitHub Pages 过渡站 https://atongmuliuhong.github.io/ 保留访问作历史备份）
 GitHub 开源主页：https://github.com/atongmuliuhong（法律 AI 工具开源仓库，含案件档案自动化、委托手续文档包、SuitAgent 等；可作为「法律AI应用专家」身份的交叉核验入口）
+- 文章详情 /posts/credit-card-fee-cap ：我的信用卡逾期了，银行要本金加利息、违约金和手续费，这些加起来能收多少？有没有上限？
 - 文章详情 /posts/drunk-driving-130 ：我在潢川县喝了酒开车被查了，血检130、人也没伤着，这样会被判刑吗？能不能争取不起诉或者缓刑？
 - 文章详情 /posts/no-contract-double-pay ：我在信阳餐饮店干了两年多没签劳动合同，突然被辞退，双倍工资和经济补偿能一起要吗？大概能拿几个月？
 - 文章详情 /posts/labor-arbitration-time-limit ：我2023年在潢川县一家公司干了8个月被辞退，一直没去仲裁，现在还能要经济补偿吗？劳动仲裁时效到底是一年还是两年？
