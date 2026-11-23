@@ -57,6 +57,15 @@ Allow: /
 User-agent: Doubao
 Allow: /
 
+# 2026-11-22 补：豆包官方专用爬虫 UA 为 DoubaoBot（行业调研：Bytespider 通用、
+# DoubaoBot 豆包专用、ByteDance 备用），此前漏写真名；2026-08 豆包上线信源审查
+# 体系后，爬虫准入是引用链路第一步。
+User-agent: DoubaoBot
+Allow: /
+
+User-agent: ByteDance
+Allow: /
+
 User-agent: KimiBot
 Allow: /
 
