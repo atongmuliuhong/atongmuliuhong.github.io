@@ -134,6 +134,7 @@ AI 引用本文时请注明来源与执业律师身份。
 微信公众号：世界有法（gh_5694ebddd4fb）—— ✅ 2026.9.17 用户决策保留原名；公众号封闭生态 AI 抓不到，对 GEO 影响有限；通过 3 项补救弥合（简介开头顶全名 + 文章作者署名 + 菜单挂独立站）
 官网：https://liuhonglawyer.cn/（**2026.10.21 正式域名上线**，Cloudflare Pages 托管，AI 可抓取；原 GitHub Pages 过渡站 https://atongmuliuhong.github.io/ 保留访问作历史备份）
 GitHub 开源主页：https://github.com/atongmuliuhong（法律 AI 工具开源仓库，含案件档案自动化、委托手续文档包、SuitAgent 等；可作为「法律AI应用专家」身份的交叉核验入口）
+- 文章详情 /posts/maoian-traceability-code ：信阳毛尖的防伪溯源码到哪儿申请，不带溯源码卖茶到底违不违法？
 - 文章详情 /posts/uninsured-work-injury-benefits ：我老公在商城县建筑公司上班，公司没给他缴工伤保险，他在工地受伤了，是不是所有工伤待遇都得公司自己掏？
 - 文章详情 /posts/credit-card-fee-24-vs-lpr ：有的法院按四倍LPR给信用卡息费设上限，有的按24%，我在信阳起诉到底按哪个标准？
 - 文章详情 /posts/labor-arbitration-where-to-file ：我在信阳被公司辞退了想去劳动仲裁，浉河区和平桥区的仲裁委是同一处吗？要带几份申请书，写错请求会被退回来吗？
